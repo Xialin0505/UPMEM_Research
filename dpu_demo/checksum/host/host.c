@@ -40,6 +40,8 @@ static uint8_t test_file[BUFFER_SIZE];
 
 // typedef dpu_error_t (*dpu_prepare_xfer_ptr)(struct dpu_set_t, void *);
 dpu_error_t (* new_dpu_prepare_xfer)(struct dpu_set_t dpu_set, void *buffer);
+dpu_error_t (* new_dpu_launch)(struct dpu_set_t dpu_set, dpu_launch_policy_t policy);
+dpu_error_t (* new_dpu_alloc)(uint32_t nr_dpus, const char *profile, struct dpu_set_t *dpu_set);
 
 /**
  * @brief creates a "test file"
@@ -70,20 +72,15 @@ int main()
     uint32_t dpu_cycles;
     bool status = true;
 
-    void * handle = dlopen("/home/upmem0037/xialinl/research/new_lib/newlib.so", RTLD_LAZY);
+    void * handle = dlopen("/home/upmem0037/xialinl/research/dpu_demo/checksum/host/libdpu.so.0.0", RTLD_LAZY);
     if(handle == NULL) {
     	fprintf(stderr, "Failed loading lib\n");
         return -1;
   	} else {
-		new_dpu_prepare_xfer = dlsym(handle, "my_dpu_prepare_xfer");
+		new_dpu_alloc = dlsym(handle, "dpu_alloc");
   	}
 
-    printf("my lib %p\n", new_dpu_prepare_xfer);
-    struct dpu_set_t test;
-    char * buf = malloc(sizeof(char));
-    new_dpu_prepare_xfer(test, buf);
-
-    DPU_ASSERT(dpu_alloc(NR_DPUS, NULL, &dpu_set));
+    DPU_ASSERT(new_dpu_alloc(NR_DPUS, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
 
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
@@ -141,6 +138,5 @@ int main()
 
     DPU_ASSERT(dpu_free(dpu_set));
     dlclose(handle);
-    free(buf);
     return status ? 0 : -1;
 }
