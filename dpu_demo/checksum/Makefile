@@ -32,7 +32,7 @@ ${CONF}:
 	touch ${CONF}
 
 ${HOST_TARGET}: ${HOST_SOURCES} ${COMMON_INCLUDES} ${CONF}
-	$(CC) -o $@ ${HOST_SOURCES} ${HOST_FLAGS}
+	$(CC) -o $@ ${HOST_SOURCES} ${HOST_FLAGS} -L./lib
 
 ${DPU_TARGET}: ${DPU_SOURCES} ${COMMON_INCLUDES} ${CONF}
 	dpu-upmem-dpurte-clang ${DPU_FLAGS} -o $@ ${DPU_SOURCES}

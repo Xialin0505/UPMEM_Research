@@ -72,7 +72,7 @@ int main()
     uint32_t dpu_cycles;
     bool status = true;
 
-    void * handle = dlopen("/home/upmem0037/xialinl/research/dpu_demo/checksum/host/libdpu.so.0.0", RTLD_LAZY);
+    void * handle = dlopen("libdpu.so.0.0", RTLD_LAZY);
     if(handle == NULL) {
     	fprintf(stderr, "Failed loading lib\n");
         return -1;
