@@ -1,2 +1,4 @@
-# libaray/**/.c.o
+libaray/src/backends/build-dir/**
+
+
 dpu_demo/checksum/lib/*
