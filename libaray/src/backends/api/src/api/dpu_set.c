@@ -385,7 +385,6 @@ __API_SYMBOL__ dpu_error_t
 dpu_alloc(uint32_t nr_dpus, const char *profile, struct dpu_set_t *dpu_set)
 {
     LOG_FN(DEBUG, "%d, \"%s\"", nr_dpus, profile);
-    printf("my dpu_alloc\n");
 
     bool dispatch_on_all_ranks;
 

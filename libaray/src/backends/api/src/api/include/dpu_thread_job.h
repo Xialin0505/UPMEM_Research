@@ -57,6 +57,15 @@ dpu_thread_job_do_jobs(struct dpu_rank_t **ranks,
     bool synchronous,
     struct dpu_thread_job_sync *sync);
 
+dpu_error_t
+dpu_thread_job_do_jobs_preempt(struct dpu_rank_t **ranks,
+    uint32_t nr_ranks,
+    uint32_t nr_job_per_rank,
+    struct dpu_thread_job **jobs,
+    bool synchronous,
+    struct dpu_thread_job_sync *sync,
+    struct dpu_set_t dpu_set);
+
 void
 dpu_thread_job_init_sync_job(struct dpu_thread_job_sync *sync, uint32_t nr_ranks);
 

@@ -23,8 +23,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <dlfcn.h>
-#include <fcntl.h>
+#include<unistd.h>
 
 #include "common.h"
 
@@ -37,11 +36,6 @@
 #define ANSI_COLOR_RESET "\x1b[0m"
 
 static uint8_t test_file[BUFFER_SIZE];
-
-// typedef dpu_error_t (*dpu_prepare_xfer_ptr)(struct dpu_set_t, void *);
-dpu_error_t (* new_dpu_prepare_xfer)(struct dpu_set_t dpu_set, void *buffer);
-dpu_error_t (* new_dpu_launch)(struct dpu_set_t dpu_set, dpu_launch_policy_t policy);
-dpu_error_t (* new_dpu_alloc)(uint32_t nr_dpus, const char *profile, struct dpu_set_t *dpu_set);
 
 /**
  * @brief creates a "test file"
@@ -72,15 +66,7 @@ int main()
     uint32_t dpu_cycles;
     bool status = true;
 
-    void * handle = dlopen("libdpu.so.0.0", RTLD_LAZY);
-    if(handle == NULL) {
-    	fprintf(stderr, "Failed loading lib\n");
-        return -1;
-  	} else {
-		new_dpu_alloc = dlsym(handle, "dpu_alloc");
-  	}
-
-    DPU_ASSERT(new_dpu_alloc(NR_DPUS, NULL, &dpu_set));
+    DPU_ASSERT(dpu_alloc(NR_DPUS, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
 
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
@@ -137,6 +123,5 @@ int main()
     }
 
     DPU_ASSERT(dpu_free(dpu_set));
-    dlclose(handle);
     return status ? 0 : -1;
 }

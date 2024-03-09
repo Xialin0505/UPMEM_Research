@@ -117,6 +117,7 @@ struct dpu_thread_job_sync {
     pthread_mutex_t mutex;
     pthread_cond_t cond;
     uint32_t nr_ranks;
+    int stop_polling;
     dpu_error_t status;
 };
 

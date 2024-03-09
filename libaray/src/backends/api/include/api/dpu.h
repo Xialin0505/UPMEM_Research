@@ -379,6 +379,16 @@ dpu_load(struct dpu_set_t dpu_set, const char *binary_path, struct dpu_program_t
 dpu_error_t
 dpu_get_symbol(struct dpu_program_t *program, const char *symbol_name, struct dpu_symbol_t *symbol);
 
+
+/**
+ * @brief Request the boot of all the DPUs in a DPU set.
+ * @param dpu_set the identifier of the DPU set we want to boot
+ * @param policy how to synchronize with the booted DPUs
+ * @return Whether the operation was successful.
+ */
+dpu_error_t
+dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy);
+
 /**
  * @brief Request the boot of all the DPUs in a DPU set.
  * @param dpu_set the identifier of the DPU set we want to boot

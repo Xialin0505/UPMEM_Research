@@ -1,0 +1,543 @@
+     24835:	find library=libdpu.so.2023.2 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/avx512_1/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/avx512_1:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/avx512_1/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/avx512_1:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/avx512_1/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/avx512_1:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/avx512_1/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/avx512_1:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/x86_64:/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=tls/haswell/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=tls/haswell/x86_64/libdpu.so.2023.2
+     24835:	  trying file=tls/haswell/libdpu.so.2023.2
+     24835:	  trying file=tls/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=tls/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=tls/x86_64/libdpu.so.2023.2
+     24835:	  trying file=tls/libdpu.so.2023.2
+     24835:	  trying file=haswell/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=haswell/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=haswell/x86_64/libdpu.so.2023.2
+     24835:	  trying file=haswell/libdpu.so.2023.2
+     24835:	  trying file=avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=avx512_1/libdpu.so.2023.2
+     24835:	  trying file=x86_64/libdpu.so.2023.2
+     24835:	  trying file=libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/haswell/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/tls/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/haswell/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/avx512_1/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/avx512_1/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/x86_64/libdpu.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2
+     24835:	
+     24835:	find library=libdpujni.so.2023.2 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=tls/haswell/avx512_1/libdpujni.so.2023.2
+     24835:	  trying file=tls/haswell/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=tls/haswell/libdpujni.so.2023.2
+     24835:	  trying file=tls/avx512_1/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=tls/avx512_1/libdpujni.so.2023.2
+     24835:	  trying file=tls/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=tls/libdpujni.so.2023.2
+     24835:	  trying file=haswell/avx512_1/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=haswell/avx512_1/libdpujni.so.2023.2
+     24835:	  trying file=haswell/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=haswell/libdpujni.so.2023.2
+     24835:	  trying file=avx512_1/x86_64/libdpujni.so.2023.2
+     24835:	  trying file=avx512_1/libdpujni.so.2023.2
+     24835:	  trying file=x86_64/libdpujni.so.2023.2
+     24835:	  trying file=libdpujni.so.2023.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpujni.so.2023.2
+     24835:	
+     24835:	find library=libdl.so.2 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libdl.so.2
+     24835:	  trying file=tls/haswell/avx512_1/libdl.so.2
+     24835:	  trying file=tls/haswell/x86_64/libdl.so.2
+     24835:	  trying file=tls/haswell/libdl.so.2
+     24835:	  trying file=tls/avx512_1/x86_64/libdl.so.2
+     24835:	  trying file=tls/avx512_1/libdl.so.2
+     24835:	  trying file=tls/x86_64/libdl.so.2
+     24835:	  trying file=tls/libdl.so.2
+     24835:	  trying file=haswell/avx512_1/x86_64/libdl.so.2
+     24835:	  trying file=haswell/avx512_1/libdl.so.2
+     24835:	  trying file=haswell/x86_64/libdl.so.2
+     24835:	  trying file=haswell/libdl.so.2
+     24835:	  trying file=avx512_1/x86_64/libdl.so.2
+     24835:	  trying file=avx512_1/libdl.so.2
+     24835:	  trying file=x86_64/libdl.so.2
+     24835:	  trying file=libdl.so.2
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdl.so.2
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+     24835:	
+     24835:	find library=libc.so.6 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libc.so.6
+     24835:	  trying file=tls/haswell/avx512_1/libc.so.6
+     24835:	  trying file=tls/haswell/x86_64/libc.so.6
+     24835:	  trying file=tls/haswell/libc.so.6
+     24835:	  trying file=tls/avx512_1/x86_64/libc.so.6
+     24835:	  trying file=tls/avx512_1/libc.so.6
+     24835:	  trying file=tls/x86_64/libc.so.6
+     24835:	  trying file=tls/libc.so.6
+     24835:	  trying file=haswell/avx512_1/x86_64/libc.so.6
+     24835:	  trying file=haswell/avx512_1/libc.so.6
+     24835:	  trying file=haswell/x86_64/libc.so.6
+     24835:	  trying file=haswell/libc.so.6
+     24835:	  trying file=avx512_1/x86_64/libc.so.6
+     24835:	  trying file=avx512_1/libc.so.6
+     24835:	  trying file=x86_64/libc.so.6
+     24835:	  trying file=libc.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libc.so.6
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+     24835:	
+     24835:	find library=libm.so.6 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=tls/haswell/avx512_1/libm.so.6
+     24835:	  trying file=tls/haswell/x86_64/libm.so.6
+     24835:	  trying file=tls/haswell/libm.so.6
+     24835:	  trying file=tls/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=tls/avx512_1/libm.so.6
+     24835:	  trying file=tls/x86_64/libm.so.6
+     24835:	  trying file=tls/libm.so.6
+     24835:	  trying file=haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=haswell/avx512_1/libm.so.6
+     24835:	  trying file=haswell/x86_64/libm.so.6
+     24835:	  trying file=haswell/libm.so.6
+     24835:	  trying file=avx512_1/x86_64/libm.so.6
+     24835:	  trying file=avx512_1/libm.so.6
+     24835:	  trying file=x86_64/libm.so.6
+     24835:	  trying file=libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libm.so.6
+     24835:	 search path=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/avx512_1/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/avx512_1:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/avx512_1/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/avx512_1:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/avx512_1/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/avx512_1:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/avx512_1/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/avx512_1:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/x86_64:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/avx512_1/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/avx512_1:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/avx512_1/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/avx512_1:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/avx512_1/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/avx512_1:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/avx512_1/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/avx512_1:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/x86_64:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose		(RUNPATH from file /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2)
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/avx512_1/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/haswell/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/avx512_1/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/tls/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/avx512_1/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/haswell/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/avx512_1/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/x86_64/libm.so.6
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/avx512_1/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/haswell/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/avx512_1/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/tls/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/avx512_1/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/haswell/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/avx512_1/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/x86_64/libm.so.6
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libm.so.6
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64:		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=tls/haswell/avx512_1/libm.so.6
+     24835:	  trying file=tls/haswell/x86_64/libm.so.6
+     24835:	  trying file=tls/haswell/libm.so.6
+     24835:	  trying file=tls/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=tls/avx512_1/libm.so.6
+     24835:	  trying file=tls/x86_64/libm.so.6
+     24835:	  trying file=tls/libm.so.6
+     24835:	  trying file=haswell/avx512_1/x86_64/libm.so.6
+     24835:	  trying file=haswell/avx512_1/libm.so.6
+     24835:	  trying file=haswell/x86_64/libm.so.6
+     24835:	  trying file=haswell/libm.so.6
+     24835:	  trying file=avx512_1/x86_64/libm.so.6
+     24835:	  trying file=avx512_1/libm.so.6
+     24835:	  trying file=x86_64/libm.so.6
+     24835:	  trying file=libm.so.6
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libm.so.6
+     24835:	
+     24835:	find library=libpthread.so.0 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=tls/haswell/avx512_1/libpthread.so.0
+     24835:	  trying file=tls/haswell/x86_64/libpthread.so.0
+     24835:	  trying file=tls/haswell/libpthread.so.0
+     24835:	  trying file=tls/avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=tls/avx512_1/libpthread.so.0
+     24835:	  trying file=tls/x86_64/libpthread.so.0
+     24835:	  trying file=tls/libpthread.so.0
+     24835:	  trying file=haswell/avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=haswell/avx512_1/libpthread.so.0
+     24835:	  trying file=haswell/x86_64/libpthread.so.0
+     24835:	  trying file=haswell/libpthread.so.0
+     24835:	  trying file=avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=avx512_1/libpthread.so.0
+     24835:	  trying file=x86_64/libpthread.so.0
+     24835:	  trying file=libpthread.so.0
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libpthread.so.0
+     24835:	 search path=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose		(RUNPATH from file /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2)
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libpthread.so.0
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libpthread.so.0
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64:		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=tls/haswell/avx512_1/libpthread.so.0
+     24835:	  trying file=tls/haswell/x86_64/libpthread.so.0
+     24835:	  trying file=tls/haswell/libpthread.so.0
+     24835:	  trying file=tls/avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=tls/avx512_1/libpthread.so.0
+     24835:	  trying file=tls/x86_64/libpthread.so.0
+     24835:	  trying file=tls/libpthread.so.0
+     24835:	  trying file=haswell/avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=haswell/avx512_1/libpthread.so.0
+     24835:	  trying file=haswell/x86_64/libpthread.so.0
+     24835:	  trying file=haswell/libpthread.so.0
+     24835:	  trying file=avx512_1/x86_64/libpthread.so.0
+     24835:	  trying file=avx512_1/libpthread.so.0
+     24835:	  trying file=x86_64/libpthread.so.0
+     24835:	  trying file=libpthread.so.0
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+     24835:	
+     24835:	find library=libelf.so.1 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libelf.so.1
+     24835:	  trying file=tls/haswell/x86_64/libelf.so.1
+     24835:	  trying file=tls/haswell/libelf.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=tls/avx512_1/libelf.so.1
+     24835:	  trying file=tls/x86_64/libelf.so.1
+     24835:	  trying file=tls/libelf.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=haswell/avx512_1/libelf.so.1
+     24835:	  trying file=haswell/x86_64/libelf.so.1
+     24835:	  trying file=haswell/libelf.so.1
+     24835:	  trying file=avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=avx512_1/libelf.so.1
+     24835:	  trying file=x86_64/libelf.so.1
+     24835:	  trying file=libelf.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libelf.so.1
+     24835:	 search path=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose		(RUNPATH from file /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2)
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libelf.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libelf.so.1
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64:		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libelf.so.1
+     24835:	  trying file=tls/haswell/x86_64/libelf.so.1
+     24835:	  trying file=tls/haswell/libelf.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=tls/avx512_1/libelf.so.1
+     24835:	  trying file=tls/x86_64/libelf.so.1
+     24835:	  trying file=tls/libelf.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=haswell/avx512_1/libelf.so.1
+     24835:	  trying file=haswell/x86_64/libelf.so.1
+     24835:	  trying file=haswell/libelf.so.1
+     24835:	  trying file=avx512_1/x86_64/libelf.so.1
+     24835:	  trying file=avx512_1/libelf.so.1
+     24835:	  trying file=x86_64/libelf.so.1
+     24835:	  trying file=libelf.so.1
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libelf.so.1
+     24835:	
+     24835:	find library=libpython3.7m.so.1.0 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/haswell/avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=tls/haswell/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/haswell/libpython3.7m.so.1.0
+     24835:	  trying file=tls/avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=tls/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/libpython3.7m.so.1.0
+     24835:	  trying file=avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=libpython3.7m.so.1.0
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libpython3.7m.so.1.0
+     24835:	 search path=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose		(RUNPATH from file /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2)
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libpython3.7m.so.1.0
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libpython3.7m.so.1.0
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64:		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/haswell/avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=tls/haswell/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/haswell/libpython3.7m.so.1.0
+     24835:	  trying file=tls/avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=tls/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=tls/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=haswell/libpython3.7m.so.1.0
+     24835:	  trying file=avx512_1/x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=avx512_1/libpython3.7m.so.1.0
+     24835:	  trying file=x86_64/libpython3.7m.so.1.0
+     24835:	  trying file=libpython3.7m.so.1.0
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libpython3.7m.so.1.0
+     24835:	
+     24835:	find library=libnuma.so.1 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libnuma.so.1
+     24835:	  trying file=tls/haswell/x86_64/libnuma.so.1
+     24835:	  trying file=tls/haswell/libnuma.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=tls/avx512_1/libnuma.so.1
+     24835:	  trying file=tls/x86_64/libnuma.so.1
+     24835:	  trying file=tls/libnuma.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=haswell/avx512_1/libnuma.so.1
+     24835:	  trying file=haswell/x86_64/libnuma.so.1
+     24835:	  trying file=haswell/libnuma.so.1
+     24835:	  trying file=avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=avx512_1/libnuma.so.1
+     24835:	  trying file=x86_64/libnuma.so.1
+     24835:	  trying file=libnuma.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libnuma.so.1
+     24835:	 search path=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose		(RUNPATH from file /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2)
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libnuma.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libnuma.so.1
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64:		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libnuma.so.1
+     24835:	  trying file=tls/haswell/x86_64/libnuma.so.1
+     24835:	  trying file=tls/haswell/libnuma.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=tls/avx512_1/libnuma.so.1
+     24835:	  trying file=tls/x86_64/libnuma.so.1
+     24835:	  trying file=tls/libnuma.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=haswell/avx512_1/libnuma.so.1
+     24835:	  trying file=haswell/x86_64/libnuma.so.1
+     24835:	  trying file=haswell/libnuma.so.1
+     24835:	  trying file=avx512_1/x86_64/libnuma.so.1
+     24835:	  trying file=avx512_1/libnuma.so.1
+     24835:	  trying file=x86_64/libnuma.so.1
+     24835:	  trying file=libnuma.so.1
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+     24835:	
+     24835:	find library=libdpuverbose.so.0.0 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=tls/haswell/avx512_1/libdpuverbose.so.0.0
+     24835:	  trying file=tls/haswell/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=tls/haswell/libdpuverbose.so.0.0
+     24835:	  trying file=tls/avx512_1/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=tls/avx512_1/libdpuverbose.so.0.0
+     24835:	  trying file=tls/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=tls/libdpuverbose.so.0.0
+     24835:	  trying file=haswell/avx512_1/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=haswell/avx512_1/libdpuverbose.so.0.0
+     24835:	  trying file=haswell/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=haswell/libdpuverbose.so.0.0
+     24835:	  trying file=avx512_1/x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=avx512_1/libdpuverbose.so.0.0
+     24835:	  trying file=x86_64/libdpuverbose.so.0.0
+     24835:	  trying file=libdpuverbose.so.0.0
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpuverbose.so.0.0
+     24835:	 search path=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose		(RUNPATH from file /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2)
+     24835:	  trying file=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libdpuverbose.so.0.0
+     24835:	  trying file=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libdpuverbose.so.0.0
+     24835:	
+     24835:	find library=libz.so.1 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libz.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libz.so.1
+     24835:	  trying file=tls/haswell/x86_64/libz.so.1
+     24835:	  trying file=tls/haswell/libz.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libz.so.1
+     24835:	  trying file=tls/avx512_1/libz.so.1
+     24835:	  trying file=tls/x86_64/libz.so.1
+     24835:	  trying file=tls/libz.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libz.so.1
+     24835:	  trying file=haswell/avx512_1/libz.so.1
+     24835:	  trying file=haswell/x86_64/libz.so.1
+     24835:	  trying file=haswell/libz.so.1
+     24835:	  trying file=avx512_1/x86_64/libz.so.1
+     24835:	  trying file=avx512_1/libz.so.1
+     24835:	  trying file=x86_64/libz.so.1
+     24835:	  trying file=libz.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libz.so.1
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libz.so.1
+     24835:	
+     24835:	find library=libexpat.so.1 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libexpat.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libexpat.so.1
+     24835:	  trying file=tls/haswell/x86_64/libexpat.so.1
+     24835:	  trying file=tls/haswell/libexpat.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libexpat.so.1
+     24835:	  trying file=tls/avx512_1/libexpat.so.1
+     24835:	  trying file=tls/x86_64/libexpat.so.1
+     24835:	  trying file=tls/libexpat.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libexpat.so.1
+     24835:	  trying file=haswell/avx512_1/libexpat.so.1
+     24835:	  trying file=haswell/x86_64/libexpat.so.1
+     24835:	  trying file=haswell/libexpat.so.1
+     24835:	  trying file=avx512_1/x86_64/libexpat.so.1
+     24835:	  trying file=avx512_1/libexpat.so.1
+     24835:	  trying file=x86_64/libexpat.so.1
+     24835:	  trying file=libexpat.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libexpat.so.1
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libexpat.so.1
+     24835:	
+     24835:	find library=libcrypt.so.1 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libcrypt.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libcrypt.so.1
+     24835:	  trying file=tls/haswell/x86_64/libcrypt.so.1
+     24835:	  trying file=tls/haswell/libcrypt.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libcrypt.so.1
+     24835:	  trying file=tls/avx512_1/libcrypt.so.1
+     24835:	  trying file=tls/x86_64/libcrypt.so.1
+     24835:	  trying file=tls/libcrypt.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libcrypt.so.1
+     24835:	  trying file=haswell/avx512_1/libcrypt.so.1
+     24835:	  trying file=haswell/x86_64/libcrypt.so.1
+     24835:	  trying file=haswell/libcrypt.so.1
+     24835:	  trying file=avx512_1/x86_64/libcrypt.so.1
+     24835:	  trying file=avx512_1/libcrypt.so.1
+     24835:	  trying file=x86_64/libcrypt.so.1
+     24835:	  trying file=libcrypt.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libcrypt.so.1
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libcrypt.so.1
+     24835:	
+     24835:	find library=libutil.so.1 [0]; searching
+     24835:	 search path=tls/haswell/avx512_1/x86_64:tls/haswell/avx512_1:tls/haswell/x86_64:tls/haswell:tls/avx512_1/x86_64:tls/avx512_1:tls/x86_64:tls:haswell/avx512_1/x86_64:haswell/avx512_1:haswell/x86_64:haswell:avx512_1/x86_64:avx512_1:x86_64::/home/upmem0037/xialinl/research/dpu_demo/checksum/lib		(LD_LIBRARY_PATH)
+     24835:	  trying file=tls/haswell/avx512_1/x86_64/libutil.so.1
+     24835:	  trying file=tls/haswell/avx512_1/libutil.so.1
+     24835:	  trying file=tls/haswell/x86_64/libutil.so.1
+     24835:	  trying file=tls/haswell/libutil.so.1
+     24835:	  trying file=tls/avx512_1/x86_64/libutil.so.1
+     24835:	  trying file=tls/avx512_1/libutil.so.1
+     24835:	  trying file=tls/x86_64/libutil.so.1
+     24835:	  trying file=tls/libutil.so.1
+     24835:	  trying file=haswell/avx512_1/x86_64/libutil.so.1
+     24835:	  trying file=haswell/avx512_1/libutil.so.1
+     24835:	  trying file=haswell/x86_64/libutil.so.1
+     24835:	  trying file=haswell/libutil.so.1
+     24835:	  trying file=avx512_1/x86_64/libutil.so.1
+     24835:	  trying file=avx512_1/libutil.so.1
+     24835:	  trying file=x86_64/libutil.so.1
+     24835:	  trying file=libutil.so.1
+     24835:	  trying file=/home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libutil.so.1
+     24835:	 search cache=/etc/ld.so.cache
+     24835:	  trying file=/lib/x86_64-linux-gnu/libutil.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libutil.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libcrypt.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libexpat.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libz.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libdpuverbose.so.0.0
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libnuma.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libm.so.6
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libpython3.7m.so.1.0
+     24835:	
+     24835:	
+     24835:	calling init: /lib/x86_64-linux-gnu/libelf.so.1
+     24835:	
+     24835:	
+     24835:	calling init: /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2
+     24835:	
+     24835:	
+     24835:	calling init: /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpujni.so.2023.2
+     24835:	
+     24835:	
+     24835:	initialize program: ./build/checksum_host
+     24835:	
+     24835:	
+     24835:	transferring control: ./build/checksum_host
+     24835:	
+cannot open library /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpufsim.so: /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpufsim.so: cannot open shared object file: No such file or directory
+host/host.c:68(main): DPU Error (dpu allocation error)
+     24835:	
+     24835:	calling fini: ./build/checksum_host [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpujni.so.2023.2 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /home/upmem0037/xialinl/research/dpu_demo/checksum/lib/libdpu.so.2023.2 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libelf.so.1 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libpython3.7m.so.1.0 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libpthread.so.0 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libm.so.6 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libdl.so.2 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libnuma.so.1 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/libdpuverbose.so.0.0 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libz.so.1 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libexpat.so.1 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libcrypt.so.1 [0]
+     24835:	
+     24835:	
+     24835:	calling fini: /lib/x86_64-linux-gnu/libutil.so.1 [0]
+     24835:	
+my dpu_alloc

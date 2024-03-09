@@ -12,6 +12,7 @@
  */
 
 #include <stdint.h>
+#include <pthread.h> 
 
 #include <dpu_target.h>
 
