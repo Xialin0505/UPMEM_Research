@@ -16,17 +16,23 @@
 #include <dpu_mask.h>
 #include <unistd.h>
 #include <time.h>
+#include <sys/time.h>
+
+#define RANK_THRESHOLD 0.4
+#define EXECUTION_WINDOW 0.02
 
 struct preempt_info{
     pthread_t preempt_thread;
     struct dpu_set_t* dpu_set;
 
-    double avg_execution_dur;
+    long long avg_execution_dur;
     int nr_rank;
     int nr_rank_threshold;
     short* rank_done;
     long long check_interval;
     long long* execution_times;
+    struct timeval startTime;
+    int num_done;
 };
 
 static struct preempt_info preempt;
@@ -46,14 +52,32 @@ dpu_launch_policy_to_string(dpu_launch_policy_t policy)
 
 static void nano_sleep(long duration) {
     nanosleep((const struct timespec[]){{0, duration}}, NULL);
+} 
+
+static long long getElaspedTime() {
+    struct timeval nowTime;
+    gettimeofday(&nowTime, NULL);
+
+    double elapsedTime;
+    elapsedTime = (nowTime.tv_sec - preempt.startTime.tv_sec) * 1000.0;      // sec to ms
+    elapsedTime += (nowTime.tv_usec - preempt.startTime.tv_usec) / 1000.0;   // us to ms
+
+    return (long long)elapsedTime;
 }
 
 /*
 output the 
 */
-static void determine_struggle_dpu(struct preempt_info * arg) {
+static bool determine_struggle_dpu() {
+    if (preempt.num_done < preempt.nr_rank_threshold) return false;
+    
+    long long elapsed = getElaspedTime();
+    if (elapsed * (1 + EXECUTION_WINDOW) > preempt.avg_execution_dur) {
+        return true;
+    }
 
-}
+    return false;
+}  
 
 static void each_rank_status() {
     for (uint32_t each_rank = 0; each_rank < preempt.nr_rank; ++each_rank) {
@@ -66,12 +90,18 @@ static void each_rank_status() {
         }
 
         if (rank_done) {
-            preempt.rank_done[each_rank] = 1;
+            if (preempt.rank_done[each_rank] == 0){
+                long long elapsedTime = getElaspedTime();
+                preempt.rank_done[each_rank] = 1;
+                preempt.execution_times[each_rank] = elapsedTime;
+
+                preempt.avg_execution_dur = preempt.avg_execution_dur * preempt.num_done + elapsedTime;
+                preempt.num_done ++;
+                preempt.avg_execution_dur /= preempt.num_done;
+            }
         } else if (rank_fault) {
             preempt.rank_done[each_rank] = 2;
-        } else {
-            preempt.rank_done[each_rank] = 0;
-        }
+        } 
     }
 }
 
@@ -80,27 +110,67 @@ static void print_rank_status() {
         printf("done %d ", preempt.rank_done[i]);
     }
     printf("\n");
+
+    for (int i = 0; i < preempt.nr_rank; i++) {
+        if (preempt.rank_done[i]) {
+            printf("execution time %lld ", preempt.execution_times[i]);
+        } else {
+            printf("not done ");
+        }
+    }
+    printf("\n");
+    printf("avg execution time %lld\n", preempt.avg_execution_dur);
+}
+
+void abort_struggling_dpu(int rankIdx) {
+    printf("abort_struggling_dpu %d\n", rankIdx);
+    // preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
+}
+
+void abort_struggling_dpus() {
+    printf("abort_struggling_dpus\n");
+    for (int i = 0; i < preempt.nr_rank; i++) {
+        if (!preempt.rank_done[i]) {
+            abort_struggling_dpu(i);
+        }
+    }
 }
 
 void * dpu_poll_status(void * arg) {
     struct dpu_thread_job_sync * sync = (struct dpu_thread_job_sync*) arg;
     printf("total nr_rank %d\n", preempt.nr_rank);
+    struct timeval nowTime;
+    double elapsedTime;
+
+    gettimeofday(&preempt.startTime, NULL);
+    bool abort = false;
 
     while (!sync->stop_polling) {
         int running_rank_num = sync -> nr_ranks;
         nano_sleep(preempt.check_interval);
-        // printf("running nr_rank %d\n", running_rank_num);
+
         each_rank_status();
-        print_rank_status();
+        if (determine_struggle_dpu()) {
+            abort = true;
+            sync->stop_polling = true;
+        }
     }
 
+    if (abort) {
+        abort_struggling_dpus();
+    }
+
+    return NULL;
 }
 
 static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync * sync) {
     preempt.nr_rank = sync->nr_ranks;
-    preempt.check_interval = 5000000L;
+    preempt.check_interval = 50000000L;
     preempt.dpu_set = dpu_set;
-    
+    preempt.num_done = 0;
+    preempt.avg_execution_dur = 0;
+    preempt.nr_rank_threshold = RANK_THRESHOLD * preempt.nr_rank;
+
     preempt.execution_times = malloc(sizeof(long long) * preempt.nr_rank);
     memset(preempt.execution_times, 0, sizeof(long long) * preempt.nr_rank);
     preempt.rank_done = malloc(sizeof(short) * preempt.nr_rank);
