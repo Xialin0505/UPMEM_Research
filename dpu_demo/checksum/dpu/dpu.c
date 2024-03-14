@@ -40,7 +40,7 @@
 #define BLOCK_SIZE (256)
 
 /* define how many times to run the checksum */
-#define REPEAT_TIMES 20
+#define REPEAT_TIMES 5
 
 __dma_aligned uint8_t DPU_CACHES[NR_TASKLETS][BLOCK_SIZE];
 __host dpu_results_t DPU_RESULTS;

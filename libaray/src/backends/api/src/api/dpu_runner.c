@@ -14,12 +14,20 @@
 #include <dpu_log_utils.h>
 #include <dpu_thread_job.h>
 #include <dpu_mask.h>
+#include <ufi/ufi_config.h>
+
 #include <unistd.h>
 #include <time.h>
 #include <sys/time.h>
 
 #define RANK_THRESHOLD 0.4
 #define EXECUTION_WINDOW 0.02
+
+#define STOPci(cc, pc)                                                                                                           \
+    ((dpuinstruction_t)(0x7ef320000000l | (((((dpuinstruction_t)cc) >> 0) & 0xf) << 24)                                          \
+        | (((((dpuinstruction_t)pc) >> 0) & 0xffff) << 0)))
+
+#define BOOT_CC_TRUE (1)
 
 struct preempt_info{
     pthread_t preempt_thread;
@@ -122,13 +130,38 @@ static void print_rank_status() {
     printf("avg execution time %lld\n", preempt.avg_execution_dur);
 }
 
+void stop_dpu (struct dpu_t * dpu) {
+    // dpu_error_t status;
+	// struct dpu_rank_t *rank = dpu->rank;
+	// dpu_slice_id_t slice_id = dpu->slice_id;
+	// dpu_member_id_t member_id = dpu->dpu_id;
+	// dpu_selected_mask_t mask_one = dpu_mask_one(member_id);
+
+    // struct dpu_context_t context;
+	// struct _dpu_description_t *description = dpu_get_description(rank);
+
+	// uint8_t nr_of_dpu_threads = description->hw.dpu.nr_of_threads;
+	// dpu_thread_t each_thread;
+
+    // dpuinstruction_t stop_instruction = STOPci(BOOT_CC_TRUE, 0);
+
+	// uint8_t mask = CI_MASK_ONE(slice_id);
+	// dpuinstruction_t *iram_array[DPU_MAX_NR_CIS];
+	// uint8_t result[DPU_MAX_NR_CIS];
+
+    // iram_array[slice_id] = &stop_instruction;
+	// FF(ufi_iram_write(rank, mask, iram_array, 0, 1));
+
+}
+
 void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
-    // preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
+    preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
+    dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
 }
 
 void abort_struggling_dpus() {
-    printf("abort_struggling_dpus\n");
+    printf("abort_struggling_dpus\n"); 
     for (int i = 0; i < preempt.nr_rank; i++) {
         if (!preempt.rank_done[i]) {
             abort_struggling_dpu(i);
