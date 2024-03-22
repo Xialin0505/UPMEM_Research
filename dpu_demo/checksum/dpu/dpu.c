@@ -39,8 +39,7 @@
 /* Use blocks of 256 bytes */
 #define BLOCK_SIZE (256)
 
-/* define how many times to run the checksum */
-#define REPEAT_TIMES 5
+#define REPEAT_TIMES 10
 
 __dma_aligned uint8_t DPU_CACHES[NR_TASKLETS][BLOCK_SIZE];
 __host dpu_results_t DPU_RESULTS;
@@ -64,6 +63,7 @@ int main()
     uint8_t *cache = DPU_CACHES[tasklet_id];
     dpu_result_t *result = &DPU_RESULTS.tasklet_result[tasklet_id];
     uint32_t checksum = 0;
+
     uint32_t sum_arr[REPEAT_TIMES] = {0};
 
     /* Initialize once the cycle counter */

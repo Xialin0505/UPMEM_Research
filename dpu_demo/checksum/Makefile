@@ -3,7 +3,7 @@ HOST_DIR := host
 BUILDDIR ?= build
 NR_TASKLETS ?= 16
 NR_DPUS ?= 5
-LDFLAGS=-L./lib -ldpu -ldpujni
+LDFLAGS=-I../../libaray/src/backends/api/include/api -L./lib -ldpu -ldpujni -ldl
 
 define conf_filename
 	${BUILDDIR}/.NR_DPUS_$(1)_NR_TASKLETS_$(2).conf
@@ -23,7 +23,7 @@ DPU_SOURCES := $(wildcard ${DPU_DIR}/*.c)
 __dirs := $(shell mkdir -p ${BUILDDIR})
 
 COMMON_FLAGS := -Wall -Wextra -Werror -g -I${COMMON_INCLUDES}
-HOST_FLAGS := ${COMMON_FLAGS} -std=c11 -O3 `dpu-pkg-config --cflags --libs dpu` -DNR_TASKLETS=${NR_TASKLETS} -DNR_DPUS=${NR_DPUS} -ldl
+HOST_FLAGS := ${COMMON_FLAGS} -std=c11 -O3 `dpu-pkg-config --cflags --libs dpu` -DNR_TASKLETS=${NR_TASKLETS} -DNR_DPUS=${NR_DPUS}
 DPU_FLAGS := ${COMMON_FLAGS} -O2 -DNR_TASKLETS=${NR_TASKLETS}
 
 all: ${HOST_TARGET} ${DPU_TARGET}
@@ -33,7 +33,7 @@ ${CONF}:
 	touch ${CONF}
 
 ${HOST_TARGET}: ${HOST_SOURCES} ${COMMON_INCLUDES} ${CONF}
-	$(CC) ${LDFLAGS} -o $@ ${HOST_SOURCES} ${HOST_FLAGS}
+	$(CC) -o $@ ${HOST_SOURCES} ${LDFLAGS} ${HOST_FLAGS}
 
 ${DPU_TARGET}: ${DPU_SOURCES} ${COMMON_INCLUDES} ${CONF}
 	dpu-upmem-dpurte-clang ${DPU_FLAGS} -o $@ ${DPU_SOURCES}

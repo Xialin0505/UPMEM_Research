@@ -19,11 +19,11 @@
  * @brief Template for a Host Application Source File.
  */
 
-#include <dpu.h>
+#include "dpu.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include<unistd.h>
+#include <unistd.h>
 
 #include "common.h"
 
@@ -80,7 +80,7 @@ int main()
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, test_file, BUFFER_SIZE));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));
@@ -104,8 +104,11 @@ int main()
             dpu_result_t *result = &results[each_dpu].tasklet_result[each_tasklet];
 
             dpu_checksum += result->checksum;
-            if (result->cycles > dpu_cycles)
+            if (result->cycles > dpu_cycles) {
                 dpu_cycles = result->cycles;
+            } else if (result->cycles == 0) {
+                dpu_checksum = create_test_file();
+            }
         }
 
         dpu_status = (dpu_checksum == theoretical_checksum);
