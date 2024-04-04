@@ -3,8 +3,8 @@
  * found in the LICENSE file.
  */
 
-#include "dpu_memory.h"
-#include "dpu_rank_handler.h"
+#include <dpu_memory.h>
+#include <dpu_rank_handler.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>

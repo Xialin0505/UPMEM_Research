@@ -199,6 +199,8 @@ struct dpu_rank_t {
         pthread_mutex_t jobs_mutex;
         pthread_cond_t available_jobs_cond;
         dpu_error_t job_error;
+
+        bool abort;
     } api;
 
     struct _dpu_rank_handler_context_t *handler_context;

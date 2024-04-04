@@ -495,18 +495,6 @@ static dpu_error_t dpu_get_runnning(struct dpu_rank_t *rank) {
         nb_dpu_running += __builtin_popcount(run_context->dpu_running[each_slice]);
     }
     run_context->nb_dpu_running = nb_dpu_running;
-    
-    printf("dpu_was_running %d\n", nb_dpu_running);
-    // printf("dpu_is_not_running %d\n", dpu_is_not_running);
-}
-
-static dpu_error_t
-dpu_thread_job_wait_sync_job_preempt(struct dpu_thread_job_sync *sync, struct dpu_set_t dpu_set)
-{
-    do {
-        pthread_cond_wait(&sync->cond, &sync->mutex);
-    } while (sync->nr_ranks != 0);
-    return sync->status;
 }
 
 dpu_error_t
@@ -526,47 +514,6 @@ dpu_thread_job_do_jobs(struct dpu_rank_t **ranks,
     } else if (synchronous) {
         dpu_thread_job_add_jobs(ranks, nr_ranks, nr_job_per_rank, jobs);
         status = dpu_thread_job_wait_sync_job(sync) & ((1 << DPU_ERROR_ASYNC_JOB_TYPE_SHIFT) - 1);
-
-        if (status != DPU_OK) {
-            /* The job failed on at least one rank.
-             * In the general async case, we do not handle a clean restart (we need to allocate the rank again).
-             * However, for synchronous jobs, the job is the only one in the queue (API assumption). We know
-             * exactly what jobs have been executed, thus we can clean the queue to a coherent state!
-             * The error status will be returned to the caller via status, we can set back job_error to DPU_OK.
-             * This is safe to do because no other sync job is waiting (again because this is the only job in
-             * the queue).
-             */
-            for (uint32_t rank = 0; rank < nr_ranks; ++rank) {
-                ranks[rank]->api.job_error = DPU_OK;
-            }
-        }
-    } else {
-        dpu_thread_job_add_jobs(ranks, nr_ranks, nr_job_per_rank, jobs);
-    }
-    return status;
-}
-
-dpu_error_t
-dpu_thread_job_do_jobs_preempt(struct dpu_rank_t **ranks,
-    uint32_t nr_ranks,
-    uint32_t nr_job_per_rank,
-    struct dpu_thread_job **jobs,
-    bool synchronous,
-    struct dpu_thread_job_sync *sync,
-    struct dpu_set_t dpu_set)
-{
-
-    printf("dpu_thread_job_do_jobs_preempt\n");
-
-    dpu_error_t status = DPU_OK;
-    if (synchronous && (nr_ranks == 1) && (ranks[0]->api.callback_tid_set) && (jobs[0]->type != DPU_THREAD_JOB_SYNC)) {
-        bool ignored;
-        dpu_lock_rank(ranks[0]);
-        status = dpu_thread_compute_job(ranks[0], jobs[0], &ignored);
-        dpu_unlock_rank(ranks[0]);
-    } else if (synchronous) {
-        dpu_thread_job_add_jobs(ranks, nr_ranks, nr_job_per_rank, jobs);
-        status = dpu_thread_job_wait_sync_job_preempt(sync, dpu_set) & ((1 << DPU_ERROR_ASYNC_JOB_TYPE_SHIFT) - 1);
         if (status != DPU_OK) {
             /* The job failed on at least one rank.
              * In the general async case, we do not handle a clean restart (we need to allocate the rank again).

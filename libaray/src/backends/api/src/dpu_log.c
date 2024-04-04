@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
-
+#include <stdint.h>
 #include <dpu_api_log.h>
 #include <dpu_attributes.h>
 #include <dpu_program.h>

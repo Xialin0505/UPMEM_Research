@@ -19,7 +19,7 @@
  * @brief Template for a Host Application Source File.
  */
 
-#include "dpu.h"
+#include <dpu.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -55,6 +55,17 @@ static uint32_t create_test_file()
     return checksum;
 }
 
+void host_test_func(uint8_t* data, uint32_t* output, size_t length) {
+    uint32_t checksum = 0;
+    srand(0);
+
+    for (unsigned int i = 0; i < length; i++) {
+        data[i] = (unsigned char)(rand());
+        checksum += data[i];
+    }
+    *output = checksum;
+}
+
 /**
  * @brief Main of the Host Application.
  */
@@ -72,6 +83,11 @@ int main()
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
     printf("Allocated %d DPU(s)\n", nr_of_dpus);
 
+    uint32_t num_rank = 0;
+    dpu_get_nr_ranks(dpu_set, &num_rank);
+    printf("Allocated %d rank(s)\n", num_rank);
+    uint32_t* alter_result = malloc(num_rank * sizeof(uint32_t));
+
     // Create an "input file" with arbitrary data.
     // Compute its theoretical checksum value.
     theoretical_checksum = create_test_file();
@@ -80,7 +96,7 @@ int main()
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, test_file, BUFFER_SIZE));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS));
+    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS, &host_test_func, test_file, alter_result, BUFFER_SIZE));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));
@@ -107,7 +123,8 @@ int main()
             if (result->cycles > dpu_cycles) {
                 dpu_cycles = result->cycles;
             } else if (result->cycles == 0) {
-                dpu_checksum = create_test_file();
+                //host_test_func(test_file, &dpu_checksum, BUFFER_SIZE);
+                dpu_checksum = alter_result[each_dpu];
             }
         }
 
@@ -123,8 +140,10 @@ int main()
         } else {
             printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] checksums differ!\n");
         }
+
     }
 
     DPU_ASSERT(dpu_free(dpu_set));
+    free(alter_result);
     return status ? 0 : -1;
 }

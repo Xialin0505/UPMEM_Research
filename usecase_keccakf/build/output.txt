@@ -1,0 +1,101 @@
+Allocated 64 DPU(s) x 16 Threads
+Run program on DPU(s)
+dpu_launch
+total nr_rank 64
+abort_struggling_dpus
+abort_struggling_dpu 0
+abort_struggling_dpu 1
+abort_struggling_dpu 2
+abort_struggling_dpu 6
+abort_struggling_dpu 7
+abort_struggling_dpu 9
+abort_struggling_dpu 11
+abort_struggling_dpu 12
+abort_struggling_dpu 13
+abort_struggling_dpu 14
+abort_struggling_dpu 16
+abort_struggling_dpu 21
+abort_struggling_dpu 22
+abort_struggling_dpu 23
+abort_struggling_dpu 26
+abort_struggling_dpu 27
+abort_struggling_dpu 34
+abort_struggling_dpu 37
+abort_struggling_dpu 42
+abort_struggling_dpu 45
+abort_struggling_dpu 46
+abort_struggling_dpu 47
+abort_struggling_dpu 48
+abort_struggling_dpu 49
+abort_struggling_dpu 52
+abort_struggling_dpu 54
+abort_struggling_dpu 55
+abort_struggling_dpu 61
+abort_struggling_dpu 63
+Retrieve results
+DPU cycle count = 672 cc, dpu: 0
+DPU cycle count = 672 cc, dpu: 1
+DPU cycle count = 672 cc, dpu: 2
+DPU cycle count = 3203392 cc, dpu: 3
+DPU cycle count = 3203392 cc, dpu: 4
+DPU cycle count = 3203392 cc, dpu: 5
+DPU cycle count = 672 cc, dpu: 6
+DPU cycle count = 672 cc, dpu: 7
+DPU cycle count = 3203392 cc, dpu: 8
+DPU cycle count = 672 cc, dpu: 9
+DPU cycle count = 3203392 cc, dpu: 10
+DPU cycle count = 672 cc, dpu: 11
+DPU cycle count = 672 cc, dpu: 12
+DPU cycle count = 672 cc, dpu: 13
+DPU cycle count = 672 cc, dpu: 14
+DPU cycle count = 3203392 cc, dpu: 15
+DPU cycle count = 672 cc, dpu: 16
+DPU cycle count = 3203392 cc, dpu: 17
+DPU cycle count = 3203392 cc, dpu: 18
+DPU cycle count = 3203392 cc, dpu: 19
+DPU cycle count = 3203392 cc, dpu: 20
+DPU cycle count = 672 cc, dpu: 21
+DPU cycle count = 672 cc, dpu: 22
+DPU cycle count = 672 cc, dpu: 23
+DPU cycle count = 3203392 cc, dpu: 24
+DPU cycle count = 3203392 cc, dpu: 25
+DPU cycle count = 672 cc, dpu: 26
+DPU cycle count = 672 cc, dpu: 27
+DPU cycle count = 3203392 cc, dpu: 28
+DPU cycle count = 3203392 cc, dpu: 29
+DPU cycle count = 3203392 cc, dpu: 30
+DPU cycle count = 3203392 cc, dpu: 31
+DPU cycle count = 3203392 cc, dpu: 32
+DPU cycle count = 3203392 cc, dpu: 33
+DPU cycle count = 672 cc, dpu: 34
+DPU cycle count = 3203392 cc, dpu: 35
+DPU cycle count = 3203392 cc, dpu: 36
+DPU cycle count = 672 cc, dpu: 37
+DPU cycle count = 3203392 cc, dpu: 38
+DPU cycle count = 3203392 cc, dpu: 39
+DPU cycle count = 3203392 cc, dpu: 40
+DPU cycle count = 3203392 cc, dpu: 41
+DPU cycle count = 672 cc, dpu: 42
+DPU cycle count = 3203392 cc, dpu: 43
+DPU cycle count = 3203392 cc, dpu: 44
+DPU cycle count = 672 cc, dpu: 45
+DPU cycle count = 672 cc, dpu: 46
+DPU cycle count = 672 cc, dpu: 47
+DPU cycle count = 672 cc, dpu: 48
+DPU cycle count = 672 cc, dpu: 49
+DPU cycle count = 3203392 cc, dpu: 50
+DPU cycle count = 3203392 cc, dpu: 51
+DPU cycle count = 672 cc, dpu: 52
+DPU cycle count = 3203392 cc, dpu: 53
+DPU cycle count = 672 cc, dpu: 54
+DPU cycle count = 672 cc, dpu: 55
+DPU cycle count = 3203392 cc, dpu: 56
+DPU cycle count = 3203392 cc, dpu: 57
+DPU cycle count = 3203392 cc, dpu: 58
+DPU cycle count = 3203392 cc, dpu: 59
+DPU cycle count = 3203392 cc, dpu: 60
+DPU cycle count = 672 cc, dpu: 61
+DPU cycle count = 3203392 cc, dpu: 62
+DPU cycle count = 672 cc, dpu: 63
+_F_ fkey=      0 lkey=    128 loops=    128 SUM= cb8957f470205c31 seconds= 0.801698   Mks= 0.020437
+DPU fkey=      0 lkey=    128 loops=    128 SUM= cb8957f470205c31 seconds= 0.005339   Mks= 0.047949
