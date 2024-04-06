@@ -96,7 +96,7 @@ int main()
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, test_file, BUFFER_SIZE));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS, &host_test_func, test_file, alter_result, BUFFER_SIZE));
+    DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &host_test_func, test_file, alter_result, BUFFER_SIZE));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));

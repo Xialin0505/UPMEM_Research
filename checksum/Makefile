@@ -3,38 +3,8 @@ HOST_DIR := host
 BUILDDIR ?= build
 NR_TASKLETS ?= 16
 NR_DPUS ?= 5
-# HOST_UPMEM_SOURCE = $(filter-out ../../libaray/src/backends/api/src/api/dpu_python_wrappers.c \
-# 								../../libaray/src/backends/api/src/api/dpu_jni.c, \
-# 					$(wildcard ../../libaray/src/backends/api/src/api/*.c, \
-# 								../../libaray/src/backends/api/src/*.c))
-# HOST_UPMEM_SOURCE = ../../libaray/src/backends/api/src/api/dpu_runner.c \
-					../../libaray/src/backends/api/src/api/dpu_thread_job.c \
-					../../libaray/src/backends/api/src/api/dpu_polling.c
 
-# LIB_INCLUDE = 	-I../../libaray/src/backends/api/include/api \
-# 				-I ../../libaray/src/backends/api/src/api/include \
-# 				-I ../../libaray/src/backends/api/src/include \
-# 				-I../../libaray/src/backends/api/src/api \
-# 				-I../../libaray/src/backends/commons/include \
-# 				-I../../libaray/src/backends/commons/src/properties \
-# 				-I../../libaray/src/backends/verbose/src \
-# 				-I../../libaray/src/backends/build-dir/gen/include
-
-# LIB_INCLUDE = 	-I../../libaray/src/backends/api/include/api \
-# 				-I../../libaray/src/backends/api/include/lowlevel \
-# 				-I../../libaray/src/backends/api/src/include \
-# 				-I../../libaray/src/backends/verbose/src \
-# 				-I../../libaray/src/backends/commons/include \
-# 				-I../../libaray/src/backends/commons/src \
-# 				-I../../libaray/src/backends/commons/src/properties \
-# 				-I../../libaray/src/backends/ufi/include/ufi \
-# 				-I../../libaray/src/backends/ufi \
-# 				-I../../libaray/src/backends/build-dir/gen/include \
-# 				-I../../libaray/src/backends/api/src/api/include \
-# 				-I../../libaray/src/backends/ufi/include
-
-
-LIB_INCLUDE = -I../../libaray/src/backends/api/include/api
+LIB_INCLUDE = -I../../library/src/backends/api/include/api
 LDFLAGS=-lpthread -L./lib -ldpu -ldpujni -ldpuverbose -ldl
 
 define conf_filename
@@ -65,7 +35,7 @@ ${CONF}:
 	touch ${CONF}
 
 ${HOST_TARGET}: ${HOST_SOURCES} ${COMMON_INCLUDES} ${CONF}
-	$(CC) -o $@ ${HOST_SOURCES} ${HOST_UPMEM_SOURCE} ${LIB_INCLUDE} ${LDFLAGS} ${HOST_FLAGS}
+	$(CC) -o $@ ${HOST_SOURCES} ${LIB_INCLUDE} ${LDFLAGS} ${HOST_FLAGS}
 
 ${DPU_TARGET}: ${DPU_SOURCES} ${COMMON_INCLUDES} ${CONF}
 	dpu-upmem-dpurte-clang ${DPU_FLAGS} -o $@ ${DPU_SOURCES}

@@ -387,12 +387,15 @@ dpu_get_symbol(struct dpu_program_t *program, const char *symbol_name, struct dp
  * @return Whether the operation was successful.
  */
 dpu_error_t
-dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, 
+dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, 
                     void (*host_func)(uint8_t*, uint32_t*, size_t), 
                     uint8_t* input, uint32_t* output, size_t length);
 
 // void (*host_func)(uint8_t*, uint32_t*, size_t), 
 //                     uint8_t* input, uint32_t* output, size_t length
+
+dpu_error_t
+dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy);
 
 /**
  * @brief Request the boot of all the DPUs in a DPU set.

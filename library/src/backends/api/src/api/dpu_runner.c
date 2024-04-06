@@ -141,7 +141,9 @@ void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
     preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
     preempt.dpu_set->list.ranks[rankIdx]->api.abort = true;
-    preempt.host_func(preempt.input, &(preempt.output[rankIdx]), preempt.data_length);
+    if (preempt.host_func != NULL) {
+        preempt.host_func(preempt.input, &(preempt.output[rankIdx]), preempt.data_length);
+    }
     dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
 }
 
@@ -210,9 +212,56 @@ static void clean_preempt(struct dpu_thread_job_sync * sync) {
 }
 
 __API_SYMBOL__ dpu_error_t
-dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
+dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
                     void (*host_func)(uint8_t*, uint32_t*, size_t), 
                     uint8_t* input, uint32_t* output, size_t length)
+{
+    dpu_error_t status = DPU_OK;
+    LOG_FN(DEBUG, "%s", dpu_launch_policy_to_string(policy));
+    printf("dpu_launch_preempt_restart\n");
+
+    if (dpu_set.kind != DPU_SET_RANKS && dpu_set.kind != DPU_SET_DPU) {
+        return DPU_ERR_INTERNAL;
+    }
+
+    uint32_t nr_ranks;
+    struct dpu_rank_t **ranks;
+    struct dpu_rank_t *rank;
+    switch (dpu_set.kind) {
+        case DPU_SET_RANKS:
+            nr_ranks = dpu_set.list.nr_ranks;
+            ranks = dpu_set.list.ranks;
+            break;
+        case DPU_SET_DPU:
+            nr_ranks = 1;
+            rank = dpu_get_rank(dpu_set.dpu);
+            ranks = &rank;
+            break;
+    }
+
+    struct dpu_thread_job_sync sync;
+    uint32_t nr_jobs_per_rank;
+    DPU_THREAD_JOB_GET_JOBS(ranks, nr_ranks, nr_jobs_per_rank, jobs, &sync, policy == DPU_SYNCHRONOUS, status);
+
+    struct dpu_thread_job *job;
+    DPU_THREAD_JOB_SET_JOBS(ranks, rank, nr_ranks, jobs, job, &sync, policy == DPU_SYNCHRONOUS, {
+        if (dpu_set.kind == DPU_SET_RANKS) {
+            job->type = DPU_THREAD_JOB_LAUNCH_RANK;
+        } else {
+            job->type = DPU_THREAD_JOB_LAUNCH_DPU;
+            job->dpu = dpu_set.dpu;
+        }
+    });
+
+    init_preempt(&dpu_set, &sync, host_func, input, output, length);
+    status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
+    clean_preempt(&sync);
+
+    return status;
+}
+
+__API_SYMBOL__ dpu_error_t
+dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy)
 {
     dpu_error_t status = DPU_OK;
     LOG_FN(DEBUG, "%s", dpu_launch_policy_to_string(policy));
@@ -251,7 +300,7 @@ dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
         }
     });
 
-    init_preempt(&dpu_set, &sync, host_func, input, output, length);
+    init_preempt(&dpu_set, &sync, NULL, NULL, NULL, 0);
     status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
     clean_preempt(&sync);
 
