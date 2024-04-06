@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for autogen.
 
@@ -67,6 +67,6 @@ CMakeFiles/autogen.dir/clean:
 .PHONY : CMakeFiles/autogen.dir/clean
 
 CMakeFiles/autogen.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/autogen.dir/depend
 

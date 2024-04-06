@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/ufi/CMakeFiles/progress.marks
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/library/src/backends/build-dir/ufi/CMakeFiles/progress.marks
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/clean
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ufi/CMakeFiles/dpu-ufi.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/CMakeFiles/dpu-ufi.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/CMakeFiles/dpu-ufi.dir/rule
 .PHONY : ufi/CMakeFiles/dpu-ufi.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ dpu-ufi: ufi/CMakeFiles/dpu-ufi.dir/rule
 
 # fast build rule for target.
 dpu-ufi/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/build
 .PHONY : dpu-ufi/fast
 
 # Convenience name for target.
 ufi/CMakeFiles/ufi-format.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/CMakeFiles/ufi-format.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 ufi/CMakeFiles/ufi-format.dir/rule
 .PHONY : ufi/CMakeFiles/ufi-format.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ ufi-format: ufi/CMakeFiles/ufi-format.dir/rule
 
 # fast build rule for target.
 ufi-format/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/ufi-format.dir/build.make ufi/CMakeFiles/ufi-format.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/ufi-format.dir/build.make ufi/CMakeFiles/ufi-format.dir/build
 .PHONY : ufi-format/fast
 
 src/ufi.o: src/ufi.c.o
@@ -203,7 +203,7 @@ src/ufi.o: src/ufi.c.o
 
 # target to build an object file
 src/ufi.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.o
 .PHONY : src/ufi.c.o
 
 src/ufi.i: src/ufi.c.i
@@ -212,7 +212,7 @@ src/ufi.i: src/ufi.c.i
 
 # target to preprocess a source file
 src/ufi.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.i
 .PHONY : src/ufi.c.i
 
 src/ufi.s: src/ufi.c.s
@@ -221,7 +221,7 @@ src/ufi.s: src/ufi.c.s
 
 # target to generate assembly for a file
 src/ufi.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.s
 .PHONY : src/ufi.c.s
 
 src/ufi_bit_config.o: src/ufi_bit_config.c.o
@@ -230,7 +230,7 @@ src/ufi_bit_config.o: src/ufi_bit_config.c.o
 
 # target to build an object file
 src/ufi_bit_config.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.o
 .PHONY : src/ufi_bit_config.c.o
 
 src/ufi_bit_config.i: src/ufi_bit_config.c.i
@@ -239,7 +239,7 @@ src/ufi_bit_config.i: src/ufi_bit_config.c.i
 
 # target to preprocess a source file
 src/ufi_bit_config.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.i
 .PHONY : src/ufi_bit_config.c.i
 
 src/ufi_bit_config.s: src/ufi_bit_config.c.s
@@ -248,7 +248,7 @@ src/ufi_bit_config.s: src/ufi_bit_config.c.s
 
 # target to generate assembly for a file
 src/ufi_bit_config.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.s
 .PHONY : src/ufi_bit_config.c.s
 
 src/ufi_ci.o: src/ufi_ci.c.o
@@ -257,7 +257,7 @@ src/ufi_ci.o: src/ufi_ci.c.o
 
 # target to build an object file
 src/ufi_ci.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.o
 .PHONY : src/ufi_ci.c.o
 
 src/ufi_ci.i: src/ufi_ci.c.i
@@ -266,7 +266,7 @@ src/ufi_ci.i: src/ufi_ci.c.i
 
 # target to preprocess a source file
 src/ufi_ci.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.i
 .PHONY : src/ufi_ci.c.i
 
 src/ufi_ci.s: src/ufi_ci.c.s
@@ -275,7 +275,7 @@ src/ufi_ci.s: src/ufi_ci.c.s
 
 # target to generate assembly for a file
 src/ufi_ci.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.s
 .PHONY : src/ufi_ci.c.s
 
 src/ufi_config.o: src/ufi_config.c.o
@@ -284,7 +284,7 @@ src/ufi_config.o: src/ufi_config.c.o
 
 # target to build an object file
 src/ufi_config.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.o
 .PHONY : src/ufi_config.c.o
 
 src/ufi_config.i: src/ufi_config.c.i
@@ -293,7 +293,7 @@ src/ufi_config.i: src/ufi_config.c.i
 
 # target to preprocess a source file
 src/ufi_config.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.i
 .PHONY : src/ufi_config.c.i
 
 src/ufi_config.s: src/ufi_config.c.s
@@ -302,7 +302,7 @@ src/ufi_config.s: src/ufi_config.c.s
 
 # target to generate assembly for a file
 src/ufi_config.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.s
 .PHONY : src/ufi_config.c.s
 
 src/ufi_debug.o: src/ufi_debug.c.o
@@ -311,7 +311,7 @@ src/ufi_debug.o: src/ufi_debug.c.o
 
 # target to build an object file
 src/ufi_debug.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.o
 .PHONY : src/ufi_debug.c.o
 
 src/ufi_debug.i: src/ufi_debug.c.i
@@ -320,7 +320,7 @@ src/ufi_debug.i: src/ufi_debug.c.i
 
 # target to preprocess a source file
 src/ufi_debug.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.i
 .PHONY : src/ufi_debug.c.i
 
 src/ufi_debug.s: src/ufi_debug.c.s
@@ -329,7 +329,7 @@ src/ufi_debug.s: src/ufi_debug.c.s
 
 # target to generate assembly for a file
 src/ufi_debug.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.s
 .PHONY : src/ufi_debug.c.s
 
 src/ufi_dma_wavegen_config.o: src/ufi_dma_wavegen_config.c.o
@@ -338,7 +338,7 @@ src/ufi_dma_wavegen_config.o: src/ufi_dma_wavegen_config.c.o
 
 # target to build an object file
 src/ufi_dma_wavegen_config.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.o
 .PHONY : src/ufi_dma_wavegen_config.c.o
 
 src/ufi_dma_wavegen_config.i: src/ufi_dma_wavegen_config.c.i
@@ -347,7 +347,7 @@ src/ufi_dma_wavegen_config.i: src/ufi_dma_wavegen_config.c.i
 
 # target to preprocess a source file
 src/ufi_dma_wavegen_config.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.i
 .PHONY : src/ufi_dma_wavegen_config.c.i
 
 src/ufi_dma_wavegen_config.s: src/ufi_dma_wavegen_config.c.s
@@ -356,7 +356,7 @@ src/ufi_dma_wavegen_config.s: src/ufi_dma_wavegen_config.c.s
 
 # target to generate assembly for a file
 src/ufi_dma_wavegen_config.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.s
 .PHONY : src/ufi_dma_wavegen_config.c.s
 
 src/ufi_memory.o: src/ufi_memory.c.o
@@ -365,7 +365,7 @@ src/ufi_memory.o: src/ufi_memory.c.o
 
 # target to build an object file
 src/ufi_memory.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.o
 .PHONY : src/ufi_memory.c.o
 
 src/ufi_memory.i: src/ufi_memory.c.i
@@ -374,7 +374,7 @@ src/ufi_memory.i: src/ufi_memory.c.i
 
 # target to preprocess a source file
 src/ufi_memory.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.i
 .PHONY : src/ufi_memory.c.i
 
 src/ufi_memory.s: src/ufi_memory.c.s
@@ -383,7 +383,7 @@ src/ufi_memory.s: src/ufi_memory.c.s
 
 # target to generate assembly for a file
 src/ufi_memory.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.s
 .PHONY : src/ufi_memory.c.s
 
 src/ufi_runner.o: src/ufi_runner.c.o
@@ -392,7 +392,7 @@ src/ufi_runner.o: src/ufi_runner.c.o
 
 # target to build an object file
 src/ufi_runner.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.o
 .PHONY : src/ufi_runner.c.o
 
 src/ufi_runner.i: src/ufi_runner.c.i
@@ -401,7 +401,7 @@ src/ufi_runner.i: src/ufi_runner.c.i
 
 # target to preprocess a source file
 src/ufi_runner.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.i
 .PHONY : src/ufi_runner.c.i
 
 src/ufi_runner.s: src/ufi_runner.c.s
@@ -410,7 +410,7 @@ src/ufi_runner.s: src/ufi_runner.c.s
 
 # target to generate assembly for a file
 src/ufi_runner.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f ufi/CMakeFiles/dpu-ufi.dir/build.make ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.s
 .PHONY : src/ufi_runner.c.s
 
 # Help Target
@@ -463,6 +463,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

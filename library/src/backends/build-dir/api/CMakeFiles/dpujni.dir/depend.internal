@@ -31,6 +31,6 @@ api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o
  ../api/include/lowlevel/dpu_runner.h
  ../api/include/lowlevel/dpu_target.h
  ../api/include/lowlevel/dpu_transfer_matrix.h
- /home/upmem0037/xialinl/research/libaray/src/backends/api/src/api/dpu_jni.c
+ /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu_jni.c
  /usr/lib/jvm/default-java/include/jni.h
  /usr/lib/jvm/default-java/include/linux/jni_md.h

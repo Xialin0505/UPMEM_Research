@@ -72,7 +72,7 @@ stdbool.h
 string.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c
+/home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c
 stdio.h
 -
 unistd.h

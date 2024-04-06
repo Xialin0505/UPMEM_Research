@@ -1,4 +1,4 @@
-# Install script for directory: /home/upmem0037/xialinl/research/libaray/src/backends/gen
+# Install script for directory: /home/upmem0037/xialinl/research/library/src/backends/gen
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

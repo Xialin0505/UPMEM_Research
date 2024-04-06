@@ -334,7 +334,7 @@ static_verbose.h
 time.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi.c
 stddef.h
 -
 ufi_rank_utils.h
@@ -350,7 +350,7 @@ ufi/ufi_ci_commands.h
 ufi/ufi.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_bit_config.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_bit_config.c
 ufi/ufi_ci_types.h
 -
 dpu_types.h
@@ -358,7 +358,7 @@ dpu_types.h
 ufi_rank_utils.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_ci.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_ci.c
 dpu_types.h
 -
 ufi/ufi_ci.h
@@ -370,7 +370,7 @@ ufi/ufi_ci_commands.h
 ufi_rank_utils.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_config.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_config.c
 dpu_error.h
 -
 dpu_instruction_encoder.h
@@ -398,11 +398,11 @@ ufi/ufi_bit_config.h
 ufi/ufi_dma_wavegen_config.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_debug.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_debug.c
 dpu.h
 -
 dpu_attributes.h
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/dpu_attributes.h
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/dpu_attributes.h
 dpu_characteristics.h
 -
 dpu_error.h
@@ -438,7 +438,7 @@ ufi/ufi_ci.h
 ufi/ufi_memory.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_dma_wavegen_config.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_dma_wavegen_config.c
 ufi/ufi_ci_types.h
 -
 ufi/ufi_dma_wavegen_config.h
@@ -450,7 +450,7 @@ dpu_types.h
 ufi_rank_utils.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_memory.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_memory.c
 dpu_transfer_matrix.h
 -
 dpu_error.h
@@ -472,7 +472,7 @@ ufi/ufi.h
 ufi/ufi_config.h
 -
 
-/home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_runner.c
+/home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_runner.c
 stdint.h
 -
 dpu_error.h

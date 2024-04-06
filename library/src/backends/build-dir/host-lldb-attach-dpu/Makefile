@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu/CMakeFiles/progress.marks
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu/CMakeFiles/progress.marks
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/clean
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/rule
 .PHONY : host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ host-lldb-attach-dpu: host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/r
 
 # fast build rule for target.
 host-lldb-attach-dpu/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build
 .PHONY : host-lldb-attach-dpu/fast
 
 lldb-attach-dpu.o: lldb-attach-dpu.c.o
@@ -188,7 +188,7 @@ lldb-attach-dpu.o: lldb-attach-dpu.c.o
 
 # target to build an object file
 lldb-attach-dpu.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o
 .PHONY : lldb-attach-dpu.c.o
 
 lldb-attach-dpu.i: lldb-attach-dpu.c.i
@@ -197,7 +197,7 @@ lldb-attach-dpu.i: lldb-attach-dpu.c.i
 
 # target to preprocess a source file
 lldb-attach-dpu.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.i
 .PHONY : lldb-attach-dpu.c.i
 
 lldb-attach-dpu.s: lldb-attach-dpu.c.s
@@ -206,7 +206,7 @@ lldb-attach-dpu.s: lldb-attach-dpu.c.s
 
 # target to generate assembly for a file
 lldb-attach-dpu.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build.make host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.s
 .PHONY : lldb-attach-dpu.c.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

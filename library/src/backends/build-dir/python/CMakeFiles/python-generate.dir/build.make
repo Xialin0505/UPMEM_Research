@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for python-generate.
 
@@ -54,12 +54,12 @@ CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-d
 include python/CMakeFiles/python-generate.dir/progress.make
 
 python/CMakeFiles/python-generate:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && PYGEN-NOTFOUND /home/upmem0037/xialinl/research/libaray/src/backends/api/include/api/dpu.h /home/upmem0037/xialinl/research/libaray/src/backends/api/include/api/dpu_checkpoint.h /home/upmem0037/xialinl/research/libaray/src/backends/api/include/api/dpu_error.h /home/upmem0037/xialinl/research/libaray/src/backends/api/include/api/dpu_types.h -o /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/ffi.py -I /home/upmem0037/xialinl/research/libaray/src/backends/api/include/api -I /home/upmem0037/xialinl/research/libaray/src/backends/api/include/lowlevel -l libdpu.so --strip-build-path=/home/upmem0037/xialinl/research/libaray/src/backends/api/include/api --no-undefs --header-template=/home/upmem0037/xialinl/research/libaray/src/backends/python/utils/ffi_header.txt --insert-file=/home/upmem0037/xialinl/research/libaray/src/backends/python/utils/ffi_footer.txt
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && sed -i "s/add_library_search_dirs(\[\])/add_library_search_dirs([os.path.dirname(os.path.dirname(os.path.dirname((os.path.dirname(__file__)))))])/" /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/ffi.py
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && sed -i "s/\/home\/upmem0037\/xialinl\/research\/libaray\/src\/backends/<backends>/" /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/ffi.py
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && sed -i "s/set()/[]/" /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/ffi.py
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && sed -i "s/cache_i.add/cache_i.append/" /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/ffi.py
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && PYFORMAT-NOTFOUND /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/ffi.py --in-place --aggressive --aggressive
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && PYGEN-NOTFOUND /home/upmem0037/xialinl/research/library/src/backends/api/include/api/dpu.h /home/upmem0037/xialinl/research/library/src/backends/api/include/api/dpu_checkpoint.h /home/upmem0037/xialinl/research/library/src/backends/api/include/api/dpu_error.h /home/upmem0037/xialinl/research/library/src/backends/api/include/api/dpu_types.h -o /home/upmem0037/xialinl/research/library/src/backends/python/dpu/ffi.py -I /home/upmem0037/xialinl/research/library/src/backends/api/include/api -I /home/upmem0037/xialinl/research/library/src/backends/api/include/lowlevel -l libdpu.so --strip-build-path=/home/upmem0037/xialinl/research/library/src/backends/api/include/api --no-undefs --header-template=/home/upmem0037/xialinl/research/library/src/backends/python/utils/ffi_header.txt --insert-file=/home/upmem0037/xialinl/research/library/src/backends/python/utils/ffi_footer.txt
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && sed -i "s/add_library_search_dirs(\[\])/add_library_search_dirs([os.path.dirname(os.path.dirname(os.path.dirname((os.path.dirname(__file__)))))])/" /home/upmem0037/xialinl/research/library/src/backends/python/dpu/ffi.py
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && sed -i "s/\/home\/upmem0037\/xialinl\/research\/library\/src\/backends/<backends>/" /home/upmem0037/xialinl/research/library/src/backends/python/dpu/ffi.py
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && sed -i "s/set()/[]/" /home/upmem0037/xialinl/research/library/src/backends/python/dpu/ffi.py
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && sed -i "s/cache_i.add/cache_i.append/" /home/upmem0037/xialinl/research/library/src/backends/python/dpu/ffi.py
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && PYFORMAT-NOTFOUND /home/upmem0037/xialinl/research/library/src/backends/python/dpu/ffi.py --in-place --aggressive --aggressive
 
 python-generate: python/CMakeFiles/python-generate
 python-generate: python/CMakeFiles/python-generate.dir/build.make
@@ -72,10 +72,10 @@ python/CMakeFiles/python-generate.dir/build: python-generate
 .PHONY : python/CMakeFiles/python-generate.dir/build
 
 python/CMakeFiles/python-generate.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python && $(CMAKE_COMMAND) -P CMakeFiles/python-generate.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/python && $(CMAKE_COMMAND) -P CMakeFiles/python-generate.dir/cmake_clean.cmake
 .PHONY : python/CMakeFiles/python-generate.dir/clean
 
 python/CMakeFiles/python-generate.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/python /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python/CMakeFiles/python-generate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/python /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/python /home/upmem0037/xialinl/research/library/src/backends/build-dir/python/CMakeFiles/python-generate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/CMakeFiles/python-generate.dir/depend
 

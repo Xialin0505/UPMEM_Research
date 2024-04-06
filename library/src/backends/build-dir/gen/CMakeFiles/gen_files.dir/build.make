@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for gen_files.
 
@@ -63,10 +63,10 @@ gen/CMakeFiles/gen_files.dir/build: gen_files
 .PHONY : gen/CMakeFiles/gen_files.dir/build
 
 gen/CMakeFiles/gen_files.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen && $(CMAKE_COMMAND) -P CMakeFiles/gen_files.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen && $(CMAKE_COMMAND) -P CMakeFiles/gen_files.dir/cmake_clean.cmake
 .PHONY : gen/CMakeFiles/gen_files.dir/clean
 
 gen/CMakeFiles/gen_files.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/gen /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen/CMakeFiles/gen_files.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/gen /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen/CMakeFiles/gen_files.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gen/CMakeFiles/gen_files.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/vpd/CMakeFiles/progress.marks
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/library/src/backends/build-dir/vpd/CMakeFiles/progress.marks
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/clean
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vpd/CMakeFiles/dpuvpd.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/CMakeFiles/dpuvpd.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 vpd/CMakeFiles/dpuvpd.dir/rule
 .PHONY : vpd/CMakeFiles/dpuvpd.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ dpuvpd: vpd/CMakeFiles/dpuvpd.dir/rule
 
 # fast build rule for target.
 dpuvpd/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/build
 .PHONY : dpuvpd/fast
 
 src/dpu_vpd.o: src/dpu_vpd.c.o
@@ -188,7 +188,7 @@ src/dpu_vpd.o: src/dpu_vpd.c.o
 
 # target to build an object file
 src/dpu_vpd.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd.c.o
 .PHONY : src/dpu_vpd.c.o
 
 src/dpu_vpd.i: src/dpu_vpd.c.i
@@ -197,7 +197,7 @@ src/dpu_vpd.i: src/dpu_vpd.c.i
 
 # target to preprocess a source file
 src/dpu_vpd.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd.c.i
 .PHONY : src/dpu_vpd.c.i
 
 src/dpu_vpd.s: src/dpu_vpd.c.s
@@ -206,7 +206,7 @@ src/dpu_vpd.s: src/dpu_vpd.c.s
 
 # target to generate assembly for a file
 src/dpu_vpd.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd.c.s
 .PHONY : src/dpu_vpd.c.s
 
 src/dpu_vpd_container.o: src/dpu_vpd_container.c.o
@@ -215,7 +215,7 @@ src/dpu_vpd_container.o: src/dpu_vpd_container.c.o
 
 # target to build an object file
 src/dpu_vpd_container.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_container.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_container.c.o
 .PHONY : src/dpu_vpd_container.c.o
 
 src/dpu_vpd_container.i: src/dpu_vpd_container.c.i
@@ -224,7 +224,7 @@ src/dpu_vpd_container.i: src/dpu_vpd_container.c.i
 
 # target to preprocess a source file
 src/dpu_vpd_container.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_container.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_container.c.i
 .PHONY : src/dpu_vpd_container.c.i
 
 src/dpu_vpd_container.s: src/dpu_vpd_container.c.s
@@ -233,7 +233,7 @@ src/dpu_vpd_container.s: src/dpu_vpd_container.c.s
 
 # target to generate assembly for a file
 src/dpu_vpd_container.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_container.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_container.c.s
 .PHONY : src/dpu_vpd_container.c.s
 
 src/dpu_vpd_decode.o: src/dpu_vpd_decode.c.o
@@ -242,7 +242,7 @@ src/dpu_vpd_decode.o: src/dpu_vpd_decode.c.o
 
 # target to build an object file
 src/dpu_vpd_decode.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_decode.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_decode.c.o
 .PHONY : src/dpu_vpd_decode.c.o
 
 src/dpu_vpd_decode.i: src/dpu_vpd_decode.c.i
@@ -251,7 +251,7 @@ src/dpu_vpd_decode.i: src/dpu_vpd_decode.c.i
 
 # target to preprocess a source file
 src/dpu_vpd_decode.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_decode.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_decode.c.i
 .PHONY : src/dpu_vpd_decode.c.i
 
 src/dpu_vpd_decode.s: src/dpu_vpd_decode.c.s
@@ -260,7 +260,7 @@ src/dpu_vpd_decode.s: src/dpu_vpd_decode.c.s
 
 # target to generate assembly for a file
 src/dpu_vpd_decode.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_decode.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_decode.c.s
 .PHONY : src/dpu_vpd_decode.c.s
 
 src/dpu_vpd_encode.o: src/dpu_vpd_encode.c.o
@@ -269,7 +269,7 @@ src/dpu_vpd_encode.o: src/dpu_vpd_encode.c.o
 
 # target to build an object file
 src/dpu_vpd_encode.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_encode.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_encode.c.o
 .PHONY : src/dpu_vpd_encode.c.o
 
 src/dpu_vpd_encode.i: src/dpu_vpd_encode.c.i
@@ -278,7 +278,7 @@ src/dpu_vpd_encode.i: src/dpu_vpd_encode.c.i
 
 # target to preprocess a source file
 src/dpu_vpd_encode.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_encode.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_encode.c.i
 .PHONY : src/dpu_vpd_encode.c.i
 
 src/dpu_vpd_encode.s: src/dpu_vpd_encode.c.s
@@ -287,7 +287,7 @@ src/dpu_vpd_encode.s: src/dpu_vpd_encode.c.s
 
 # target to generate assembly for a file
 src/dpu_vpd_encode.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_encode.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f vpd/CMakeFiles/dpuvpd.dir/build.make vpd/CMakeFiles/dpuvpd.dir/src/dpu_vpd_encode.c.s
 .PHONY : src/dpu_vpd_encode.c.s
 
 # Help Target
@@ -327,6 +327,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

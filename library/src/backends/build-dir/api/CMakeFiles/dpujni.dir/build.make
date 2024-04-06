@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Include any dependencies generated for this target.
 include api/CMakeFiles/dpujni.dir/depend.make
@@ -59,16 +59,16 @@ include api/CMakeFiles/dpujni.dir/flags.make
 
 api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o: api/CMakeFiles/dpujni.dir/flags.make
 api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o: ../api/src/api/dpu_jni.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/api/src/api/dpu_jni.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o"
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/api && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dpujni.dir/src/api/dpu_jni.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu_jni.c
 
 api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dpujni.dir/src/api/dpu_jni.c.i"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/upmem0037/xialinl/research/libaray/src/backends/api/src/api/dpu_jni.c > CMakeFiles/dpujni.dir/src/api/dpu_jni.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/api && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu_jni.c > CMakeFiles/dpujni.dir/src/api/dpu_jni.c.i
 
 api/CMakeFiles/dpujni.dir/src/api/dpu_jni.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dpujni.dir/src/api/dpu_jni.c.s"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/upmem0037/xialinl/research/libaray/src/backends/api/src/api/dpu_jni.c -o CMakeFiles/dpujni.dir/src/api/dpu_jni.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/api && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu_jni.c -o CMakeFiles/dpujni.dir/src/api/dpu_jni.c.s
 
 # Object files for target dpujni
 dpujni_OBJECTS = \
@@ -85,9 +85,9 @@ api/libdpujni.so.0.0: /usr/lib/x86_64-linux-gnu/libelf.so
 api/libdpujni.so.0.0: /usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/libpython3.7m.so
 api/libdpujni.so.0.0: /usr/lib/x86_64-linux-gnu/libnuma.so
 api/libdpujni.so.0.0: api/CMakeFiles/dpujni.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libdpujni.so"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dpujni.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api && $(CMAKE_COMMAND) -E cmake_symlink_library libdpujni.so.0.0 libdpujni.so.0.0 libdpujni.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libdpujni.so"
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dpujni.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/api && $(CMAKE_COMMAND) -E cmake_symlink_library libdpujni.so.0.0 libdpujni.so.0.0 libdpujni.so
 
 api/libdpujni.so: api/libdpujni.so.0.0
 	@$(CMAKE_COMMAND) -E touch_nocreate api/libdpujni.so
@@ -98,10 +98,10 @@ api/CMakeFiles/dpujni.dir/build: api/libdpujni.so
 .PHONY : api/CMakeFiles/dpujni.dir/build
 
 api/CMakeFiles/dpujni.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api && $(CMAKE_COMMAND) -P CMakeFiles/dpujni.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/api && $(CMAKE_COMMAND) -P CMakeFiles/dpujni.dir/cmake_clean.cmake
 .PHONY : api/CMakeFiles/dpujni.dir/clean
 
 api/CMakeFiles/dpujni.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/api /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/CMakeFiles/dpujni.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/api /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/api /home/upmem0037/xialinl/research/library/src/backends/build-dir/api/CMakeFiles/dpujni.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : api/CMakeFiles/dpujni.dir/depend
 

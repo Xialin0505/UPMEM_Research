@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for ufi-format.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-d
 include ufi/CMakeFiles/ufi-format.dir/progress.make
 
 ufi/CMakeFiles/ufi-format:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/ufi && clang-format -style=file -i /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_bit_config.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_ci.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_ci_commands.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_ci_types.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_config.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_debug.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_dma_wavegen_config.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_memory.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/include/ufi/ufi_runner.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_bit_config.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_ci.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_config.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_debug.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_dma_wavegen_config.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_memory.c /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_rank_utils.h /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_runner.c
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/ufi && clang-format -style=file -i /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_bit_config.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_ci.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_ci_commands.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_ci_types.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_config.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_debug.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_dma_wavegen_config.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_memory.h /home/upmem0037/xialinl/research/library/src/backends/ufi/include/ufi/ufi_runner.h /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_bit_config.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_ci.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_config.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_debug.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_dma_wavegen_config.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_memory.c /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_rank_utils.h /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_runner.c
 
 ufi-format: ufi/CMakeFiles/ufi-format
 ufi-format: ufi/CMakeFiles/ufi-format.dir/build.make
@@ -67,10 +67,10 @@ ufi/CMakeFiles/ufi-format.dir/build: ufi-format
 .PHONY : ufi/CMakeFiles/ufi-format.dir/build
 
 ufi/CMakeFiles/ufi-format.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/ufi && $(CMAKE_COMMAND) -P CMakeFiles/ufi-format.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/ufi && $(CMAKE_COMMAND) -P CMakeFiles/ufi-format.dir/cmake_clean.cmake
 .PHONY : ufi/CMakeFiles/ufi-format.dir/clean
 
 ufi/CMakeFiles/ufi-format.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/ufi /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/ufi /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/ufi/CMakeFiles/ufi-format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/ufi /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/ufi /home/upmem0037/xialinl/research/library/src/backends/build-dir/ufi/CMakeFiles/ufi-format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ufi/CMakeFiles/ufi-format.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/upmem0037/xialinl/research/libaray/src/backends
+# Install script for directory: /home/upmem0037/xialinl/research/library/src/backends
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,14 +39,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/ufi/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/hw/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python/cmake_install.cmake")
-  include("/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/vpd/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/gen/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/api/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/ufi/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/hw/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/python/cmake_install.cmake")
+  include("/home/upmem0037/xialinl/research/library/src/backends/build-dir/vpd/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/upmem0037/xialinl/research/library/src/backends/build-dir/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for python-generate-vpd.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-d
 include python/CMakeFiles/python-generate-vpd.dir/progress.make
 
 python/CMakeFiles/python-generate-vpd:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && PYGEN-NOTFOUND /home/upmem0037/xialinl/research/libaray/src/backends/api/include/lowlevel/dpu_vpd.h /home/upmem0037/xialinl/research/libaray/src/backends/api/include/lowlevel/dpu_vpd_structures.h /home/upmem0037/xialinl/research/libaray/src/backends/vpd/src//dpu_flash_partition.h -o /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/vpd/vpd.py -I /home/upmem0037/xialinl/research/libaray/src/backends/api/include/api -I /home/upmem0037/xialinl/research/libaray/src/backends/api/include/lowlevel -l libdpuvpd.so --strip-build-path=/home/upmem0037/xialinl/research/libaray/src/backends --no-undefs --header-template=/home/upmem0037/xialinl/research/libaray/src/backends/python/utils/ffi_header.txt
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && PYFORMAT-NOTFOUND /home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/vpd/vpd.py --in-place --aggressive --aggressive
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && PYGEN-NOTFOUND /home/upmem0037/xialinl/research/library/src/backends/api/include/lowlevel/dpu_vpd.h /home/upmem0037/xialinl/research/library/src/backends/api/include/lowlevel/dpu_vpd_structures.h /home/upmem0037/xialinl/research/library/src/backends/vpd/src//dpu_flash_partition.h -o /home/upmem0037/xialinl/research/library/src/backends/python/dpu/vpd/vpd.py -I /home/upmem0037/xialinl/research/library/src/backends/api/include/api -I /home/upmem0037/xialinl/research/library/src/backends/api/include/lowlevel -l libdpuvpd.so --strip-build-path=/home/upmem0037/xialinl/research/library/src/backends --no-undefs --header-template=/home/upmem0037/xialinl/research/library/src/backends/python/utils/ffi_header.txt
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && PYFORMAT-NOTFOUND /home/upmem0037/xialinl/research/library/src/backends/python/dpu/vpd/vpd.py --in-place --aggressive --aggressive
 
 python-generate-vpd: python/CMakeFiles/python-generate-vpd
 python-generate-vpd: python/CMakeFiles/python-generate-vpd.dir/build.make
@@ -68,10 +68,10 @@ python/CMakeFiles/python-generate-vpd.dir/build: python-generate-vpd
 .PHONY : python/CMakeFiles/python-generate-vpd.dir/build
 
 python/CMakeFiles/python-generate-vpd.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python && $(CMAKE_COMMAND) -P CMakeFiles/python-generate-vpd.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/python && $(CMAKE_COMMAND) -P CMakeFiles/python-generate-vpd.dir/cmake_clean.cmake
 .PHONY : python/CMakeFiles/python-generate-vpd.dir/clean
 
 python/CMakeFiles/python-generate-vpd.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/python /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python/CMakeFiles/python-generate-vpd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/python /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/python /home/upmem0037/xialinl/research/library/src/backends/build-dir/python/CMakeFiles/python-generate-vpd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/CMakeFiles/python-generate-vpd.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python/CMakeFiles/progress.marks
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/library/src/backends/build-dir/python/CMakeFiles/progress.marks
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/clean
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 python/CMakeFiles/python-generate-vpd.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python-generate-vpd.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python-generate-vpd.dir/rule
 .PHONY : python/CMakeFiles/python-generate-vpd.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ python-generate-vpd: python/CMakeFiles/python-generate-vpd.dir/rule
 
 # fast build rule for target.
 python-generate-vpd/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f python/CMakeFiles/python-generate-vpd.dir/build.make python/CMakeFiles/python-generate-vpd.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f python/CMakeFiles/python-generate-vpd.dir/build.make python/CMakeFiles/python-generate-vpd.dir/build
 .PHONY : python-generate-vpd/fast
 
 # Convenience name for target.
 python/CMakeFiles/python-generate.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python-generate.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python-generate.dir/rule
 .PHONY : python/CMakeFiles/python-generate.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ python-generate: python/CMakeFiles/python-generate.dir/rule
 
 # fast build rule for target.
 python-generate/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f python/CMakeFiles/python-generate.dir/build.make python/CMakeFiles/python-generate.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f python/CMakeFiles/python-generate.dir/build.make python/CMakeFiles/python-generate.dir/build
 .PHONY : python-generate/fast
 
 # Convenience name for target.
 python/CMakeFiles/python-format.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python-format.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/python-format.dir/rule
 .PHONY : python/CMakeFiles/python-format.dir/rule
 
 # Convenience name for target.
@@ -209,7 +209,7 @@ python-format: python/CMakeFiles/python-format.dir/rule
 
 # fast build rule for target.
 python-format/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f python/CMakeFiles/python-format.dir/build.make python/CMakeFiles/python-format.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f python/CMakeFiles/python-format.dir/build.make python/CMakeFiles/python-format.dir/build
 .PHONY : python-format/fast
 
 # Help Target
@@ -239,6 +239,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

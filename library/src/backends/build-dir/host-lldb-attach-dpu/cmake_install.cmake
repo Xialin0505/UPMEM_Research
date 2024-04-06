@@ -1,4 +1,4 @@
-# Install script for directory: /home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu
+# Install script for directory: /home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/upmem/lldb/host-lldb-attach-dpu"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/upmem/lldb" TYPE EXECUTABLE FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu/host-lldb-attach-dpu")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/upmem/lldb" TYPE EXECUTABLE FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu/host-lldb-attach-dpu")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/upmem/lldb/host-lldb-attach-dpu" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/upmem/lldb/host-lldb-attach-dpu")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/upmem/lldb/host-lldb-attach-dpu"
-         OLD_RPATH "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:"
+         OLD_RPATH "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/upmem/lldb/host-lldb-attach-dpu")

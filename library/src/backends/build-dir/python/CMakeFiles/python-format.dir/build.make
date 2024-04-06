@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for python-format.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-d
 include python/CMakeFiles/python-format.dir/progress.make
 
 python/CMakeFiles/python-format:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/python && PYFORMAT-NOTFOUND dpu/__init__.py dpu/compiler.py dpu/driver.py dpu/vpd/db.py dpu/vpd/dimm.py tests/*.py --in-place --aggressive --aggressive
+	cd /home/upmem0037/xialinl/research/library/src/backends/python && PYFORMAT-NOTFOUND dpu/__init__.py dpu/compiler.py dpu/driver.py dpu/vpd/db.py dpu/vpd/dimm.py tests/*.py --in-place --aggressive --aggressive
 
 python-format: python/CMakeFiles/python-format
 python-format: python/CMakeFiles/python-format.dir/build.make
@@ -67,10 +67,10 @@ python/CMakeFiles/python-format.dir/build: python-format
 .PHONY : python/CMakeFiles/python-format.dir/build
 
 python/CMakeFiles/python-format.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python && $(CMAKE_COMMAND) -P CMakeFiles/python-format.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/python && $(CMAKE_COMMAND) -P CMakeFiles/python-format.dir/cmake_clean.cmake
 .PHONY : python/CMakeFiles/python-format.dir/clean
 
 python/CMakeFiles/python-format.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/python /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/python/CMakeFiles/python-format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/python /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/python /home/upmem0037/xialinl/research/library/src/backends/build-dir/python/CMakeFiles/python-format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/CMakeFiles/python-format.dir/depend
 

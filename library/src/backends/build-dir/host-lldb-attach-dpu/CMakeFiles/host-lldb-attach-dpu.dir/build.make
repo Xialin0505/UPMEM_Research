@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Include any dependencies generated for this target.
 include host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/depend.make
@@ -59,16 +59,16 @@ include host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/flags.make
 
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o: host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/flags.make
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o: ../host-lldb-attach-dpu/lldb-attach-dpu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o"
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c
 
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.i"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c > CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c > CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.i
 
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.s"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c -o CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c -o CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.s
 
 # Object files for target host-lldb-attach-dpu
 host__lldb__attach__dpu_OBJECTS = \
@@ -85,8 +85,8 @@ host-lldb-attach-dpu/host-lldb-attach-dpu: /usr/lib/python3.7/config-3.7m-x86_64
 host-lldb-attach-dpu/host-lldb-attach-dpu: /usr/lib/x86_64-linux-gnu/libnuma.so
 host-lldb-attach-dpu/host-lldb-attach-dpu: verbose/libdpuverbose.so.0.0
 host-lldb-attach-dpu/host-lldb-attach-dpu: host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable host-lldb-attach-dpu"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/host-lldb-attach-dpu.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable host-lldb-attach-dpu"
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/host-lldb-attach-dpu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build: host-lldb-attach-dpu/host-lldb-attach-dpu
@@ -94,10 +94,10 @@ host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build: host-lldb-attach
 .PHONY : host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/build
 
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu && $(CMAKE_COMMAND) -P CMakeFiles/host-lldb-attach-dpu.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu && $(CMAKE_COMMAND) -P CMakeFiles/host-lldb-attach-dpu.dir/cmake_clean.cmake
 .PHONY : host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/clean
 
 host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu /home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/depend
 

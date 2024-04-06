@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/CMakeFiles/progress.marks
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles /home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose/CMakeFiles/progress.marks
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/clean
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/preinstall
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 verbose/CMakeFiles/dpuverbose.dir/rule:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/CMakeFiles/dpuverbose.dir/rule
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f CMakeFiles/Makefile2 verbose/CMakeFiles/dpuverbose.dir/rule
 .PHONY : verbose/CMakeFiles/dpuverbose.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ dpuverbose: verbose/CMakeFiles/dpuverbose.dir/rule
 
 # fast build rule for target.
 dpuverbose/fast:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/build
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/build
 .PHONY : dpuverbose/fast
 
 src/static_verbose.o: src/static_verbose.c.o
@@ -188,7 +188,7 @@ src/static_verbose.o: src/static_verbose.c.o
 
 # target to build an object file
 src/static_verbose.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.o
 .PHONY : src/static_verbose.c.o
 
 src/static_verbose.i: src/static_verbose.c.i
@@ -197,7 +197,7 @@ src/static_verbose.i: src/static_verbose.c.i
 
 # target to preprocess a source file
 src/static_verbose.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.i
 .PHONY : src/static_verbose.c.i
 
 src/static_verbose.s: src/static_verbose.c.s
@@ -206,7 +206,7 @@ src/static_verbose.s: src/static_verbose.c.s
 
 # target to generate assembly for a file
 src/static_verbose.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.s
 .PHONY : src/static_verbose.c.s
 
 src/verbose_config.o: src/verbose_config.c.o
@@ -215,7 +215,7 @@ src/verbose_config.o: src/verbose_config.c.o
 
 # target to build an object file
 src/verbose_config.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.o
 .PHONY : src/verbose_config.c.o
 
 src/verbose_config.i: src/verbose_config.c.i
@@ -224,7 +224,7 @@ src/verbose_config.i: src/verbose_config.c.i
 
 # target to preprocess a source file
 src/verbose_config.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.i
 .PHONY : src/verbose_config.c.i
 
 src/verbose_config.s: src/verbose_config.c.s
@@ -233,7 +233,7 @@ src/verbose_config.s: src/verbose_config.c.s
 
 # target to generate assembly for a file
 src/verbose_config.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.s
 .PHONY : src/verbose_config.c.s
 
 src/verbose_control.o: src/verbose_control.c.o
@@ -242,7 +242,7 @@ src/verbose_control.o: src/verbose_control.c.o
 
 # target to build an object file
 src/verbose_control.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.o
 .PHONY : src/verbose_control.c.o
 
 src/verbose_control.i: src/verbose_control.c.i
@@ -251,7 +251,7 @@ src/verbose_control.i: src/verbose_control.c.i
 
 # target to preprocess a source file
 src/verbose_control.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.i
 .PHONY : src/verbose_control.c.i
 
 src/verbose_control.s: src/verbose_control.c.s
@@ -260,7 +260,7 @@ src/verbose_control.s: src/verbose_control.c.s
 
 # target to generate assembly for a file
 src/verbose_control.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.s
 .PHONY : src/verbose_control.c.s
 
 src/verbose_profile.o: src/verbose_profile.c.o
@@ -269,7 +269,7 @@ src/verbose_profile.o: src/verbose_profile.c.o
 
 # target to build an object file
 src/verbose_profile.c.o:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.o
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.o
 .PHONY : src/verbose_profile.c.o
 
 src/verbose_profile.i: src/verbose_profile.c.i
@@ -278,7 +278,7 @@ src/verbose_profile.i: src/verbose_profile.c.i
 
 # target to preprocess a source file
 src/verbose_profile.c.i:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.i
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.i
 .PHONY : src/verbose_profile.c.i
 
 src/verbose_profile.s: src/verbose_profile.c.s
@@ -287,7 +287,7 @@ src/verbose_profile.s: src/verbose_profile.c.s
 
 # target to generate assembly for a file
 src/verbose_profile.c.s:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.s
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(MAKE) -f verbose/CMakeFiles/dpuverbose.dir/build.make verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.s
 .PHONY : src/verbose_profile.c.s
 
 # Help Target
@@ -327,6 +327,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

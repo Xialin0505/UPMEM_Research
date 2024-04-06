@@ -1,4 +1,4 @@
-# Install script for directory: /home/upmem0037/xialinl/research/libaray/src/backends/python
+# Install script for directory: /home/upmem0037/xialinl/research/library/src/backends/python
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/dpu" TYPE DIRECTORY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/python/dpu/" REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/dpu" TYPE DIRECTORY FILES "/home/upmem0037/xialinl/research/library/src/backends/python/dpu/" REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 

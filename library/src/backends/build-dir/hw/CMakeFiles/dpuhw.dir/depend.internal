@@ -7,7 +7,7 @@ hw/CMakeFiles/dpuhw.dir/__/commons/src/dpu_chip_description.c.o
  ../hw/../api/include/lowlevel/dpu_description.h
  ../hw/../api/include/lowlevel/dpu_hw_description.h
  ../hw/../api/include/lowlevel/dpu_target.h
- /home/upmem0037/xialinl/research/libaray/src/backends/commons/src/dpu_chip_description.c
+ /home/upmem0037/xialinl/research/library/src/backends/commons/src/dpu_chip_description.c
 hw/CMakeFiles/dpuhw.dir/__/commons/src/properties/dpu_properties.c.o
  ../hw/../api/include/api/dpu_macro_utils.h
  ../hw/../api/include/api/dpu_types.h
@@ -18,15 +18,15 @@ hw/CMakeFiles/dpuhw.dir/__/commons/src/properties/dpu_properties.c.o
  ../hw/../verbose/src/verbose_config.h
  ../hw/../verbose/src/verbose_control.h
  ../hw/../verbose/src/verbose_profile.h
- /home/upmem0037/xialinl/research/libaray/src/backends/commons/src/properties/dpu_properties.c
- /home/upmem0037/xialinl/research/libaray/src/backends/commons/src/properties/dpu_properties.h
+ /home/upmem0037/xialinl/research/library/src/backends/commons/src/properties/dpu_properties.c
+ /home/upmem0037/xialinl/research/library/src/backends/commons/src/properties/dpu_properties.h
 hw/CMakeFiles/dpuhw.dir/src/mappings/fpga_aws/fpga_aws_translation.c.o
  ../hw/../api/include/api/dpu_types.h
  ../hw/../api/include/lowlevel/dpu_chip_id.h
  ../hw/../api/include/lowlevel/dpu_hw_description.h
  ../hw/../api/include/lowlevel/dpu_target.h
  ../hw/src/commons/dpu_region_address_translation.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/mappings/fpga_aws/fpga_aws_translation.c
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/mappings/fpga_aws/fpga_aws_translation.c
 hw/CMakeFiles/dpuhw.dir/src/mappings/xeon_sp/xeon_sp_translation.c.o
  ../hw/../api/include/api/dpu_types.h
  ../hw/../api/include/lowlevel/dpu_chip_id.h
@@ -38,7 +38,7 @@ hw/CMakeFiles/dpuhw.dir/src/mappings/xeon_sp/xeon_sp_translation.c.o
  ../hw/../verbose/src/verbose_control.h
  ../hw/../verbose/src/verbose_profile.h
  ../hw/src/commons/dpu_region_address_translation.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/mappings/xeon_sp/xeon_sp_translation.c
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/mappings/xeon_sp/xeon_sp_translation.c
 hw/CMakeFiles/dpuhw.dir/src/rank/fpga_ila.c.o
  ../hw/../api/include/api/dpu_types.h
  ../hw/../api/include/lowlevel/dpu_chip_id.h
@@ -46,9 +46,9 @@ hw/CMakeFiles/dpuhw.dir/src/rank/fpga_ila.c.o
  ../hw/../api/include/lowlevel/dpu_hw_description.h
  ../hw/../api/include/lowlevel/dpu_target.h
  ../hw/src/commons/dpu_rank_ioctl.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/dpu_fpga_ila.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/fpga_ila.c
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/hw_dpu_sysfs.h
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/dpu_fpga_ila.h
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/fpga_ila.c
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/hw_dpu_sysfs.h
 hw/CMakeFiles/dpuhw.dir/src/rank/hw_dpu_rank.c.o
  ../hw/../api/include/api/dpu_error.h
  ../hw/../api/include/api/dpu_macro_utils.h
@@ -87,9 +87,9 @@ hw/CMakeFiles/dpuhw.dir/src/rank/hw_dpu_rank.c.o
  ../hw/src/commons/dpu_rank_ioctl.h
  ../hw/src/commons/dpu_region_address_translation.h
  ../hw/src/commons/dpu_region_constants.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/dpu_fpga_ila.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/hw_dpu_rank.c
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/hw_dpu_sysfs.h
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/dpu_fpga_ila.h
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/hw_dpu_rank.c
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/hw_dpu_sysfs.h
  gen/include/dpu_profile_properties.h
 hw/CMakeFiles/dpuhw.dir/src/rank/hw_dpu_sysfs.c.o
  ../hw/../api/include/api/dpu_macro_utils.h
@@ -107,5 +107,5 @@ hw/CMakeFiles/dpuhw.dir/src/rank/hw_dpu_sysfs.c.o
  ../hw/src/commons/dpu_rank_ioctl.h
  ../hw/src/commons/dpu_region_address_translation.h
  ../hw/src/commons/dpu_region_constants.h
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/hw_dpu_sysfs.c
- /home/upmem0037/xialinl/research/libaray/src/backends/hw/src/rank/hw_dpu_sysfs.h
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/hw_dpu_sysfs.c
+ /home/upmem0037/xialinl/research/library/src/backends/hw/src/rank/hw_dpu_sysfs.h

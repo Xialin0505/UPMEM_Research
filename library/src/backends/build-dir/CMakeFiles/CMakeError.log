@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b64ff/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b64ff.dir/build.make CMakeFiles/cmTC_b64ff.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b64ff.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11     -o CMakeFiles/cmTC_b64ff.dir/CheckSymbolExists.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_b64ff
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b64ff.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wextra -std=gnu11    -Wl,--enable-new-dtags  CMakeFiles/cmTC_b64ff.dir/CheckSymbolExists.c.o  -o cmTC_b64ff 
-/usr/bin/ld: CMakeFiles/cmTC_b64ff.dir/CheckSymbolExists.c.o: in function `main':
+Run Build Command:"/usr/bin/make" "cmTC_481eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_481eb.dir/build.make CMakeFiles/cmTC_481eb.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_481eb.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11     -o CMakeFiles/cmTC_481eb.dir/CheckSymbolExists.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_481eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481eb.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -std=gnu11    -Wl,--enable-new-dtags  CMakeFiles/cmTC_481eb.dir/CheckSymbolExists.c.o  -o cmTC_481eb 
+/usr/bin/ld: CMakeFiles/cmTC_481eb.dir/CheckSymbolExists.c.o: in function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_b64ff.dir/build.make:87: cmTC_b64ff] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b64ff/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_481eb.dir/build.make:87: cmTC_481eb] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_481eb/fast] Error 2
 
-File /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -32,42 +32,42 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b53fe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b53fe.dir/build.make CMakeFiles/cmTC_b53fe.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b53fe.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b53fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_b53fe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b53fe.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wextra -std=gnu11  -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--enable-new-dtags  CMakeFiles/cmTC_b53fe.dir/CheckFunctionExists.c.o  -o cmTC_b53fe -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_404c4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_404c4.dir/build.make CMakeFiles/cmTC_404c4.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_404c4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_404c4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_404c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_404c4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -std=gnu11  -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--enable-new-dtags  CMakeFiles/cmTC_404c4.dir/CheckFunctionExists.c.o  -o cmTC_404c4 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_b53fe.dir/build.make:87: cmTC_b53fe] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b53fe/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_404c4.dir/build.make:87: cmTC_404c4] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_404c4/fast] Error 2
 
 
 Performing C SOURCE FILE Test C_HAS_SSE3_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b4930/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b4930.dir/build.make CMakeFiles/cmTC_b4930.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b4930.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_SSE3_1   -o CMakeFiles/cmTC_b4930.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_3c740/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c740.dir/build.make CMakeFiles/cmTC_3c740.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c740.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_SSE3_1   -o CMakeFiles/cmTC_3c740.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/pmmintrin.h:110:1: error: inlining failed in call to always_inline ‘_mm_lddqu_si128’: target specific option mismatch
  _mm_lddqu_si128 (__m128i const *__P)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
      a = _mm_lddqu_si128( (const __m128i*)vals );
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_b4930.dir/build.make:66: CMakeFiles/cmTC_b4930.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b4930/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_3c740.dir/build.make:66: CMakeFiles/cmTC_3c740.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3c740/fast] Error 2
 
 ...and run output:
 
@@ -83,24 +83,24 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test C_COMPILES_SSE3_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2636a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2636a.dir/build.make CMakeFiles/cmTC_2636a.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2636a.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_SSE3_1   -o CMakeFiles/cmTC_2636a.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_f763b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f763b.dir/build.make CMakeFiles/cmTC_f763b.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f763b.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_SSE3_1   -o CMakeFiles/cmTC_f763b.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/pmmintrin.h:110:1: error: inlining failed in call to always_inline ‘_mm_lddqu_si128’: target specific option mismatch
  _mm_lddqu_si128 (__m128i const *__P)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
      a = _mm_lddqu_si128( (const __m128i*)vals );
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_2636a.dir/build.make:66: CMakeFiles/cmTC_2636a.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2636a/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_f763b.dir/build.make:66: CMakeFiles/cmTC_f763b.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f763b/fast] Error 2
 
 Source file was:
 
@@ -113,31 +113,31 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test C_HAS_SSE4_1_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f34a7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f34a7.dir/build.make CMakeFiles/cmTC_f34a7.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f34a7.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_SSE4_1_1   -o CMakeFiles/cmTC_f34a7.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_e5fd5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5fd5.dir/build.make CMakeFiles/cmTC_e5fd5.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5fd5.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_SSE4_1_1   -o CMakeFiles/cmTC_e5fd5.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_f34a7.dir/build.make:66: CMakeFiles/cmTC_f34a7.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f34a7/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_e5fd5.dir/build.make:66: CMakeFiles/cmTC_e5fd5.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e5fd5/fast] Error 2
 
 ...and run output:
 
@@ -154,31 +154,31 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_SSE4_1_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ac1e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8ac1e.dir/build.make CMakeFiles/cmTC_8ac1e.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8ac1e.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_SSE4_1_1   -o CMakeFiles/cmTC_8ac1e.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_d47ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d47ae.dir/build.make CMakeFiles/cmTC_d47ae.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d47ae.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_SSE4_1_1   -o CMakeFiles/cmTC_d47ae.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_8ac1e.dir/build.make:66: CMakeFiles/cmTC_8ac1e.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_8ac1e/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d47ae.dir/build.make:66: CMakeFiles/cmTC_d47ae.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d47ae/fast] Error 2
 
 Source file was:
 
@@ -192,33 +192,33 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_SSE4_2_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e8839/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e8839.dir/build.make CMakeFiles/cmTC_e8839.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e8839.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_SSE4_2_1   -o CMakeFiles/cmTC_e8839.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+Run Build Command:"/usr/bin/make" "cmTC_d930f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d930f.dir/build.make CMakeFiles/cmTC_d930f.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d930f.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_SSE4_2_1   -o CMakeFiles/cmTC_d930f.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_e8839.dir/build.make:66: CMakeFiles/cmTC_e8839.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_e8839/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d930f.dir/build.make:66: CMakeFiles/cmTC_d930f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d930f/fast] Error 2
 
 ...and run output:
 
@@ -236,33 +236,33 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_SSE4_2_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ff6cf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ff6cf.dir/build.make CMakeFiles/cmTC_ff6cf.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ff6cf.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_SSE4_2_1   -o CMakeFiles/cmTC_ff6cf.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+Run Build Command:"/usr/bin/make" "cmTC_cf6ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf6ed.dir/build.make CMakeFiles/cmTC_cf6ed.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf6ed.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_SSE4_2_1   -o CMakeFiles/cmTC_cf6ed.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_ff6cf.dir/build.make:66: CMakeFiles/cmTC_ff6cf.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ff6cf/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_cf6ed.dir/build.make:66: CMakeFiles/cmTC_cf6ed.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cf6ed/fast] Error 2
 
 Source file was:
 
@@ -277,28 +277,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_AVX_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_df006/fast"
-/usr/bin/make -f CMakeFiles/cmTC_df006.dir/build.make CMakeFiles/cmTC_df006.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_df006.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX_1   -o CMakeFiles/cmTC_df006.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_0994d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0994d.dir/build.make CMakeFiles/cmTC_0994d.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0994d.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX_1   -o CMakeFiles/cmTC_0994d.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_set1_ps(0);
      ~~^~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:41,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avxintrin.h:1310:1: error: inlining failed in call to always_inline ‘_mm256_set1_ps’: target specific option mismatch
  _mm256_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_set1_ps(0);
          ^~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_df006.dir/build.make:66: CMakeFiles/cmTC_df006.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_df006/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_0994d.dir/build.make:66: CMakeFiles/cmTC_0994d.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0994d/fast] Error 2
 
 ...and run output:
 
@@ -314,28 +314,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_AVX_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_dd0a2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_dd0a2.dir/build.make CMakeFiles/cmTC_dd0a2.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dd0a2.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX_1   -o CMakeFiles/cmTC_dd0a2.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_e2cd8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e2cd8.dir/build.make CMakeFiles/cmTC_e2cd8.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2cd8.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX_1   -o CMakeFiles/cmTC_e2cd8.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_set1_ps(0);
      ~~^~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:41,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avxintrin.h:1310:1: error: inlining failed in call to always_inline ‘_mm256_set1_ps’: target specific option mismatch
  _mm256_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_set1_ps(0);
          ^~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_dd0a2.dir/build.make:66: CMakeFiles/cmTC_dd0a2.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_dd0a2/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_e2cd8.dir/build.make:66: CMakeFiles/cmTC_e2cd8.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e2cd8/fast] Error 2
 
 Source file was:
 
@@ -348,28 +348,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_AVX2_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_476b0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_476b0.dir/build.make CMakeFiles/cmTC_476b0.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_476b0.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX2_1   -o CMakeFiles/cmTC_476b0.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_36831/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36831.dir/build.make CMakeFiles/cmTC_36831.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36831.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX2_1   -o CMakeFiles/cmTC_36831.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_abs_epi16(a);
      ~~^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:43,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx2intrin.h:63:1: error: inlining failed in call to always_inline ‘_mm256_abs_epi16’: target specific option mismatch
  _mm256_abs_epi16 (__m256i __A)
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_abs_epi16(a);
          ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_476b0.dir/build.make:66: CMakeFiles/cmTC_476b0.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_476b0/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_36831.dir/build.make:66: CMakeFiles/cmTC_36831.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_36831/fast] Error 2
 
 ...and run output:
 
@@ -385,28 +385,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_AVX2_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b47c3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b47c3.dir/build.make CMakeFiles/cmTC_b47c3.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b47c3.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX2_1   -o CMakeFiles/cmTC_b47c3.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_bd639/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd639.dir/build.make CMakeFiles/cmTC_bd639.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd639.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX2_1   -o CMakeFiles/cmTC_bd639.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_abs_epi16(a);
      ~~^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:43,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx2intrin.h:63:1: error: inlining failed in call to always_inline ‘_mm256_abs_epi16’: target specific option mismatch
  _mm256_abs_epi16 (__m256i __A)
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_abs_epi16(a);
          ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_b47c3.dir/build.make:66: CMakeFiles/cmTC_b47c3.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b47c3/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_bd639.dir/build.make:66: CMakeFiles/cmTC_bd639.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bd639/fast] Error 2
 
 Source file was:
 
@@ -419,44 +419,44 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_AVX512F_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ee825/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ee825.dir/build.make CMakeFiles/cmTC_ee825.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ee825.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX512F_1   -o CMakeFiles/cmTC_ee825.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_10f41/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10f41.dir/build.make CMakeFiles/cmTC_10f41.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10f41.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX512F_1   -o CMakeFiles/cmTC_10f41.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512 a = _mm512_set1_ps(1.f);
             ^
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:11534:1: error: inlining failed in call to always_inline ‘_mm512_add_ps’: target specific option mismatch
  _mm512_add_ps (__m512 __A, __m512 __B)
  ^~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
      __m512 a = _mm512_set1_ps(1.f);
                 ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_ee825.dir/build.make:66: CMakeFiles/cmTC_ee825.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ee825/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_10f41.dir/build.make:66: CMakeFiles/cmTC_10f41.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_10f41/fast] Error 2
 
 ...and run output:
 
@@ -472,44 +472,44 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_AVX512F_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7d0a1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7d0a1.dir/build.make CMakeFiles/cmTC_7d0a1.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d0a1.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX512F_1   -o CMakeFiles/cmTC_7d0a1.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_af3ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af3ff.dir/build.make CMakeFiles/cmTC_af3ff.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af3ff.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX512F_1   -o CMakeFiles/cmTC_af3ff.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512 a = _mm512_set1_ps(1.f);
             ^
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:11534:1: error: inlining failed in call to always_inline ‘_mm512_add_ps’: target specific option mismatch
  _mm512_add_ps (__m512 __A, __m512 __B)
  ^~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
      __m512 a = _mm512_set1_ps(1.f);
                 ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_7d0a1.dir/build.make:66: CMakeFiles/cmTC_7d0a1.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_7d0a1/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_af3ff.dir/build.make:66: CMakeFiles/cmTC_af3ff.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_af3ff/fast] Error 2
 
 Source file was:
 
@@ -522,36 +522,36 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_AVX512BW_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6fa4e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6fa4e.dir/build.make CMakeFiles/cmTC_6fa4e.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6fa4e.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX512BW_1   -o CMakeFiles/cmTC_6fa4e.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_2bd5a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2bd5a.dir/build.make CMakeFiles/cmTC_2bd5a.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2bd5a.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_AVX512BW_1   -o CMakeFiles/cmTC_2bd5a.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
              ^~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:55,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bwintrin.h:1852:1: error: inlining failed in call to always_inline ‘_mm512_shuffle_epi8’: target specific option mismatch
  _mm512_shuffle_epi8 (__m512i __A, __m512i __B)
  ^~~~~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
      load = _mm512_shuffle_epi8(load, mask);
             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:79:1: error: inlining failed in call to always_inline ‘_mm512_set_epi64’: target specific option mismatch
  _mm512_set_epi64 (long long __A, long long __B, long long __C,
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_6fa4e.dir/build.make:66: CMakeFiles/cmTC_6fa4e.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_6fa4e/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_2bd5a.dir/build.make:66: CMakeFiles/cmTC_2bd5a.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2bd5a/fast] Error 2
 
 ...and run output:
 
@@ -568,36 +568,36 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_AVX512BW_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ccc9d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ccc9d.dir/build.make CMakeFiles/cmTC_ccc9d.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ccc9d.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX512BW_1   -o CMakeFiles/cmTC_ccc9d.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_ebd16/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebd16.dir/build.make CMakeFiles/cmTC_ebd16.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebd16.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_AVX512BW_1   -o CMakeFiles/cmTC_ebd16.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
              ^~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:55,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bwintrin.h:1852:1: error: inlining failed in call to always_inline ‘_mm512_shuffle_epi8’: target specific option mismatch
  _mm512_shuffle_epi8 (__m512i __A, __m512i __B)
  ^~~~~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
      load = _mm512_shuffle_epi8(load, mask);
             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:79:1: error: inlining failed in call to always_inline ‘_mm512_set_epi64’: target specific option mismatch
  _mm512_set_epi64 (long long __A, long long __B, long long __C,
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_ccc9d.dir/build.make:66: CMakeFiles/cmTC_ccc9d.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ccc9d/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ebd16.dir/build.make:66: CMakeFiles/cmTC_ebd16.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ebd16/fast] Error 2
 
 Source file was:
 
@@ -611,27 +611,27 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_HAS_CLFLUSHOPT_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_328f1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_328f1.dir/build.make CMakeFiles/cmTC_328f1.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_328f1.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_CLFLUSHOPT_1   -o CMakeFiles/cmTC_328f1.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
+Run Build Command:"/usr/bin/make" "cmTC_58cac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_58cac.dir/build.make CMakeFiles/cmTC_58cac.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58cac.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_HAS_CLFLUSHOPT_1   -o CMakeFiles/cmTC_58cac.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
      __builtin_ia32_clflushopt(&flush);
      ^~~~~~~~~~~~~~~~~~~~~~~~~
      __builtin_ia32_clflush
-Linking C executable cmTC_328f1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_328f1.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wextra -std=gnu11  -DC_HAS_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_328f1.dir/src.c.o  -o cmTC_328f1 
-/usr/bin/ld: CMakeFiles/cmTC_328f1.dir/src.c.o: in function `main':
+Linking C executable cmTC_58cac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58cac.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -std=gnu11  -DC_HAS_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_58cac.dir/src.c.o  -o cmTC_58cac 
+/usr/bin/ld: CMakeFiles/cmTC_58cac.dir/src.c.o: in function `main':
 src.c:(.text+0x1c): undefined reference to `__builtin_ia32_clflushopt'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_328f1.dir/build.make:87: cmTC_328f1] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_328f1/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_58cac.dir/build.make:87: cmTC_58cac] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_58cac/fast] Error 2
 
 ...and run output:
 
@@ -647,27 +647,27 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test C_COMPILES_CLFLUSHOPT_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a2b83/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a2b83.dir/build.make CMakeFiles/cmTC_a2b83.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a2b83.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_CLFLUSHOPT_1   -o CMakeFiles/cmTC_a2b83.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
+Run Build Command:"/usr/bin/make" "cmTC_ab2e9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab2e9.dir/build.make CMakeFiles/cmTC_ab2e9.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab2e9.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DC_COMPILES_CLFLUSHOPT_1   -o CMakeFiles/cmTC_ab2e9.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
      __builtin_ia32_clflushopt(&flush);
      ^~~~~~~~~~~~~~~~~~~~~~~~~
      __builtin_ia32_clflush
-Linking C executable cmTC_a2b83
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2b83.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wextra -std=gnu11  -DC_COMPILES_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_a2b83.dir/src.c.o  -o cmTC_a2b83 
-/usr/bin/ld: CMakeFiles/cmTC_a2b83.dir/src.c.o: in function `main':
+Linking C executable cmTC_ab2e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab2e9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -std=gnu11  -DC_COMPILES_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_ab2e9.dir/src.c.o  -o cmTC_ab2e9 
+/usr/bin/ld: CMakeFiles/cmTC_ab2e9.dir/src.c.o: in function `main':
 src.c:(.text+0x1c): undefined reference to `__builtin_ia32_clflushopt'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a2b83.dir/build.make:87: cmTC_a2b83] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a2b83/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ab2e9.dir/build.make:87: cmTC_ab2e9] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ab2e9/fast] Error 2
 
 Source file was:
 
@@ -680,24 +680,24 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_SSE3_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_54343/fast"
-/usr/bin/make -f CMakeFiles/cmTC_54343.dir/build.make CMakeFiles/cmTC_54343.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_54343.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_SSE3_1   -o CMakeFiles/cmTC_54343.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_f4944/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4944.dir/build.make CMakeFiles/cmTC_f4944.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4944.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_SSE3_1   -o CMakeFiles/cmTC_f4944.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/pmmintrin.h:110:1: error: inlining failed in call to always_inline ‘_mm_lddqu_si128’: target specific option mismatch
  _mm_lddqu_si128 (__m128i const *__P)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
      a = _mm_lddqu_si128( (const __m128i*)vals );
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_54343.dir/build.make:66: CMakeFiles/cmTC_54343.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_54343/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_f4944.dir/build.make:66: CMakeFiles/cmTC_f4944.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f4944/fast] Error 2
 
 ...and run output:
 
@@ -713,24 +713,24 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test CXX_COMPILES_SSE3_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f40fa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f40fa.dir/build.make CMakeFiles/cmTC_f40fa.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f40fa.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_SSE3_1   -o CMakeFiles/cmTC_f40fa.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_48667/fast"
+/usr/bin/make -f CMakeFiles/cmTC_48667.dir/build.make CMakeFiles/cmTC_48667.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48667.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_SSE3_1   -o CMakeFiles/cmTC_48667.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/pmmintrin.h:110:1: error: inlining failed in call to always_inline ‘_mm_lddqu_si128’: target specific option mismatch
  _mm_lddqu_si128 (__m128i const *__P)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:9: note: called from here
      a = _mm_lddqu_si128( (const __m128i*)vals );
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_f40fa.dir/build.make:66: CMakeFiles/cmTC_f40fa.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f40fa/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_48667.dir/build.make:66: CMakeFiles/cmTC_48667.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_48667/fast] Error 2
 
 Source file was:
 
@@ -743,31 +743,31 @@ Source file was:
     return 0;
   }
 Performing C SOURCE FILE Test CXX_HAS_SSE4_1_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f897a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f897a.dir/build.make CMakeFiles/cmTC_f897a.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f897a.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_SSE4_1_1   -o CMakeFiles/cmTC_f897a.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_d3912/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d3912.dir/build.make CMakeFiles/cmTC_d3912.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3912.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_SSE4_1_1   -o CMakeFiles/cmTC_d3912.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_f897a.dir/build.make:66: CMakeFiles/cmTC_f897a.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f897a/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d3912.dir/build.make:66: CMakeFiles/cmTC_d3912.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d3912/fast] Error 2
 
 ...and run output:
 
@@ -784,31 +784,31 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_SSE4_1_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_31dc7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_31dc7.dir/build.make CMakeFiles/cmTC_31dc7.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_31dc7.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_SSE4_1_1   -o CMakeFiles/cmTC_31dc7.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+Run Build Command:"/usr/bin/make" "cmTC_5b2f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5b2f3.dir/build.make CMakeFiles/cmTC_5b2f3.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b2f3.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_SSE4_1_1   -o CMakeFiles/cmTC_5b2f3.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-In file included from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+In file included from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:282:1: error: inlining failed in call to always_inline ‘_mm_max_epi8’: target specific option mismatch
  _mm_max_epi8 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:43: note: called from here
      __attribute__((unused)) __m128i res = _mm_max_epi8(a, b);
                                            ^~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_31dc7.dir/build.make:66: CMakeFiles/cmTC_31dc7.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_31dc7/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_5b2f3.dir/build.make:66: CMakeFiles/cmTC_5b2f3.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5b2f3/fast] Error 2
 
 Source file was:
 
@@ -822,33 +822,33 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_SSE4_2_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_da923/fast"
-/usr/bin/make -f CMakeFiles/cmTC_da923.dir/build.make CMakeFiles/cmTC_da923.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_da923.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_SSE4_2_1   -o CMakeFiles/cmTC_da923.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+Run Build Command:"/usr/bin/make" "cmTC_bfef0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bfef0.dir/build.make CMakeFiles/cmTC_bfef0.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bfef0.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_SSE4_2_1   -o CMakeFiles/cmTC_bfef0.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_da923.dir/build.make:66: CMakeFiles/cmTC_da923.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_da923/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_bfef0.dir/build.make:66: CMakeFiles/cmTC_bfef0.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bfef0/fast] Error 2
 
 ...and run output:
 
@@ -866,33 +866,33 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_SSE4_2_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a143b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a143b.dir/build.make CMakeFiles/cmTC_a143b.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a143b.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_SSE4_2_1   -o CMakeFiles/cmTC_a143b.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+Run Build Command:"/usr/bin/make" "cmTC_e72c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e72c5.dir/build.make CMakeFiles/cmTC_e72c5.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e72c5.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_SSE4_2_1   -o CMakeFiles/cmTC_e72c5.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/nmmintrin.h:31,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/smmintrin.h:796:1: error: inlining failed in call to always_inline ‘_mm_cmpgt_epi64’: target specific option mismatch
  _mm_cmpgt_epi64 (__m128i __X, __m128i __Y)
  ^~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:8:9: note: called from here
      c = _mm_cmpgt_epi64(a, b);
          ^~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_a143b.dir/build.make:66: CMakeFiles/cmTC_a143b.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a143b/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_e72c5.dir/build.make:66: CMakeFiles/cmTC_e72c5.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e72c5/fast] Error 2
 
 Source file was:
 
@@ -907,28 +907,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_AVX_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_70aa3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_70aa3.dir/build.make CMakeFiles/cmTC_70aa3.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_70aa3.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX_1   -o CMakeFiles/cmTC_70aa3.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_528c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_528c2.dir/build.make CMakeFiles/cmTC_528c2.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_528c2.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX_1   -o CMakeFiles/cmTC_528c2.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_set1_ps(0);
      ~~^~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:41,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avxintrin.h:1310:1: error: inlining failed in call to always_inline ‘_mm256_set1_ps’: target specific option mismatch
  _mm256_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_set1_ps(0);
          ^~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_70aa3.dir/build.make:66: CMakeFiles/cmTC_70aa3.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_70aa3/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_528c2.dir/build.make:66: CMakeFiles/cmTC_528c2.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_528c2/fast] Error 2
 
 ...and run output:
 
@@ -944,28 +944,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_AVX_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_720a7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_720a7.dir/build.make CMakeFiles/cmTC_720a7.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_720a7.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX_1   -o CMakeFiles/cmTC_720a7.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_f938d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f938d.dir/build.make CMakeFiles/cmTC_f938d.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f938d.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX_1   -o CMakeFiles/cmTC_f938d.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_set1_ps(0);
      ~~^~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:41,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avxintrin.h:1310:1: error: inlining failed in call to always_inline ‘_mm256_set1_ps’: target specific option mismatch
  _mm256_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_set1_ps(0);
          ^~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_720a7.dir/build.make:66: CMakeFiles/cmTC_720a7.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_720a7/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_f938d.dir/build.make:66: CMakeFiles/cmTC_f938d.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f938d/fast] Error 2
 
 Source file was:
 
@@ -978,28 +978,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_AVX2_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b7194/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b7194.dir/build.make CMakeFiles/cmTC_b7194.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b7194.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX2_1   -o CMakeFiles/cmTC_b7194.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_17d4e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17d4e.dir/build.make CMakeFiles/cmTC_17d4e.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17d4e.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX2_1   -o CMakeFiles/cmTC_17d4e.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_abs_epi16(a);
      ~~^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:43,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx2intrin.h:63:1: error: inlining failed in call to always_inline ‘_mm256_abs_epi16’: target specific option mismatch
  _mm256_abs_epi16 (__m256i __A)
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_abs_epi16(a);
          ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_b7194.dir/build.make:66: CMakeFiles/cmTC_b7194.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_b7194/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_17d4e.dir/build.make:66: CMakeFiles/cmTC_17d4e.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_17d4e/fast] Error 2
 
 ...and run output:
 
@@ -1015,28 +1015,28 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_AVX2_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_35ce0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_35ce0.dir/build.make CMakeFiles/cmTC_35ce0.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35ce0.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX2_1   -o CMakeFiles/cmTC_35ce0.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_21b5e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21b5e.dir/build.make CMakeFiles/cmTC_21b5e.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21b5e.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX2_1   -o CMakeFiles/cmTC_21b5e.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:7: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
      a = _mm256_abs_epi16(a);
      ~~^~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:43,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx2intrin.h:63:1: error: inlining failed in call to always_inline ‘_mm256_abs_epi16’: target specific option mismatch
  _mm256_abs_epi16 (__m256i __A)
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm256_abs_epi16(a);
          ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_35ce0.dir/build.make:66: CMakeFiles/cmTC_35ce0.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_35ce0/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_21b5e.dir/build.make:66: CMakeFiles/cmTC_21b5e.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_21b5e/fast] Error 2
 
 Source file was:
 
@@ -1049,44 +1049,44 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_AVX512F_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ec3da/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ec3da.dir/build.make CMakeFiles/cmTC_ec3da.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ec3da.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX512F_1   -o CMakeFiles/cmTC_ec3da.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_c4948/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4948.dir/build.make CMakeFiles/cmTC_c4948.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4948.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX512F_1   -o CMakeFiles/cmTC_c4948.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512 a = _mm512_set1_ps(1.f);
             ^
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:11534:1: error: inlining failed in call to always_inline ‘_mm512_add_ps’: target specific option mismatch
  _mm512_add_ps (__m512 __A, __m512 __B)
  ^~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
      __m512 a = _mm512_set1_ps(1.f);
                 ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_ec3da.dir/build.make:66: CMakeFiles/cmTC_ec3da.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ec3da/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_c4948.dir/build.make:66: CMakeFiles/cmTC_c4948.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c4948/fast] Error 2
 
 ...and run output:
 
@@ -1102,44 +1102,44 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_AVX512F_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3a31c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3a31c.dir/build.make CMakeFiles/cmTC_3a31c.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3a31c.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX512F_1   -o CMakeFiles/cmTC_3a31c.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_2928f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2928f.dir/build.make CMakeFiles/cmTC_2928f.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2928f.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX512F_1   -o CMakeFiles/cmTC_2928f.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:12: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512 a = _mm512_set1_ps(1.f);
             ^
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:11534:1: error: inlining failed in call to always_inline ‘_mm512_add_ps’: target specific option mismatch
  _mm512_add_ps (__m512 __A, __m512 __B)
  ^~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:9: note: called from here
      a = _mm512_add_ps(a, _mm512_set1_ps(1.f));;
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:201:1: error: inlining failed in call to always_inline ‘_mm512_set1_ps’: target specific option mismatch
  _mm512_set1_ps (float __A)
  ^~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:16: note: called from here
      __m512 a = _mm512_set1_ps(1.f);
                 ^~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_3a31c.dir/build.make:66: CMakeFiles/cmTC_3a31c.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_3a31c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_2928f.dir/build.make:66: CMakeFiles/cmTC_2928f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2928f/fast] Error 2
 
 Source file was:
 
@@ -1152,36 +1152,36 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_AVX512BW_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a03e6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a03e6.dir/build.make CMakeFiles/cmTC_a03e6.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a03e6.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX512BW_1   -o CMakeFiles/cmTC_a03e6.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_62e80/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62e80.dir/build.make CMakeFiles/cmTC_62e80.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62e80.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_AVX512BW_1   -o CMakeFiles/cmTC_62e80.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
              ^~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:55,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bwintrin.h:1852:1: error: inlining failed in call to always_inline ‘_mm512_shuffle_epi8’: target specific option mismatch
  _mm512_shuffle_epi8 (__m512i __A, __m512i __B)
  ^~~~~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
      load = _mm512_shuffle_epi8(load, mask);
             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:79:1: error: inlining failed in call to always_inline ‘_mm512_set_epi64’: target specific option mismatch
  _mm512_set_epi64 (long long __A, long long __B, long long __C,
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_a03e6.dir/build.make:66: CMakeFiles/cmTC_a03e6.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a03e6/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_62e80.dir/build.make:66: CMakeFiles/cmTC_62e80.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_62e80/fast] Error 2
 
 ...and run output:
 
@@ -1198,36 +1198,36 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_AVX512BW_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2454b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2454b.dir/build.make CMakeFiles/cmTC_2454b.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2454b.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX512BW_1   -o CMakeFiles/cmTC_2454b.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+Run Build Command:"/usr/bin/make" "cmTC_b7625/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7625.dir/build.make CMakeFiles/cmTC_b7625.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7625.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_AVX512BW_1   -o CMakeFiles/cmTC_b7625.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:13: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
              ^~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:55,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512bwintrin.h:1852:1: error: inlining failed in call to always_inline ‘_mm512_shuffle_epi8’: target specific option mismatch
  _mm512_shuffle_epi8 (__m512i __A, __m512i __B)
  ^~~~~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:7:12: note: called from here
      load = _mm512_shuffle_epi8(load, mask);
             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /usr/lib/gcc/x86_64-linux-gnu/8/include/immintrin.h:45,
-                 from /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
+                 from /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:2:
 /usr/lib/gcc/x86_64-linux-gnu/8/include/avx512fintrin.h:79:1: error: inlining failed in call to always_inline ‘_mm512_set_epi64’: target specific option mismatch
  _mm512_set_epi64 (long long __A, long long __B, long long __C,
  ^~~~~~~~~~~~~~~~
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:5:20: note: called from here
      __m512i mask = _mm512_set_epi64(0, 0, 0, 0, 0, 0, 0, 0);
                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make[1]: *** [CMakeFiles/cmTC_2454b.dir/build.make:66: CMakeFiles/cmTC_2454b.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2454b/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_b7625.dir/build.make:66: CMakeFiles/cmTC_b7625.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b7625/fast] Error 2
 
 Source file was:
 
@@ -1241,27 +1241,27 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_HAS_CLFLUSHOPT_1 failed with the following compile output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bbd5b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bbd5b.dir/build.make CMakeFiles/cmTC_bbd5b.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bbd5b.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_CLFLUSHOPT_1   -o CMakeFiles/cmTC_bbd5b.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
+Run Build Command:"/usr/bin/make" "cmTC_dd22a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd22a.dir/build.make CMakeFiles/cmTC_dd22a.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd22a.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_HAS_CLFLUSHOPT_1   -o CMakeFiles/cmTC_dd22a.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
      __builtin_ia32_clflushopt(&flush);
      ^~~~~~~~~~~~~~~~~~~~~~~~~
      __builtin_ia32_clflush
-Linking C executable cmTC_bbd5b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbd5b.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wextra -std=gnu11  -DCXX_HAS_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_bbd5b.dir/src.c.o  -o cmTC_bbd5b 
-/usr/bin/ld: CMakeFiles/cmTC_bbd5b.dir/src.c.o: in function `main':
+Linking C executable cmTC_dd22a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd22a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -std=gnu11  -DCXX_HAS_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_dd22a.dir/src.c.o  -o cmTC_dd22a 
+/usr/bin/ld: CMakeFiles/cmTC_dd22a.dir/src.c.o: in function `main':
 src.c:(.text+0x1c): undefined reference to `__builtin_ia32_clflushopt'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_bbd5b.dir/build.make:87: cmTC_bbd5b] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_bbd5b/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_dd22a.dir/build.make:87: cmTC_dd22a] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_dd22a/fast] Error 2
 
 ...and run output:
 
@@ -1277,27 +1277,27 @@ Source file was:
   }
 
 Performing C SOURCE FILE Test CXX_COMPILES_CLFLUSHOPT_1 failed with the following output:
-Change Dir: /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp
+Change Dir: /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fe964/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fe964.dir/build.make CMakeFiles/cmTC_fe964.dir/build
-make[1]: Entering directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fe964.dir/src.c.o
-/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_CLFLUSHOPT_1   -o CMakeFiles/cmTC_fe964.dir/src.c.o   -c /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
+Run Build Command:"/usr/bin/make" "cmTC_1097f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1097f.dir/build.make CMakeFiles/cmTC_1097f.dir/build
+make[1]: Entering directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1097f.dir/src.c.o
+/usr/bin/cc   -Wall -Wextra -std=gnu11  -DCXX_COMPILES_CLFLUSHOPT_1   -o CMakeFiles/cmTC_1097f.dir/src.c.o   -c /home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp/src.c:6:5: warning: implicit declaration of function ‘__builtin_ia32_clflushopt’; did you mean ‘__builtin_ia32_clflush’? [-Wimplicit-function-declaration]
      __builtin_ia32_clflushopt(&flush);
      ^~~~~~~~~~~~~~~~~~~~~~~~~
      __builtin_ia32_clflush
-Linking C executable cmTC_fe964
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe964.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wextra -std=gnu11  -DCXX_COMPILES_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_fe964.dir/src.c.o  -o cmTC_fe964 
-/usr/bin/ld: CMakeFiles/cmTC_fe964.dir/src.c.o: in function `main':
+Linking C executable cmTC_1097f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1097f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -std=gnu11  -DCXX_COMPILES_CLFLUSHOPT_1  -Wl,--enable-new-dtags  CMakeFiles/cmTC_1097f.dir/src.c.o  -o cmTC_1097f 
+/usr/bin/ld: CMakeFiles/cmTC_1097f.dir/src.c.o: in function `main':
 src.c:(.text+0x1c): undefined reference to `__builtin_ia32_clflushopt'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_fe964.dir/build.make:87: cmTC_fe964] Error 1
-make[1]: Leaving directory '/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_fe964/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_1097f.dir/build.make:87: cmTC_1097f] Error 1
+make[1]: Leaving directory '/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1097f/fast] Error 2
 
 Source file was:
 

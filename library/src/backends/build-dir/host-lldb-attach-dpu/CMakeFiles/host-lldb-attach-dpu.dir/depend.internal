@@ -12,4 +12,4 @@ host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o
  ../host-lldb-attach-dpu/../api/include/lowlevel/dpu_management.h
  ../host-lldb-attach-dpu/../api/include/lowlevel/dpu_program.h
  ../host-lldb-attach-dpu/../api/include/lowlevel/dpu_target.h
- /home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c
+ /home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c

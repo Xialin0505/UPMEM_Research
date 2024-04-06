@@ -35,7 +35,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi.c.o
  ../ufi/include/ufi/ufi_ci_commands.h
  ../ufi/include/ufi/ufi_ci_types.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.o
  ../ufi/../api/include/api/dpu_error.h
  ../ufi/../api/include/api/dpu_macro_utils.h
@@ -66,7 +66,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_bit_config.c.o
  ../ufi/../verbose/src/verbose_profile.h
  ../ufi/include/ufi/ufi_ci_types.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_bit_config.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_bit_config.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.o
  ../ufi/../api/include/api/dpu_error.h
  ../ufi/../api/include/api/dpu_macro_utils.h
@@ -99,7 +99,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_ci.c.o
  ../ufi/include/ufi/ufi_ci_commands.h
  ../ufi/include/ufi/ufi_ci_types.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_ci.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_ci.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.o
  ../ufi/../api/include/api/dpu_error.h
  ../ufi/../api/include/api/dpu_macro_utils.h
@@ -138,7 +138,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_config.c.o
  ../ufi/include/ufi/ufi_config.h
  ../ufi/include/ufi/ufi_dma_wavegen_config.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_config.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_config.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.o
  ../ufi/../api/include/api/dpu.h
  ../ufi/../api/include/api/dpu_checkpoint.h
@@ -182,7 +182,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_debug.c.o
  ../ufi/include/ufi/ufi_config.h
  ../ufi/include/ufi/ufi_memory.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_debug.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_debug.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.o
  ../ufi/../api/include/api/dpu_error.h
  ../ufi/../api/include/api/dpu_macro_utils.h
@@ -215,7 +215,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_dma_wavegen_config.c.o
  ../ufi/include/ufi/ufi_ci_types.h
  ../ufi/include/ufi/ufi_dma_wavegen_config.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_dma_wavegen_config.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_dma_wavegen_config.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.o
  ../ufi/../api/include/api/dpu_error.h
  ../ufi/../api/include/api/dpu_macro_utils.h
@@ -250,7 +250,7 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_memory.c.o
  ../ufi/include/ufi/ufi_ci_types.h
  ../ufi/include/ufi/ufi_config.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_memory.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_memory.c
 ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.o
  ../ufi/../api/include/api/dpu_error.h
  ../ufi/../api/include/api/dpu_macro_utils.h
@@ -283,4 +283,4 @@ ufi/CMakeFiles/dpu-ufi.dir/src/ufi_runner.c.o
  ../ufi/include/ufi/ufi_ci_types.h
  ../ufi/include/ufi/ufi_config.h
  ../ufi/src/ufi_rank_utils.h
- /home/upmem0037/xialinl/research/libaray/src/backends/ufi/src/ufi_runner.c
+ /home/upmem0037/xialinl/research/library/src/backends/ufi/src/ufi_runner.c

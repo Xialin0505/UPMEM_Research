@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/upmem0037/xialinl/research/libaray/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c" "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o"
+  "/home/upmem0037/xialinl/research/library/src/backends/host-lldb-attach-dpu/lldb-attach-dpu.c" "/home/upmem0037/xialinl/research/library/src/backends/build-dir/host-lldb-attach-dpu/CMakeFiles/host-lldb-attach-dpu.dir/lldb-attach-dpu.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -37,8 +37,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/CMakeFiles/dpu.dir/DependInfo.cmake"
-  "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose/CMakeFiles/dpuverbose.dir/DependInfo.cmake"
+  "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api/CMakeFiles/dpu.dir/DependInfo.cmake"
+  "/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose/CMakeFiles/dpuverbose.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

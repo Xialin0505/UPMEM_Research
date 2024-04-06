@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/libaray/src/backends
+CMAKE_SOURCE_DIR = /home/upmem0037/xialinl/research/library/src/backends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/libaray/src/backends/build-dir
+CMAKE_BINARY_DIR = /home/upmem0037/xialinl/research/library/src/backends/build-dir
 
 # Utility rule file for gen_profile_header.
 
@@ -57,8 +57,8 @@ gen/CMakeFiles/gen_profile_header: gen/include/dpu_profile_properties.h
 
 
 gen/include/dpu_profile_properties.h: ../gen/gen_profile_files.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen/include/dpu_profile_properties.h from /home/upmem0037/xialinl/research/libaray/src/backends/gen/gen_profile_files.py"
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen && /usr/bin/python3.7 /home/upmem0037/xialinl/research/libaray/src/backends/gen/gen_profile_files.py defs /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen/include/dpu_profile_properties.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/upmem0037/xialinl/research/library/src/backends/build-dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen/include/dpu_profile_properties.h from /home/upmem0037/xialinl/research/library/src/backends/gen/gen_profile_files.py"
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen && /usr/bin/python3.7 /home/upmem0037/xialinl/research/library/src/backends/gen/gen_profile_files.py defs /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen/include/dpu_profile_properties.h
 
 gen_profile_header: gen/CMakeFiles/gen_profile_header
 gen_profile_header: gen/include/dpu_profile_properties.h
@@ -72,10 +72,10 @@ gen/CMakeFiles/gen_profile_header.dir/build: gen_profile_header
 .PHONY : gen/CMakeFiles/gen_profile_header.dir/build
 
 gen/CMakeFiles/gen_profile_header.dir/clean:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen && $(CMAKE_COMMAND) -P CMakeFiles/gen_profile_header.dir/cmake_clean.cmake
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen && $(CMAKE_COMMAND) -P CMakeFiles/gen_profile_header.dir/cmake_clean.cmake
 .PHONY : gen/CMakeFiles/gen_profile_header.dir/clean
 
 gen/CMakeFiles/gen_profile_header.dir/depend:
-	cd /home/upmem0037/xialinl/research/libaray/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/libaray/src/backends /home/upmem0037/xialinl/research/libaray/src/backends/gen /home/upmem0037/xialinl/research/libaray/src/backends/build-dir /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen /home/upmem0037/xialinl/research/libaray/src/backends/build-dir/gen/CMakeFiles/gen_profile_header.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/upmem0037/xialinl/research/library/src/backends/build-dir && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/upmem0037/xialinl/research/library/src/backends /home/upmem0037/xialinl/research/library/src/backends/gen /home/upmem0037/xialinl/research/library/src/backends/build-dir /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen /home/upmem0037/xialinl/research/library/src/backends/build-dir/gen/CMakeFiles/gen_profile_header.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gen/CMakeFiles/gen_profile_header.dir/depend
 

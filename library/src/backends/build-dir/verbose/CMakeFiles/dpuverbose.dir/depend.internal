@@ -6,23 +6,23 @@ verbose/CMakeFiles/dpuverbose.dir/src/static_verbose.c.o
  ../verbose/../api/include/lowlevel/dpu_target.h
  ../verbose/../commons/include/dpu_attributes.h
  ../verbose/../commons/include/dpu_helpers.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/static_verbose.c
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/static_verbose.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_config.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_control.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_profile.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/static_verbose.c
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/static_verbose.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_config.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_control.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_profile.h
 verbose/CMakeFiles/dpuverbose.dir/src/verbose_config.c.o
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_config.c
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_config.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_profile.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_config.c
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_config.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_profile.h
 verbose/CMakeFiles/dpuverbose.dir/src/verbose_control.c.o
  ../verbose/../api/include/api/dpu_types.h
  ../verbose/../api/include/lowlevel/dpu_target.h
  ../verbose/../commons/include/dpu_helpers.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_config.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_control.c
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_control.h
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_profile.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_config.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_control.c
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_control.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_profile.h
 verbose/CMakeFiles/dpuverbose.dir/src/verbose_profile.c.o
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_profile.c
- /home/upmem0037/xialinl/research/libaray/src/backends/verbose/src/verbose_profile.h
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_profile.c
+ /home/upmem0037/xialinl/research/library/src/backends/verbose/src/verbose_profile.h

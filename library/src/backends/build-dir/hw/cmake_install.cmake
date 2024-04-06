@@ -1,4 +1,4 @@
-# Install script for directory: /home/upmem0037/xialinl/research/libaray/src/backends/hw
+# Install script for directory: /home/upmem0037/xialinl/research/library/src/backends/hw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so.0.0"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/hw/libdpuhw.so.0.0")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/hw/libdpuhw.so.0.0")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so.0.0" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so.0.0")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so.0.0"
-         OLD_RPATH "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/vpd:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:"
+         OLD_RPATH "/home/upmem0037/xialinl/research/library/src/backends/build-dir/vpd:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so.0.0")
@@ -64,12 +64,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/hw/libdpuhw.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/hw/libdpuhw.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so"
-         OLD_RPATH "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/vpd:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:"
+         OLD_RPATH "/home/upmem0037/xialinl/research/library/src/backends/build-dir/vpd:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpuhw.so")

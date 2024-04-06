@@ -1,4 +1,4 @@
-# Install script for directory: /home/upmem0037/xialinl/research/libaray/src/backends/api
+# Install script for directory: /home/upmem0037/xialinl/research/library/src/backends/api
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so.0.0"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/libdpu.so.0.0")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api/libdpu.so.0.0")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so.0.0" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so.0.0")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so.0.0"
-         OLD_RPATH "/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:"
+         OLD_RPATH "/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so.0.0")
@@ -64,12 +64,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/libdpu.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api/libdpu.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so"
-         OLD_RPATH "/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:"
+         OLD_RPATH "/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpu.so")
@@ -84,12 +84,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so.0.0"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/libdpujni.so.0.0")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api/libdpujni.so.0.0")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so.0.0" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so.0.0")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so.0.0"
-         OLD_RPATH "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:"
+         OLD_RPATH "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so.0.0")
@@ -104,12 +104,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api/libdpujni.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api/libdpujni.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so"
-         OLD_RPATH "/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/api:/home/upmem0037/xialinl/research/libaray/src/backends/build-dir/verbose:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:"
+         OLD_RPATH "/home/upmem0037/xialinl/research/library/src/backends/build-dir/api:/home/upmem0037/xialinl/research/library/src/backends/build-dir/verbose:/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdpujni.so")
@@ -118,10 +118,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dpu" TYPE DIRECTORY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/api/include/lowlevel/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dpu" TYPE DIRECTORY FILES "/home/upmem0037/xialinl/research/library/src/backends/api/include/lowlevel/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dpu" TYPE DIRECTORY FILES "/home/upmem0037/xialinl/research/libaray/src/backends/api/include/api/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dpu" TYPE DIRECTORY FILES "/home/upmem0037/xialinl/research/library/src/backends/api/include/api/")
 endif()
 
