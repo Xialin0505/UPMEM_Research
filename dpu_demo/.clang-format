@@ -1,6 +1,0 @@
----
-BasedOnStyle: Webkit
-ColumnLimit: 130
-PointerAlignment: Right
-ForEachMacros: ['DPU_FOREACH', 'DPU_RANK_FOREACH']
-...
