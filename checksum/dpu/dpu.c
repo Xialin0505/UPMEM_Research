@@ -43,6 +43,8 @@
 
 __dma_aligned uint8_t DPU_CACHES[NR_TASKLETS][BLOCK_SIZE];
 __host dpu_results_t DPU_RESULTS;
+__host int finish_regular_work;
+__host int start_stealing;
 
 __mram_noinit uint8_t DPU_BUFFER[BUFFER_SIZE];
 
@@ -63,6 +65,7 @@ int main()
     uint8_t *cache = DPU_CACHES[tasklet_id];
     dpu_result_t *result = &DPU_RESULTS.tasklet_result[tasklet_id];
     uint32_t checksum = 0;
+    result->checksum = 0;
 
     uint32_t sum_arr[REPEAT_TIMES] = {0};
 
@@ -86,6 +89,8 @@ int main()
         checksum = 0;
     }
     
+    finish_regular_work = 1;
+
     if (isSame(sum_arr, REPEAT_TIMES)) { // check if same solution each time
         checksum = sum_arr[0];
     }

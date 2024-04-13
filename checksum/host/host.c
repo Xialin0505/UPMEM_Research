@@ -37,6 +37,13 @@
 
 static uint8_t test_file[BUFFER_SIZE];
 
+uint8_t* global_data;
+size_t length = BUFFER_SIZE;
+dpu_results_t results[NR_DPUS];
+int* abortInfo;
+struct dpu_set_t dpu_set;
+struct dpu_set_t dpu;
+
 /**
  * @brief creates a "test file"
  *
@@ -51,19 +58,29 @@ static uint32_t create_test_file()
         test_file[i] = (unsigned char)(rand());
         checksum += test_file[i];
     }
-
+    global_data = test_file;
     return checksum;
 }
 
-void host_test_func(uint8_t* data, uint32_t* output, size_t length) {
+void host_test_func(uint32_t index) {
     uint32_t checksum = 0;
     srand(0);
 
+    printf("restart %d\n", index);
+    // int each_dpu = 0;
+    // DPU_FOREACH (dpu_set, dpu, each_dpu) {
+    //     if (each_dpu == index)
+    //         DPU_ASSERT(dpu_prepare_xfer(dpu, &results[each_dpu]));
+    // }
+    // DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
+    // for (int i = 0; i < NR_TASKLETS; i++) {
+    //     printf("tasklet %d, checksum 0x%08x\n", i, results[index].tasklet_result[i].checksum);
+    // }
+
     for (unsigned int i = 0; i < length; i++) {
-        data[i] = (unsigned char)(rand());
-        checksum += data[i];
+        checksum += global_data[i];
     }
-    *output = checksum;
+    results[index].tasklet_result[0].checksum = checksum;
 }
 
 /**
@@ -71,7 +88,6 @@ void host_test_func(uint8_t* data, uint32_t* output, size_t length) {
  */
 int main()
 {
-    struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus;
     uint32_t theoretical_checksum, dpu_checksum;
     uint32_t dpu_cycles;
@@ -83,10 +99,13 @@ int main()
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
     printf("Allocated %d DPU(s)\n", nr_of_dpus);
 
+    int num_ranks;
+    dpu_get_nr_ranks(dpu_set, &num_ranks);
+    abortInfo = malloc(num_ranks * sizeof(int));
+
     uint32_t num_rank = 0;
     dpu_get_nr_ranks(dpu_set, &num_rank);
     printf("Allocated %d rank(s)\n", num_rank);
-    uint32_t* alter_result = malloc(num_rank * sizeof(uint32_t));
 
     // Create an "input file" with arbitrary data.
     // Compute its theoretical checksum value.
@@ -96,17 +115,18 @@ int main()
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, test_file, BUFFER_SIZE));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &host_test_func, test_file, alter_result, BUFFER_SIZE));
+    DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &host_test_func, abortInfo));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));
     }
 
     printf("Retrieve results\n");
-    dpu_results_t results[nr_of_dpus];
     uint32_t each_dpu;
     DPU_FOREACH (dpu_set, dpu, each_dpu) {
-        DPU_ASSERT(dpu_prepare_xfer(dpu, &results[each_dpu]));
+        if (!abortInfo[each_dpu]) {
+            DPU_ASSERT(dpu_prepare_xfer(dpu, &results[each_dpu]));
+        }
     }
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
@@ -122,9 +142,6 @@ int main()
             dpu_checksum += result->checksum;
             if (result->cycles > dpu_cycles) {
                 dpu_cycles = result->cycles;
-            } else if (result->cycles == 0) {
-                //host_test_func(test_file, &dpu_checksum, BUFFER_SIZE);
-                dpu_checksum = alter_result[each_dpu];
             }
         }
 
@@ -144,6 +161,6 @@ int main()
     }
 
     DPU_ASSERT(dpu_free(dpu_set));
-    free(alter_result);
+    free(abortInfo);
     return status ? 0 : -1;
 }

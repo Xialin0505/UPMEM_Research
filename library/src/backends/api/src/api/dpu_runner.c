@@ -37,15 +37,15 @@ struct preempt_info{
     int nr_rank;
     int nr_rank_threshold;
     short* rank_done;
+    short* prev_done;
     long long check_interval;
     long long* execution_times;
     struct timeval startTime;
     int num_done;
+    int* abort;
 
-    uint8_t* input;
-    size_t data_length;
-    uint32_t* output;
-    void (*host_func)(uint8_t*, uint32_t*, size_t);
+    // input, query, output, data length, index
+    void (*host_func)(uint32_t);
 };
 
 static struct preempt_info preempt;
@@ -91,6 +91,32 @@ static bool determine_struggle_dpu() {
 
     return false;
 }  
+
+static void each_rank_status_2() {
+    struct dpu_set_t dpu;
+    uint32_t each_dpu;
+
+    DPU_FOREACH(*(preempt.dpu_set), dpu, each_dpu)
+    {
+        DPU_ASSERT(dpu_prepare_xfer(dpu, &(preempt.rank_done[each_dpu])));
+    }
+    DPU_ASSERT(dpu_push_xfer(*(preempt.dpu_set), DPU_XFER_FROM_DPU, "finish_regular_work", 0, sizeof(int), DPU_XFER_DEFAULT));
+
+    for (int i = 0; i < preempt.nr_rank; i++) {
+        printf("dpu %d status %d %d\n", i, preempt.rank_done[i], preempt.prev_done[i]);
+        if (preempt.rank_done[i]) {
+            if (!preempt.prev_done[i]) {
+                long long elapsedTime = getElaspedTime();
+                preempt.prev_done[i] = 1;
+                preempt.execution_times[i] = elapsedTime;
+
+                preempt.avg_execution_dur = preempt.avg_execution_dur * preempt.num_done + elapsedTime;
+                preempt.num_done ++;
+                preempt.avg_execution_dur /= preempt.num_done;
+            }
+        }  
+    }
+}
 
 static void each_rank_status() {
     for (uint32_t each_rank = 0; each_rank < preempt.nr_rank; ++each_rank) {
@@ -141,19 +167,35 @@ void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
     preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
     preempt.dpu_set->list.ranks[rankIdx]->api.abort = true;
-    if (preempt.host_func != NULL) {
-        preempt.host_func(preempt.input, &(preempt.output[rankIdx]), preempt.data_length);
-    }
     dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
+    if (preempt.host_func != NULL) {
+        preempt.host_func(rankIdx);
+    }
 }
 
 void abort_struggling_dpus() {
     printf("abort_struggling_dpus\n"); 
     for (int i = 0; i < preempt.nr_rank; i++) {
         if (!preempt.rank_done[i]) {
+            preempt.abort[i] = 1;
             abort_struggling_dpu(i);
+        } else {
+            preempt.abort[i] = 0;
         }
     }
+}
+
+void enable_stealing() {
+    printf("enable_stealing\n");
+    int stealing = 1;
+    struct dpu_set_t dpu;
+    uint32_t each_dpu;
+
+    DPU_FOREACH(*(preempt.dpu_set), dpu, each_dpu)
+    {
+        DPU_ASSERT(dpu_prepare_xfer(dpu, &(stealing)));
+    }
+    DPU_ASSERT(dpu_push_xfer(*(preempt.dpu_set), DPU_XFER_TO_DPU, "start_stealing", 0, sizeof(int), DPU_XFER_DEFAULT));
 }
 
 void * dpu_poll_status(void * arg) {
@@ -171,19 +213,20 @@ void * dpu_poll_status(void * arg) {
         if (determine_struggle_dpu()) {
             abort = true;
             sync->stop_polling = true;
+            break;
         }
     }
 
     if (abort) {
         abort_struggling_dpus();
+        // enable_stealing();
     }
-
     return NULL;
 }
 
 static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync * sync,
-                            void (*host_func)(uint8_t*, uint32_t*, size_t),
-                            uint8_t* input, uint32_t* output, size_t length) {
+                            void (*host_func)(uint32_t), int* abort) {
+    // dpu_get_nr_dpus(*dpu_set, &preempt.nr_rank);
     preempt.nr_rank = sync->nr_ranks;
     preempt.check_interval = 50000000L;
     preempt.dpu_set = dpu_set;
@@ -191,14 +234,14 @@ static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync 
     preempt.avg_execution_dur = 0;
     preempt.nr_rank_threshold = RANK_THRESHOLD * preempt.nr_rank;
     preempt.host_func = host_func;
-    preempt.input = input;
-    preempt.data_length = length;
-    preempt.output = output;
+    preempt.abort = abort;
 
     preempt.execution_times = malloc(sizeof(long long) * preempt.nr_rank);
     memset(preempt.execution_times, 0, sizeof(long long) * preempt.nr_rank);
     preempt.rank_done = malloc(sizeof(short) * preempt.nr_rank);
     memset(preempt.rank_done, 0, sizeof(short) * preempt.nr_rank);
+    preempt.prev_done = malloc(sizeof(short) * preempt.nr_rank);
+    memset(preempt.prev_done, 0, sizeof(short) * preempt.nr_rank);
 
     sync->stop_polling = false;
     int ret = pthread_create(&preempt.preempt_thread, NULL, dpu_poll_status, (void*)sync);
@@ -206,15 +249,16 @@ static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync 
 
 static void clean_preempt(struct dpu_thread_job_sync * sync) {
     sync->stop_polling = true;
+    sync->nr_ranks = 0;
     pthread_join(preempt.preempt_thread, NULL);
     free(preempt.execution_times);
     free(preempt.rank_done);
+    free(preempt.prev_done);
 }
 
 __API_SYMBOL__ dpu_error_t
 dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
-                    void (*host_func)(uint8_t*, uint32_t*, size_t), 
-                    uint8_t* input, uint32_t* output, size_t length)
+                    void (*host_func)(uint32_t), int* abort)
 {
     dpu_error_t status = DPU_OK;
     LOG_FN(DEBUG, "%s", dpu_launch_policy_to_string(policy));
@@ -253,7 +297,7 @@ dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
         }
     });
 
-    init_preempt(&dpu_set, &sync, host_func, input, output, length);
+    init_preempt(&dpu_set, &sync, host_func, abort);
     status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
     clean_preempt(&sync);
 
@@ -300,7 +344,7 @@ dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy)
         }
     });
 
-    init_preempt(&dpu_set, &sync, NULL, NULL, NULL, 0);
+    init_preempt(&dpu_set, &sync, NULL, NULL);
     status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
     clean_preempt(&sync);
 
