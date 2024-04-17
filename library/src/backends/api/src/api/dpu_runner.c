@@ -20,6 +20,8 @@
 #include <time.h>
 #include <sys/time.h>
 
+#include <dpu_program.h>
+
 #define RANK_THRESHOLD 0.4
 #define EXECUTION_WINDOW 0.02
 
@@ -118,6 +120,17 @@ static void each_rank_status_2() {
     }
 }
 
+void get_result(int rankidx) {
+	struct dpu_program_t *program;
+    struct dpu_symbol_t symbol;
+
+    struct dpu_t* dpu = preempt.dpu_set->list.ranks[rankidx]->dpus;
+    program = dpu_get_program(dpu);
+    dpu_get_symbol(program, "DPU_RESULTS", &symbol);
+    dpu_get_symbol(program, "DPU_RESULTS", &symbol);
+	printf("result pointer %d\n", symbol.address);
+}
+
 static void each_rank_status() {
     for (uint32_t each_rank = 0; each_rank < preempt.nr_rank; ++each_rank) {
         dpu_error_t status;
@@ -165,9 +178,11 @@ static void print_rank_status() {
 
 void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
+    get_result(rankIdx);
     preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
     preempt.dpu_set->list.ranks[rankIdx]->api.abort = true;
-    dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
+    dpu_thread_advance_to_next_job(preempt.dpu_set->list.ranks[rankIdx]);
+    // dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
     if (preempt.host_func != NULL) {
         preempt.host_func(rankIdx);
     }

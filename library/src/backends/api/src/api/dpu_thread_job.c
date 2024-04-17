@@ -83,7 +83,7 @@ dpu_thread_insert_rank_list(struct dpu_thread_job *first_job, uint32_t queue_idx
     }
 }
 
-static struct dpu_thread_job *
+struct dpu_thread_job *
 dpu_thread_advance_to_next_job(struct dpu_rank_t *rank)
 {
     struct dpu_thread_job *job;

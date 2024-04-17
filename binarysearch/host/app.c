@@ -20,6 +20,7 @@
 
 #include "params.h"
 #include "timer.h"
+#include <dpu_program.h>
 
 // Define the DPU Binary path as DPU_BINARY here
 #define DPU_BINARY "./bin/bs_dpu"
@@ -27,9 +28,10 @@
 DTYPE* global_input;
 DTYPE* global_query;
 DTYPE global_input_size;
-DTYPE number_query;
+uint64_t number_query;
 dpu_results_t* results_retrieve[NR_DPUS];
 int* abortInfo;
+struct dpu_set_t dpu_set, dpu;
  
 // Create input arrays
 void create_test_file(DTYPE * input, DTYPE * querys, uint64_t  nr_elements, uint64_t nr_querys) {
@@ -38,14 +40,16 @@ void create_test_file(DTYPE * input, DTYPE * querys, uint64_t  nr_elements, uint
 	for (uint64_t i = 1; i < nr_elements; i++) {
 		input[i] = input[i - 1] + 1;
 	}
-	for (uint64_t i = 0; i < nr_querys / 3; i++) {
-		querys[i] = 0;
+
+	uint64_t interval = nr_querys / 3;
+	for (uint64_t i = 0; i < interval; i++) {
+		querys[i] = 1;
 	}
-    for (uint64_t i = 0; i < nr_querys / 3; i++) {
+    for (uint64_t i = interval; i < interval * 2; i++) {
         querys[i] = nr_elements - 1;
     }
 
-    for (uint64_t i = 0; i < nr_querys / 3; i++) {
+    for (uint64_t i = interval * 2; i < nr_querys; i++) {
         querys[i] = i;
     }
 
@@ -79,10 +83,10 @@ int64_t binarySearch(DTYPE * input, DTYPE * querys, DTYPE input_size, uint64_t n
 	return result;
 }
 
-
 void binarySearchHost(uint32_t dpu_index)
 {
 	printf("restart dpu %d job\n", dpu_index);
+	
 	DTYPE r;
 	uint64_t slice = number_query / NR_DPUS;
 	uint64_t start = dpu_index * slice;
@@ -112,7 +116,7 @@ void binarySearchHost(uint32_t dpu_index)
 				r = m - 1;
 			}
 			results_retrieve[dpu_index][i].found = result;
-			printf("dpu %d, tasklet %d, found %d\n", dpu_index, i, result);
+			// printf("dpu %d, tasklet %d, found %d\n", dpu_index, i, result);
 		}
 	}
 }
@@ -122,7 +126,6 @@ void binarySearchHost(uint32_t dpu_index)
 int main(int argc, char **argv) {
 
 	struct Params p = input_params(argc, argv);
-	struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 	uint64_t input_size = INPUT_SIZE;
 	uint64_t num_querys = QUERY_SIZE;
@@ -153,9 +156,14 @@ int main(int argc, char **argv) {
 
 	DTYPE * input  = malloc((input_size) * sizeof(DTYPE));
 	DTYPE * querys = malloc((num_querys) * sizeof(DTYPE));
+	number_query = num_querys;
 
 	// Create an input file with arbitrary data
 	create_test_file(input, querys, input_size, num_querys);
+	global_input = input;
+	global_query = querys;
+	global_input_size = input_size;
+
 
 	// Compute host solution
 	start(&timer, 0, 0);
@@ -171,7 +179,7 @@ int main(int argc, char **argv) {
 		// Perform input transfers
 		uint64_t i = 0;
 
-		if (rep >= p.n_warmup)
+		//if (rep >= p.n_warmup)
 		start(&timer, 1, rep - p.n_warmup);
 
 		DPU_FOREACH(dpu_set, dpu, i)
@@ -199,17 +207,17 @@ int main(int argc, char **argv) {
 
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, input_size * sizeof(DTYPE), slice_per_dpu * sizeof(DTYPE), DPU_XFER_DEFAULT));
 
-		if (rep >= p.n_warmup)
+		//if (rep >= p.n_warmup)
 		stop(&timer, 1);
 
 		// Run kernel on DPUs
-		if (rep >= p.n_warmup)
-		{
+		// if (rep >= p.n_warmup)
+		// {
 			start(&timer, 2, rep - p.n_warmup);
 			#if ENERGY
 			DPU_ASSERT(dpu_probe_start(&probe));
 			#endif
-		}
+		//}
 
 		i = 0;
 		DPU_FOREACH(dpu_set, dpu, i)
@@ -217,16 +225,16 @@ int main(int argc, char **argv) {
 			results_retrieve[i] = (dpu_results_t*)malloc(NR_TASKLETS * sizeof(dpu_results_t));
 		}
 
-		//DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &binarySearchHost));
+		// DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
 		DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &binarySearchHost, abortInfo));
 
-		if (rep >= p.n_warmup)
-		{
+		// if (rep >= p.n_warmup)
+		// {
 			stop(&timer, 2);
 			#if ENERGY
 			DPU_ASSERT(dpu_probe_stop(&probe));
 			#endif
-		}
+		//}
 		// Print logs if required
 		#if PRINT
 		unsigned int each_dpu = 0;
@@ -240,7 +248,7 @@ int main(int argc, char **argv) {
 		#endif
 
 		// Retrieve results
-		if (rep >= p.n_warmup)
+		//if (rep >= p.n_warmup)
 		start(&timer, 3, rep - p.n_warmup);
 		i = 0;
 		DPU_FOREACH(dpu_set, dpu, i)
@@ -256,30 +264,27 @@ int main(int argc, char **argv) {
 		{
 			for(unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++)
 			{
-				if(results_retrieve[i][each_tasklet].found > result_dpu)
-				{
-					result_dpu = results_retrieve[i][each_tasklet].found;
-					printf("result_dpu %d, result_host %d\n", result_dpu, result_host);
-					status = (result_dpu == result_host);
-					if (status) {
-						break;
-					}
+				result_dpu = results_retrieve[i][each_tasklet].found;
+				// printf("result_dpu %d, result_host %d\n", result_dpu, result_host);
+				status = (result_dpu == result_host);
+				if (status) {
+					break;
 				}
 			}
 			free(results_retrieve[i]);
 		}
-		if(rep >= p.n_warmup)
+		//if(rep >= p.n_warmup)
 		stop(&timer, 3);
 	}
 	// Print timing results
 	printf("CPU Version Time (ms): ");
-	print(&timer, 0, p.n_reps);
+	print(&timer, 0, p.n_warmup);
 	printf("CPU-DPU Time (ms): ");
-	print(&timer, 1, p.n_reps);
+	print(&timer, 1, p.n_warmup);
 	printf("DPU Kernel Time (ms): ");
-	print(&timer, 2, p.n_reps);
+	print(&timer, 2, p.n_warmup);
 	printf("DPU-CPU Time (ms): ");
-	print(&timer, 3, p.n_reps);
+	print(&timer, 3, p.n_warmup);
 
 	#if ENERGY
 	double energy;

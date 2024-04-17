@@ -392,6 +392,8 @@ dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
 
 // void (*host_func)(uint8_t*, uint32_t*, size_t), 
 //                     uint8_t* input, uint32_t* output, size_t length
+struct dpu_thread_job *
+dpu_thread_advance_to_next_job(struct dpu_rank_t *rank);
 
 dpu_error_t
 dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy);

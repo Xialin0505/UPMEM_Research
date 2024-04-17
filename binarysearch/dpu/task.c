@@ -14,8 +14,6 @@
 
 __host dpu_arguments_t DPU_INPUT_ARGUMENTS;
 __host dpu_results_t DPU_RESULTS[NR_TASKLETS];
-__host int start_stealing = 0;
-__host int finish_regular_work = 0;
 
 // Search
 static DTYPE search(DTYPE *bufferA, DTYPE searching_for) {
@@ -43,10 +41,6 @@ int(*kernels[nr_kernels])(void) = {main_kernel1};
 int main(void){
   // Kernel
   return kernels[DPU_INPUT_ARGUMENTS.kernel]();
-}
-
-void steal_others() {
-
 }
 
 // main_kernel1
@@ -151,16 +145,9 @@ int main_kernel1() {
         if(found > -1)
         {
           result->found = found + (current_mram_block_addr_A - start_mram_block_addr_aux) / sizeof(DTYPE);
-        } else {
-          result->found = -1;
         }
       }
     }
   }
-
-  finish_regular_work = 1;
-  // while(!start_stealing) {}
-  // printf("start stealing\n");
-  // for (uint64_t i = 0; i < 10000000000; i++){};
   return 0;
 }

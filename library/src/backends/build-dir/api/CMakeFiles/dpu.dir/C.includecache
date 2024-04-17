@@ -220,6 +220,18 @@ dpu_error.h
 dpu_types.h
 -
 
+../api/include/lowlevel/dpu_program.h
+stdint.h
+-
+stdbool.h
+-
+dpu_types.h
+-
+dpu_error.h
+-
+dpu_elf.h
+-
+
 ../api/include/lowlevel/dpu_runner.h
 pthread.h
 -
@@ -302,5 +314,7 @@ unistd.h
 time.h
 -
 sys/time.h
+-
+dpu_program.h
 -
 

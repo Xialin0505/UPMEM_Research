@@ -610,6 +610,7 @@ api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_elf.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_hw_description.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_management.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_profiler.h
+api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_program.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_runner.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_target.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_transfer_matrix.h
