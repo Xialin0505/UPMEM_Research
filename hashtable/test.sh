@@ -3,4 +3,4 @@
 bash link.sh
 make clean
 make
-./build/checksum_host
+./build/hashtable_host
