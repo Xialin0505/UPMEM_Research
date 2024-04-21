@@ -253,19 +253,21 @@ int main(int argc, char **argv) {
 		i = 0;
 		DPU_FOREACH(dpu_set, dpu, i)
 		{
-			if (!abortInfo[i]) {
+			//if (!abortInfo[i]) {
             	DPU_ASSERT(dpu_prepare_xfer(dpu, results_retrieve[i]));
-        	}
+        	//}
 		}
 
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, "DPU_RESULTS", 0, NR_TASKLETS * sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
 		DPU_FOREACH(dpu_set, dpu, i)
 		{
+			printf("dpu %d\n", i);
 			for(unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++)
 			{
 				result_dpu = results_retrieve[i][each_tasklet].found;
-				// printf("result_dpu %d, result_host %d\n", result_dpu, result_host);
+				printf("tasklet %d, idx %d\n", results_retrieve[i][each_tasklet].workingIdx);
+				printf("result_dpu %d, result_host %d\n", result_dpu, result_host);
 				status = (result_dpu == result_host);
 				if (status) {
 					break;

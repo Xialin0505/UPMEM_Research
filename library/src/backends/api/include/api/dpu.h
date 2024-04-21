@@ -17,6 +17,7 @@
 #include <dpu_error.h>
 #include <dpu_types.h>
 #include <dpu_macro_utils.h>
+#include <dpu_rank.h>
 
 /**
  * @mainpage
@@ -395,8 +396,11 @@ dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
 struct dpu_thread_job *
 dpu_thread_advance_to_next_job(struct dpu_rank_t *rank);
 
+void
+do_sync_job(struct dpu_thread_job_sync *sync);
+
 dpu_error_t
-dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy);
+dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, int* abort);
 
 /**
  * @brief Request the boot of all the DPUs in a DPU set.

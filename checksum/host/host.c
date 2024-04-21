@@ -67,15 +67,6 @@ void host_test_func(uint32_t index) {
     srand(0);
 
     printf("restart %d\n", index);
-    // int each_dpu = 0;
-    // DPU_FOREACH (dpu_set, dpu, each_dpu) {
-    //     if (each_dpu == index)
-    //         DPU_ASSERT(dpu_prepare_xfer(dpu, &results[each_dpu]));
-    // }
-    // DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
-    // for (int i = 0; i < NR_TASKLETS; i++) {
-    //     printf("tasklet %d, checksum 0x%08x\n", i, results[index].tasklet_result[i].checksum);
-    // }
 
     for (unsigned int i = 0; i < length; i++) {
         checksum += global_data[i];
@@ -115,7 +106,7 @@ int main()
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, test_file, BUFFER_SIZE));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &host_test_func, abortInfo));
+    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS, abortInfo));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));
@@ -124,9 +115,9 @@ int main()
     printf("Retrieve results\n");
     uint32_t each_dpu;
     DPU_FOREACH (dpu_set, dpu, each_dpu) {
-        if (!abortInfo[each_dpu]) {
+        //if (!abortInfo[each_dpu]) {
             DPU_ASSERT(dpu_prepare_xfer(dpu, &results[each_dpu]));
-        }
+        //}
     }
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
@@ -138,7 +129,7 @@ int main()
         // Retrieve tasklet results and compute the final checksum.
         for (unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++) {
             dpu_result_t *result = &results[each_dpu].tasklet_result[each_tasklet];
-
+            // printf("dpu %d, tasklet %d, result 0x%08x\n", each_dpu, each_tasklet, result->checksum);
             dpu_checksum += result->checksum;
             if (result->cycles > dpu_cycles) {
                 dpu_cycles = result->cycles;

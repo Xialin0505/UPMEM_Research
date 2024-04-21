@@ -257,8 +257,10 @@ dpu_sync_rank(struct dpu_rank_t *rank)
     dpu_error_t status = DPU_OK;
     dpu_run_context_t run_context = dpu_get_run_context(rank);
     dpu_bitfield_t dpu_in_fault[DPU_MAX_NR_CIS] = { 0 };
-    while (run_context->nb_dpu_running != 0 && (status == DPU_OK || status == DPU_ERR_DPU_FAULT)) {
+    while (run_context->nb_dpu_running > 0 && (status == DPU_OK || status == DPU_ERR_DPU_FAULT)) {
+        printf("rank %p, nb_dpu_running %d\n", rank, run_context->nb_dpu_running);
         pthread_cond_wait(&rank->api.poll_cond, &rank->mutex);
+        printf("rank %p, nb_dpu_running %d\n", rank, run_context->nb_dpu_running);
         status = dpu_check_fault_rank(rank, dpu_in_fault, status);
     }
     status = dpu_check_fault_rank(rank, dpu_in_fault, status);
@@ -266,7 +268,6 @@ dpu_sync_rank(struct dpu_rank_t *rank)
     if (status == DPU_OK) {
         status = dpu_custom_for_rank(rank, DPU_COMMAND_ALL_POSTEXECUTION, NULL);
     }
-
     return status;
 }
 

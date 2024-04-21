@@ -128,7 +128,7 @@ dpu_thread_handle_global_block(struct dpu_rank_t *rank, struct dpu_rank_t **rank
     }
 }
 
-static void
+void
 do_sync_job(struct dpu_thread_job_sync *sync)
 {
     if (__sync_sub_and_fetch(&sync->nr_ranks, 1) == 0) {

@@ -84,6 +84,8 @@ int main()
             for (uint32_t cache_idx = 0; cache_idx < BLOCK_SIZE; cache_idx++) {
                 checksum += cache[cache_idx];
             }
+            result->cycles = (uint32_t)perfcounter_get();
+            result->checksum = checksum;
         }
         sum_arr[i] = checksum;
         checksum = 0;

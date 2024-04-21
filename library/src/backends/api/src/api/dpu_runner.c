@@ -15,6 +15,7 @@
 #include <dpu_thread_job.h>
 #include <dpu_mask.h>
 #include <dpu_config.h>
+#include <dpu_internals.h>
 
 #include <unistd.h>
 #include <time.h>
@@ -25,15 +26,10 @@
 #define RANK_THRESHOLD 0.4
 #define EXECUTION_WINDOW 0.02
 
-#define STOPci(cc, pc)                                                                                                           \
-    ((dpuinstruction_t)(0x7ef320000000l | (((((dpuinstruction_t)cc) >> 0) & 0xf) << 24)                                          \
-        | (((((dpuinstruction_t)pc) >> 0) & 0xffff) << 0)))
-
-#define BOOT_CC_TRUE (1)
-
 struct preempt_info{
     pthread_t preempt_thread;
     struct dpu_set_t* dpu_set;
+    struct dpu_thread_job_sync* sync;
 
     long long avg_execution_dur;
     int nr_rank;
@@ -120,17 +116,6 @@ static void each_rank_status_2() {
     }
 }
 
-void get_result(int rankidx) {
-	struct dpu_program_t *program;
-    struct dpu_symbol_t symbol;
-
-    struct dpu_t* dpu = preempt.dpu_set->list.ranks[rankidx]->dpus;
-    program = dpu_get_program(dpu);
-    dpu_get_symbol(program, "DPU_RESULTS", &symbol);
-    dpu_get_symbol(program, "DPU_RESULTS", &symbol);
-	printf("result pointer %d\n", symbol.address);
-}
-
 static void each_rank_status() {
     for (uint32_t each_rank = 0; each_rank < preempt.nr_rank; ++each_rank) {
         dpu_error_t status;
@@ -176,13 +161,37 @@ static void print_rank_status() {
     printf("avg execution time %lld\n", preempt.avg_execution_dur);
 }
 
+void drain_each_dpu(int rankIdx) {
+    struct dpu_rank_t *rank = preempt.dpu_set->list.ranks[rankIdx];
+    uint8_t nr_dpus = preempt.dpu_set->list.ranks[rankIdx]->nr_dpus_enabled;
+
+    for (int each_dpu = 0; each_dpu < nr_dpus; ++each_dpu) {
+        struct dpu_t *dpu = rank->dpus + each_dpu;
+        struct dpu_context_t dpu_context;
+        dpu_context_fill_from_rank(&dpu_context, rank);
+        // drain_pipeline(dpu, &dpu_context, false);
+    }
+}
+
 void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
-    get_result(rankIdx);
-    preempt.dpu_set->list.ranks[rankIdx]->api.thread_info.should_stop = true;
-    preempt.dpu_set->list.ranks[rankIdx]->api.abort = true;
-    dpu_thread_advance_to_next_job(preempt.dpu_set->list.ranks[rankIdx]);
+    struct dpu_rank_t* rank = preempt.dpu_set->list.ranks[rankIdx];
+    
+    rank->api.thread_info.should_stop = true;
+    rank->api.abort = true;
+
+    dpu_run_context_t run_context = dpu_get_run_context(rank);
+    // run_context->nb_dpu_running = 0;
+    while (run_context->nb_dpu_running != 0) {
+        run_context->nb_dpu_running = 0;
+        pthread_cond_broadcast(&rank->api.poll_cond);
+    }
+    
+    // printf("advance next job\n");
     // dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
+    // drain_each_dpu(rankIdx);
+    // do_sync_job(preempt.sync);
+
     if (preempt.host_func != NULL) {
         preempt.host_func(rankIdx);
     }
@@ -250,6 +259,7 @@ static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync 
     preempt.nr_rank_threshold = RANK_THRESHOLD * preempt.nr_rank;
     preempt.host_func = host_func;
     preempt.abort = abort;
+    preempt.sync = sync;
 
     preempt.execution_times = malloc(sizeof(long long) * preempt.nr_rank);
     memset(preempt.execution_times, 0, sizeof(long long) * preempt.nr_rank);
@@ -320,7 +330,7 @@ dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
 }
 
 __API_SYMBOL__ dpu_error_t
-dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy)
+dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, int* abort)
 {
     dpu_error_t status = DPU_OK;
     LOG_FN(DEBUG, "%s", dpu_launch_policy_to_string(policy));
@@ -359,7 +369,7 @@ dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy)
         }
     });
 
-    init_preempt(&dpu_set, &sync, NULL, NULL);
+    init_preempt(&dpu_set, &sync, NULL, abort);
     status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
     clean_preempt(&sync);
 
