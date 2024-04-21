@@ -180,17 +180,13 @@ void abort_struggling_dpu(int rankIdx) {
     rank->api.thread_info.should_stop = true;
     rank->api.abort = true;
 
-    dpu_run_context_t run_context = dpu_get_run_context(rank);
-    // run_context->nb_dpu_running = 0;
-    while (run_context->nb_dpu_running != 0) {
-        run_context->nb_dpu_running = 0;
-        pthread_cond_broadcast(&rank->api.poll_cond);
-    }
-    
-    // printf("advance next job\n");
-    // dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
-    // drain_each_dpu(rankIdx);
-    // do_sync_job(preempt.sync);
+    // dpu_run_context_t run_context = dpu_get_run_context(rank);
+    // while (run_context->nb_dpu_running != 0) {
+    //     run_context->nb_dpu_running = 0;
+    //     pthread_cond_broadcast(&rank->api.poll_cond);
+    // }
+
+    dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
 
     if (preempt.host_func != NULL) {
         preempt.host_func(rankIdx);
