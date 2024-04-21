@@ -161,18 +161,6 @@ static void print_rank_status() {
     printf("avg execution time %lld\n", preempt.avg_execution_dur);
 }
 
-void drain_each_dpu(int rankIdx) {
-    struct dpu_rank_t *rank = preempt.dpu_set->list.ranks[rankIdx];
-    uint8_t nr_dpus = preempt.dpu_set->list.ranks[rankIdx]->nr_dpus_enabled;
-
-    for (int each_dpu = 0; each_dpu < nr_dpus; ++each_dpu) {
-        struct dpu_t *dpu = rank->dpus + each_dpu;
-        struct dpu_context_t dpu_context;
-        dpu_context_fill_from_rank(&dpu_context, rank);
-        // drain_pipeline(dpu, &dpu_context, false);
-    }
-}
-
 void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
     struct dpu_rank_t* rank = preempt.dpu_set->list.ranks[rankIdx];

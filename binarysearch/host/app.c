@@ -266,7 +266,6 @@ int main(int argc, char **argv) {
 			for(unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++)
 			{
 				result_dpu = results_retrieve[i][each_tasklet].found;
-				printf("tasklet %d, idx %d\n", results_retrieve[i][each_tasklet].workingIdx);
 				printf("result_dpu %d, result_host %d\n", result_dpu, result_host);
 				status = (result_dpu == result_host);
 				if (status) {
