@@ -121,6 +121,50 @@ void binarySearchHost(uint32_t dpu_index)
 	}
 }
 
+void host_func_resume() {
+	for (int dpu_index = 0; dpu_index < NR_DPUS; dpu_index++) {
+		if (!abortInfo[dpu_index]) {
+			continue;
+		}
+
+		for (int i = 0; i < NR_TASKLETS; i++) {
+			DTYPE r;
+			uint64_t slice = number_query / NR_DPUS;
+			uint64_t start = dpu_index * slice;
+			uint64_t interval = slice / NR_TASKLETS;
+
+
+			uint64_t q = results_retrieve[dpu_index][i].idx;
+			printf("dpu %d, tasklet %d, q %d\n", dpu_index, i, q);
+
+			for (; q < interval; q++) {
+				
+				uint64_t idx = start + i * interval + q;
+				uint64_t result = -1;
+				DTYPE l = 0;
+				r = global_input_size;
+				while (l <= r) {
+					DTYPE m = l + (r - l) / 2;
+
+					// Check if x is present at mid
+					if (global_input[m] == global_query[idx])
+					result = m;
+
+					// If x greater, ignore left half
+					if (global_input[m] < global_query[idx])
+					l = m + 1;
+
+					// If x is smaller, ignore right half
+					else
+					r = m - 1;
+				}
+				results_retrieve[dpu_index][i].found = result;
+				// printf("dpu %d, tasklet %d, found %d\n", dpu_index, i, result);
+			}
+		}
+	}
+}
+
 
 // Main of the Host Application
 int main(int argc, char **argv) {
@@ -226,7 +270,7 @@ int main(int argc, char **argv) {
 		}
 
 		// DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
-		DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &binarySearchHost, abortInfo));
+		DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS, abortInfo));
 
 		// if (rep >= p.n_warmup)
 		// {
@@ -260,13 +304,13 @@ int main(int argc, char **argv) {
 
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, "DPU_RESULTS", 0, NR_TASKLETS * sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
+		host_func_resume();
+
 		DPU_FOREACH(dpu_set, dpu, i)
 		{
-			printf("dpu %d\n", i);
 			for(unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++)
 			{
 				result_dpu = results_retrieve[i][each_tasklet].found;
-				printf("result_dpu %d, result_host %d\n", result_dpu, result_host);
 				status = (result_dpu == result_host);
 				if (status) {
 					break;

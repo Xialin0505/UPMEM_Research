@@ -148,6 +148,7 @@ int main_kernel1() {
         }
       }
     }
+    result->idx = targets;
   }
   return 0;
 }
