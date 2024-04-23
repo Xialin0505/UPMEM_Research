@@ -148,6 +148,8 @@ int main_kernel1() {
         }
       }
     }
+    
+    if (result->found > -1) result->found --;
     result->idx = targets;
   }
   return 0;

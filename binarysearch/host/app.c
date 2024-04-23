@@ -36,7 +36,7 @@ struct dpu_set_t dpu_set, dpu;
 // Create input arrays
 void create_test_file(DTYPE * input, DTYPE * querys, uint64_t  nr_elements, uint64_t nr_querys) {
 
-	input[0] = 1;
+	input[0] = 0;
 	for (uint64_t i = 1; i < nr_elements; i++) {
 		input[i] = input[i - 1] + 1;
 	}
@@ -135,7 +135,7 @@ void host_func_resume() {
 
 
 			uint64_t q = results_retrieve[dpu_index][i].idx;
-			printf("dpu %d, tasklet %d, q %d\n", dpu_index, i, q);
+			// printf("dpu %d, tasklet %d, q %d\n", dpu_index, i, q);
 
 			for (; q < interval; q++) {
 				
@@ -311,6 +311,7 @@ int main(int argc, char **argv) {
 			for(unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++)
 			{
 				result_dpu = results_retrieve[i][each_tasklet].found;
+				// printf("dpu %d, tasklet %d, result dpu %d, result host %d\n", i, each_tasklet, result_dpu, result_host);
 				status = (result_dpu == result_host);
 				if (status) {
 					break;
