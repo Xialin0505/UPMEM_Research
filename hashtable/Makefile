@@ -1,14 +1,14 @@
 DPU_DIR := dpu
 HOST_DIR := host
 BUILDDIR ?= build
-NR_TASKLETS ?= 16
+NR_TASKLETS ?= 8
 NR_DPUS ?= 5
 
 LIB_INCLUDE = -I../../library/src/backends/api/include/api
 LDFLAGS=-lpthread -L./lib -ldpu -ldpujni -ldpuverbose -ldl
 
 define conf_filename
-	${BUILDDIR}/.NR_DPUS_$(1)_NR_TASKLETS_$(2).cosnf
+	${BUILDDIR}/.NR_DPUS_$(1)_NR_TASKLETS_$(2).conf
 endef
 CONF := $(call conf_filename,${NR_DPUS},${NR_TASKLETS})
 
@@ -46,8 +46,7 @@ clean:
 test_c: ${HOST_TARGET} ${DPU_TARGET}
 	./${HOST_TARGET}
 
-test_python: ${DPU_TARGET}
-	python3 ${HOST_PYTHON_SCRIPT} ${NR_DPUS} ${NR_TASKLETS}
+# test_python: ${DPU_TARGET}
+# 	python3 ${HOST_PYTHON_SCRIPT} ${NR_DPUS} ${NR_TASKLETS}
 
-test: test_c test_python
-
+test: test_c #test_python

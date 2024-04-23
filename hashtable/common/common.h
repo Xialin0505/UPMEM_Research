@@ -14,11 +14,12 @@
 #include <string.h>
 #include <stdint.h>
 
-#define SIZE 50000
+#define SIZE (8 << 20)
 
 typedef struct {
     uint32_t hashtablesum;
     uint32_t cycles;
+    uint32_t idx;
 } dpu_result_t;
 
 typedef struct {

@@ -36,9 +36,6 @@
 
 #include "common.h"
 
-/* Use blocks of 256 bytes */
-#define BLOCK_SIZE (256)
-
 #define REPEAT_TIMES 10
 
 __dma_aligned uint8_t DPU_CACHES[NR_TASKLETS][BLOCK_SIZE];
@@ -66,6 +63,7 @@ int main()
     dpu_result_t *result = &DPU_RESULTS.tasklet_result[tasklet_id];
     uint32_t checksum = 0;
     result->checksum = 0;
+    uint32_t buffer_idx;
 
     uint32_t sum_arr[REPEAT_TIMES] = {0};
 
@@ -75,7 +73,8 @@ int main()
 
     /* xxxxxxxxxxxxxxx increase compute intensity by repeat checksum n times xxxxxxxxxxxxxxxxxxxxxxx*/
     for (uint32_t i = 0; i < REPEAT_TIMES; i++) {
-        for (uint32_t buffer_idx = tasklet_id * BLOCK_SIZE; buffer_idx < BUFFER_SIZE; buffer_idx += (NR_TASKLETS * BLOCK_SIZE)) {
+        buffer_idx = tasklet_id * BLOCK_SIZE;
+        for (; buffer_idx < BUFFER_SIZE; buffer_idx += (NR_TASKLETS * BLOCK_SIZE)) {
 
             /* load cache with current mram block. */
             mram_read(&DPU_BUFFER[buffer_idx], cache, BLOCK_SIZE);
@@ -86,6 +85,7 @@ int main()
             }
             result->cycles = (uint32_t)perfcounter_get();
             result->checksum = checksum;
+            result->idx = buffer_idx;
         }
         sum_arr[i] = checksum;
         checksum = 0;
@@ -105,6 +105,7 @@ int main()
     /* keep the 32-bit LSB on the 64-bit cycle counter */
     result->cycles = (uint32_t)perfcounter_get();
     result->checksum = checksum;
+    result->idx = buffer_idx;
 
     printf("[%02d] Checksum = 0x%08x\n", tasklet_id, result->checksum);
     return 0;

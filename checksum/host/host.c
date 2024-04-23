@@ -66,12 +66,37 @@ void host_test_func(uint32_t index) {
     uint32_t checksum = 0;
     srand(0);
 
-    printf("restart %d\n", index);
-
     for (unsigned int i = 0; i < length; i++) {
         checksum += global_data[i];
     }
     results[index].tasklet_result[0].checksum = checksum;
+}
+
+void host_func_resume() {
+    for (int i = 0; i < NR_DPUS; i++) {
+        if (!abortInfo[i]) {
+            // for (int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++) {
+            //     dpu_result_t *result = &results[i].tasklet_result[each_tasklet];
+            // }
+            continue;
+        }
+
+        for (int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++) {
+            dpu_result_t *result = &results[i].tasklet_result[each_tasklet];
+
+            uint32_t checksum = result->checksum;
+            uint32_t buffer_idx = result->idx + (NR_TASKLETS * BLOCK_SIZE);
+
+            for (; buffer_idx < BUFFER_SIZE; buffer_idx += (NR_TASKLETS * BLOCK_SIZE)) {
+
+                /* computes the checksum of a cached block */
+                for (uint32_t cache_idx = buffer_idx; cache_idx < buffer_idx + BLOCK_SIZE; cache_idx++) {
+                    checksum += global_data[cache_idx];
+                }
+            }
+            result->checksum = checksum;
+        }
+    }
 }
 
 /**
@@ -121,6 +146,8 @@ int main()
     }
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
+    host_func_resume();
+
     DPU_FOREACH (dpu_set, dpu, each_dpu) {
         bool dpu_status;
         dpu_checksum = 0;
@@ -129,7 +156,6 @@ int main()
         // Retrieve tasklet results and compute the final checksum.
         for (unsigned int each_tasklet = 0; each_tasklet < NR_TASKLETS; each_tasklet++) {
             dpu_result_t *result = &results[each_dpu].tasklet_result[each_tasklet];
-            // printf("dpu %d, tasklet %d, result 0x%08x\n", each_dpu, each_tasklet, result->checksum);
             dpu_checksum += result->checksum;
             if (result->cycles > dpu_cycles) {
                 dpu_cycles = result->cycles;

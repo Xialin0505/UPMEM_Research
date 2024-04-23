@@ -26,6 +26,7 @@ HashTable_t* HT;
 
 static uint32_t build_hashtable()
 {
+    // printf("in build hash table\n");
     // build hashtable
     HT = (HashTable_t*)malloc(sizeof(HashTable_t));
     HT->dummyItem = (struct DataItem*)malloc(sizeof(struct DataItem));
@@ -55,6 +56,7 @@ static uint32_t build_hashtable()
 
 void host_test_func(uint32_t index) {
     // summing up the data in hashtable
+    // printf("in host test func XXXXXXXXXXXXXXXXXXX \n");
     uint32_t sum = 0;
 
     // iterate through the hashtable
@@ -98,7 +100,7 @@ int main()
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, HT, SIZE));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS, &host_test_func, abortInfo));
+    DPU_ASSERT(dpu_launch_preempt_restart(dpu_set, DPU_SYNCHRONOUS, &host_test_func, abortInfo));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));

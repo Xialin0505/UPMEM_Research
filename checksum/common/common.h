@@ -12,6 +12,9 @@
 /* Size of the buffer on which the checksum will be performed */
 #define BUFFER_SIZE (8 << 20)
 
+/* Use blocks of 256 bytes */
+#define BLOCK_SIZE (256)
+
 /* Structure used by both the host and the dpu to communicate information */
 
 #include <stdint.h>
@@ -19,6 +22,7 @@
 typedef struct {
     uint32_t checksum;
     uint32_t cycles;
+    uint32_t idx;
 } dpu_result_t;
 
 typedef struct {
