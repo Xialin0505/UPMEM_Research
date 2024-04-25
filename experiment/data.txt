@@ -1,0 +1,65 @@
+checksum data:
+reference total time: 
+    End to End Time (ms): 48685.141000
+    End to End Time (ms): 47635.832000
+    End to End Time (ms): 55428.951000
+
+preempt total time: 
+    End to End Time (ms): 40769.016000
+    End to End Time (ms): 36962.737000
+    End to End Time (ms): 35460.751000
+
+binary search:
+reference total time:
+    End to End Time (ms): 184027.330000
+    End to End Time (ms): 102906.642000
+    End to End Time (ms): 169225.910000
+    End to End Time (ms): 84219.442000
+
+
+preempt total time: 
+    End to End Time (ms): 29430.589000
+    End to End Time (ms): 28885.665000
+    End to End Time (ms): 29383.287000
+    End to End Time (ms): 30387.469000
+
+
+hashtable:
+reference total time:
+preempt total time:
+
+sensitivity of abort threshold and execution time window checksum:
+0.4 and 0.02:
+    ref: End to End Time (ms): 48685.141000
+    preempt: End to End Time (ms): 40769.016000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 50643.311000
+    preempt: End to End Time (ms): 41765.777000
+0.8 and 0.02:
+    ref: End to End Time (ms): 54242.783000
+    preempt: End to End Time (ms): 40565.371000
+0.4 and 0.1:
+    ref: End to End Time (ms): 50174.600000
+    preempt: End to End Time (ms): 36908.129000
+
+sensitivity of abort threshold and execution time window binary search:
+0.4 and 0.02:
+    ref: End to End Time (ms): 113981.222000
+    preempt: End to End Time (ms): 32037.580000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 87768.426000
+    preempt: End to End Time (ms): 30333.815000
+0.8 and 0.02:
+    ref: End to End Time (ms): 93428.493000
+    preempt: End to End Time (ms): 29634.704000
+0.4 and 0.1:
+    ref: End to End Time (ms): 124072.810000
+    preempt: End to End Time (ms): 29784.955000
+0.6 and 0.1:
+    ref: End to End Time (ms): 96726.189000
+    preempt: End to End Time (ms): 26483.126000
+0.4 and 0.2:
+    ref: End to End Time (ms): 105051.129000
+    preempt: End to End Time (ms): 30134.505000
+
+
