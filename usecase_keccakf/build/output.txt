@@ -1,101 +1,2087 @@
 Allocated 64 DPU(s) x 16 Threads
+ Thread 00-00 0->1
+ Thread 00-01 1->1
+ Thread 00-02 1->1
+ Thread 00-03 1->1
+ Thread 00-04 1->1
+ Thread 00-05 1->1
+ Thread 00-06 1->1
+ Thread 00-07 1->1
+ Thread 00-08 1->2
+ Thread 00-09 2->2
+ Thread 00-10 2->2
+ Thread 00-11 2->2
+ Thread 00-12 2->2
+ Thread 00-13 2->2
+ Thread 00-14 2->2
+ Thread 00-15 2->2
+ Thread 01-00 2->3
+ Thread 01-01 3->3
+ Thread 01-02 3->3
+ Thread 01-03 3->3
+ Thread 01-04 3->3
+ Thread 01-05 3->3
+ Thread 01-06 3->3
+ Thread 01-07 3->3
+ Thread 01-08 3->4
+ Thread 01-09 4->4
+ Thread 01-10 4->4
+ Thread 01-11 4->4
+ Thread 01-12 4->4
+ Thread 01-13 4->4
+ Thread 01-14 4->4
+ Thread 01-15 4->4
+ Thread 02-00 4->5
+ Thread 02-01 5->5
+ Thread 02-02 5->5
+ Thread 02-03 5->5
+ Thread 02-04 5->5
+ Thread 02-05 5->5
+ Thread 02-06 5->5
+ Thread 02-07 5->5
+ Thread 02-08 5->6
+ Thread 02-09 6->6
+ Thread 02-10 6->6
+ Thread 02-11 6->6
+ Thread 02-12 6->6
+ Thread 02-13 6->6
+ Thread 02-14 6->6
+ Thread 02-15 6->6
+ Thread 03-00 6->7
+ Thread 03-01 7->7
+ Thread 03-02 7->7
+ Thread 03-03 7->7
+ Thread 03-04 7->7
+ Thread 03-05 7->7
+ Thread 03-06 7->7
+ Thread 03-07 7->7
+ Thread 03-08 7->8
+ Thread 03-09 8->8
+ Thread 03-10 8->8
+ Thread 03-11 8->8
+ Thread 03-12 8->8
+ Thread 03-13 8->8
+ Thread 03-14 8->8
+ Thread 03-15 8->8
+ Thread 04-00 8->9
+ Thread 04-01 9->9
+ Thread 04-02 9->9
+ Thread 04-03 9->9
+ Thread 04-04 9->9
+ Thread 04-05 9->9
+ Thread 04-06 9->9
+ Thread 04-07 9->9
+ Thread 04-08 9->10
+ Thread 04-09 10->10
+ Thread 04-10 10->10
+ Thread 04-11 10->10
+ Thread 04-12 10->10
+ Thread 04-13 10->10
+ Thread 04-14 10->10
+ Thread 04-15 10->10
+ Thread 05-00 10->11
+ Thread 05-01 11->11
+ Thread 05-02 11->11
+ Thread 05-03 11->11
+ Thread 05-04 11->11
+ Thread 05-05 11->11
+ Thread 05-06 11->11
+ Thread 05-07 11->11
+ Thread 05-08 11->12
+ Thread 05-09 12->12
+ Thread 05-10 12->12
+ Thread 05-11 12->12
+ Thread 05-12 12->12
+ Thread 05-13 12->12
+ Thread 05-14 12->12
+ Thread 05-15 12->12
+ Thread 06-00 12->13
+ Thread 06-01 13->13
+ Thread 06-02 13->13
+ Thread 06-03 13->13
+ Thread 06-04 13->13
+ Thread 06-05 13->13
+ Thread 06-06 13->13
+ Thread 06-07 13->13
+ Thread 06-08 13->14
+ Thread 06-09 14->14
+ Thread 06-10 14->14
+ Thread 06-11 14->14
+ Thread 06-12 14->14
+ Thread 06-13 14->14
+ Thread 06-14 14->14
+ Thread 06-15 14->14
+ Thread 07-00 14->15
+ Thread 07-01 15->15
+ Thread 07-02 15->15
+ Thread 07-03 15->15
+ Thread 07-04 15->15
+ Thread 07-05 15->15
+ Thread 07-06 15->15
+ Thread 07-07 15->15
+ Thread 07-08 15->16
+ Thread 07-09 16->16
+ Thread 07-10 16->16
+ Thread 07-11 16->16
+ Thread 07-12 16->16
+ Thread 07-13 16->16
+ Thread 07-14 16->16
+ Thread 07-15 16->16
+ Thread 08-00 16->17
+ Thread 08-01 17->17
+ Thread 08-02 17->17
+ Thread 08-03 17->17
+ Thread 08-04 17->17
+ Thread 08-05 17->17
+ Thread 08-06 17->17
+ Thread 08-07 17->17
+ Thread 08-08 17->18
+ Thread 08-09 18->18
+ Thread 08-10 18->18
+ Thread 08-11 18->18
+ Thread 08-12 18->18
+ Thread 08-13 18->18
+ Thread 08-14 18->18
+ Thread 08-15 18->18
+ Thread 09-00 18->19
+ Thread 09-01 19->19
+ Thread 09-02 19->19
+ Thread 09-03 19->19
+ Thread 09-04 19->19
+ Thread 09-05 19->19
+ Thread 09-06 19->19
+ Thread 09-07 19->19
+ Thread 09-08 19->20
+ Thread 09-09 20->20
+ Thread 09-10 20->20
+ Thread 09-11 20->20
+ Thread 09-12 20->20
+ Thread 09-13 20->20
+ Thread 09-14 20->20
+ Thread 09-15 20->20
+ Thread 10-00 20->21
+ Thread 10-01 21->21
+ Thread 10-02 21->21
+ Thread 10-03 21->21
+ Thread 10-04 21->21
+ Thread 10-05 21->21
+ Thread 10-06 21->21
+ Thread 10-07 21->21
+ Thread 10-08 21->22
+ Thread 10-09 22->22
+ Thread 10-10 22->22
+ Thread 10-11 22->22
+ Thread 10-12 22->22
+ Thread 10-13 22->22
+ Thread 10-14 22->22
+ Thread 10-15 22->22
+ Thread 11-00 22->23
+ Thread 11-01 23->23
+ Thread 11-02 23->23
+ Thread 11-03 23->23
+ Thread 11-04 23->23
+ Thread 11-05 23->23
+ Thread 11-06 23->23
+ Thread 11-07 23->23
+ Thread 11-08 23->24
+ Thread 11-09 24->24
+ Thread 11-10 24->24
+ Thread 11-11 24->24
+ Thread 11-12 24->24
+ Thread 11-13 24->24
+ Thread 11-14 24->24
+ Thread 11-15 24->24
+ Thread 12-00 24->25
+ Thread 12-01 25->25
+ Thread 12-02 25->25
+ Thread 12-03 25->25
+ Thread 12-04 25->25
+ Thread 12-05 25->25
+ Thread 12-06 25->25
+ Thread 12-07 25->25
+ Thread 12-08 25->26
+ Thread 12-09 26->26
+ Thread 12-10 26->26
+ Thread 12-11 26->26
+ Thread 12-12 26->26
+ Thread 12-13 26->26
+ Thread 12-14 26->26
+ Thread 12-15 26->26
+ Thread 13-00 26->27
+ Thread 13-01 27->27
+ Thread 13-02 27->27
+ Thread 13-03 27->27
+ Thread 13-04 27->27
+ Thread 13-05 27->27
+ Thread 13-06 27->27
+ Thread 13-07 27->27
+ Thread 13-08 27->28
+ Thread 13-09 28->28
+ Thread 13-10 28->28
+ Thread 13-11 28->28
+ Thread 13-12 28->28
+ Thread 13-13 28->28
+ Thread 13-14 28->28
+ Thread 13-15 28->28
+ Thread 14-00 28->29
+ Thread 14-01 29->29
+ Thread 14-02 29->29
+ Thread 14-03 29->29
+ Thread 14-04 29->29
+ Thread 14-05 29->29
+ Thread 14-06 29->29
+ Thread 14-07 29->29
+ Thread 14-08 29->30
+ Thread 14-09 30->30
+ Thread 14-10 30->30
+ Thread 14-11 30->30
+ Thread 14-12 30->30
+ Thread 14-13 30->30
+ Thread 14-14 30->30
+ Thread 14-15 30->30
+ Thread 15-00 30->31
+ Thread 15-01 31->31
+ Thread 15-02 31->31
+ Thread 15-03 31->31
+ Thread 15-04 31->31
+ Thread 15-05 31->31
+ Thread 15-06 31->31
+ Thread 15-07 31->31
+ Thread 15-08 31->32
+ Thread 15-09 32->32
+ Thread 15-10 32->32
+ Thread 15-11 32->32
+ Thread 15-12 32->32
+ Thread 15-13 32->32
+ Thread 15-14 32->32
+ Thread 15-15 32->32
+ Thread 16-00 32->33
+ Thread 16-01 33->33
+ Thread 16-02 33->33
+ Thread 16-03 33->33
+ Thread 16-04 33->33
+ Thread 16-05 33->33
+ Thread 16-06 33->33
+ Thread 16-07 33->33
+ Thread 16-08 33->34
+ Thread 16-09 34->34
+ Thread 16-10 34->34
+ Thread 16-11 34->34
+ Thread 16-12 34->34
+ Thread 16-13 34->34
+ Thread 16-14 34->34
+ Thread 16-15 34->34
+ Thread 17-00 34->35
+ Thread 17-01 35->35
+ Thread 17-02 35->35
+ Thread 17-03 35->35
+ Thread 17-04 35->35
+ Thread 17-05 35->35
+ Thread 17-06 35->35
+ Thread 17-07 35->35
+ Thread 17-08 35->36
+ Thread 17-09 36->36
+ Thread 17-10 36->36
+ Thread 17-11 36->36
+ Thread 17-12 36->36
+ Thread 17-13 36->36
+ Thread 17-14 36->36
+ Thread 17-15 36->36
+ Thread 18-00 36->37
+ Thread 18-01 37->37
+ Thread 18-02 37->37
+ Thread 18-03 37->37
+ Thread 18-04 37->37
+ Thread 18-05 37->37
+ Thread 18-06 37->37
+ Thread 18-07 37->37
+ Thread 18-08 37->38
+ Thread 18-09 38->38
+ Thread 18-10 38->38
+ Thread 18-11 38->38
+ Thread 18-12 38->38
+ Thread 18-13 38->38
+ Thread 18-14 38->38
+ Thread 18-15 38->38
+ Thread 19-00 38->39
+ Thread 19-01 39->39
+ Thread 19-02 39->39
+ Thread 19-03 39->39
+ Thread 19-04 39->39
+ Thread 19-05 39->39
+ Thread 19-06 39->39
+ Thread 19-07 39->39
+ Thread 19-08 39->40
+ Thread 19-09 40->40
+ Thread 19-10 40->40
+ Thread 19-11 40->40
+ Thread 19-12 40->40
+ Thread 19-13 40->40
+ Thread 19-14 40->40
+ Thread 19-15 40->40
+ Thread 20-00 40->41
+ Thread 20-01 41->41
+ Thread 20-02 41->41
+ Thread 20-03 41->41
+ Thread 20-04 41->41
+ Thread 20-05 41->41
+ Thread 20-06 41->41
+ Thread 20-07 41->41
+ Thread 20-08 41->42
+ Thread 20-09 42->42
+ Thread 20-10 42->42
+ Thread 20-11 42->42
+ Thread 20-12 42->42
+ Thread 20-13 42->42
+ Thread 20-14 42->42
+ Thread 20-15 42->42
+ Thread 21-00 42->43
+ Thread 21-01 43->43
+ Thread 21-02 43->43
+ Thread 21-03 43->43
+ Thread 21-04 43->43
+ Thread 21-05 43->43
+ Thread 21-06 43->43
+ Thread 21-07 43->43
+ Thread 21-08 43->44
+ Thread 21-09 44->44
+ Thread 21-10 44->44
+ Thread 21-11 44->44
+ Thread 21-12 44->44
+ Thread 21-13 44->44
+ Thread 21-14 44->44
+ Thread 21-15 44->44
+ Thread 22-00 44->45
+ Thread 22-01 45->45
+ Thread 22-02 45->45
+ Thread 22-03 45->45
+ Thread 22-04 45->45
+ Thread 22-05 45->45
+ Thread 22-06 45->45
+ Thread 22-07 45->45
+ Thread 22-08 45->46
+ Thread 22-09 46->46
+ Thread 22-10 46->46
+ Thread 22-11 46->46
+ Thread 22-12 46->46
+ Thread 22-13 46->46
+ Thread 22-14 46->46
+ Thread 22-15 46->46
+ Thread 23-00 46->47
+ Thread 23-01 47->47
+ Thread 23-02 47->47
+ Thread 23-03 47->47
+ Thread 23-04 47->47
+ Thread 23-05 47->47
+ Thread 23-06 47->47
+ Thread 23-07 47->47
+ Thread 23-08 47->48
+ Thread 23-09 48->48
+ Thread 23-10 48->48
+ Thread 23-11 48->48
+ Thread 23-12 48->48
+ Thread 23-13 48->48
+ Thread 23-14 48->48
+ Thread 23-15 48->48
+ Thread 24-00 48->49
+ Thread 24-01 49->49
+ Thread 24-02 49->49
+ Thread 24-03 49->49
+ Thread 24-04 49->49
+ Thread 24-05 49->49
+ Thread 24-06 49->49
+ Thread 24-07 49->49
+ Thread 24-08 49->50
+ Thread 24-09 50->50
+ Thread 24-10 50->50
+ Thread 24-11 50->50
+ Thread 24-12 50->50
+ Thread 24-13 50->50
+ Thread 24-14 50->50
+ Thread 24-15 50->50
+ Thread 25-00 50->51
+ Thread 25-01 51->51
+ Thread 25-02 51->51
+ Thread 25-03 51->51
+ Thread 25-04 51->51
+ Thread 25-05 51->51
+ Thread 25-06 51->51
+ Thread 25-07 51->51
+ Thread 25-08 51->52
+ Thread 25-09 52->52
+ Thread 25-10 52->52
+ Thread 25-11 52->52
+ Thread 25-12 52->52
+ Thread 25-13 52->52
+ Thread 25-14 52->52
+ Thread 25-15 52->52
+ Thread 26-00 52->53
+ Thread 26-01 53->53
+ Thread 26-02 53->53
+ Thread 26-03 53->53
+ Thread 26-04 53->53
+ Thread 26-05 53->53
+ Thread 26-06 53->53
+ Thread 26-07 53->53
+ Thread 26-08 53->54
+ Thread 26-09 54->54
+ Thread 26-10 54->54
+ Thread 26-11 54->54
+ Thread 26-12 54->54
+ Thread 26-13 54->54
+ Thread 26-14 54->54
+ Thread 26-15 54->54
+ Thread 27-00 54->55
+ Thread 27-01 55->55
+ Thread 27-02 55->55
+ Thread 27-03 55->55
+ Thread 27-04 55->55
+ Thread 27-05 55->55
+ Thread 27-06 55->55
+ Thread 27-07 55->55
+ Thread 27-08 55->56
+ Thread 27-09 56->56
+ Thread 27-10 56->56
+ Thread 27-11 56->56
+ Thread 27-12 56->56
+ Thread 27-13 56->56
+ Thread 27-14 56->56
+ Thread 27-15 56->56
+ Thread 28-00 56->57
+ Thread 28-01 57->57
+ Thread 28-02 57->57
+ Thread 28-03 57->57
+ Thread 28-04 57->57
+ Thread 28-05 57->57
+ Thread 28-06 57->57
+ Thread 28-07 57->57
+ Thread 28-08 57->58
+ Thread 28-09 58->58
+ Thread 28-10 58->58
+ Thread 28-11 58->58
+ Thread 28-12 58->58
+ Thread 28-13 58->58
+ Thread 28-14 58->58
+ Thread 28-15 58->58
+ Thread 29-00 58->59
+ Thread 29-01 59->59
+ Thread 29-02 59->59
+ Thread 29-03 59->59
+ Thread 29-04 59->59
+ Thread 29-05 59->59
+ Thread 29-06 59->59
+ Thread 29-07 59->59
+ Thread 29-08 59->60
+ Thread 29-09 60->60
+ Thread 29-10 60->60
+ Thread 29-11 60->60
+ Thread 29-12 60->60
+ Thread 29-13 60->60
+ Thread 29-14 60->60
+ Thread 29-15 60->60
+ Thread 30-00 60->61
+ Thread 30-01 61->61
+ Thread 30-02 61->61
+ Thread 30-03 61->61
+ Thread 30-04 61->61
+ Thread 30-05 61->61
+ Thread 30-06 61->61
+ Thread 30-07 61->61
+ Thread 30-08 61->62
+ Thread 30-09 62->62
+ Thread 30-10 62->62
+ Thread 30-11 62->62
+ Thread 30-12 62->62
+ Thread 30-13 62->62
+ Thread 30-14 62->62
+ Thread 30-15 62->62
+ Thread 31-00 62->63
+ Thread 31-01 63->63
+ Thread 31-02 63->63
+ Thread 31-03 63->63
+ Thread 31-04 63->63
+ Thread 31-05 63->63
+ Thread 31-06 63->63
+ Thread 31-07 63->63
+ Thread 31-08 63->64
+ Thread 31-09 64->64
+ Thread 31-10 64->64
+ Thread 31-11 64->64
+ Thread 31-12 64->64
+ Thread 31-13 64->64
+ Thread 31-14 64->64
+ Thread 31-15 64->64
+ Thread 32-00 64->65
+ Thread 32-01 65->65
+ Thread 32-02 65->65
+ Thread 32-03 65->65
+ Thread 32-04 65->65
+ Thread 32-05 65->65
+ Thread 32-06 65->65
+ Thread 32-07 65->65
+ Thread 32-08 65->66
+ Thread 32-09 66->66
+ Thread 32-10 66->66
+ Thread 32-11 66->66
+ Thread 32-12 66->66
+ Thread 32-13 66->66
+ Thread 32-14 66->66
+ Thread 32-15 66->66
+ Thread 33-00 66->67
+ Thread 33-01 67->67
+ Thread 33-02 67->67
+ Thread 33-03 67->67
+ Thread 33-04 67->67
+ Thread 33-05 67->67
+ Thread 33-06 67->67
+ Thread 33-07 67->67
+ Thread 33-08 67->68
+ Thread 33-09 68->68
+ Thread 33-10 68->68
+ Thread 33-11 68->68
+ Thread 33-12 68->68
+ Thread 33-13 68->68
+ Thread 33-14 68->68
+ Thread 33-15 68->68
+ Thread 34-00 68->69
+ Thread 34-01 69->69
+ Thread 34-02 69->69
+ Thread 34-03 69->69
+ Thread 34-04 69->69
+ Thread 34-05 69->69
+ Thread 34-06 69->69
+ Thread 34-07 69->69
+ Thread 34-08 69->70
+ Thread 34-09 70->70
+ Thread 34-10 70->70
+ Thread 34-11 70->70
+ Thread 34-12 70->70
+ Thread 34-13 70->70
+ Thread 34-14 70->70
+ Thread 34-15 70->70
+ Thread 35-00 70->71
+ Thread 35-01 71->71
+ Thread 35-02 71->71
+ Thread 35-03 71->71
+ Thread 35-04 71->71
+ Thread 35-05 71->71
+ Thread 35-06 71->71
+ Thread 35-07 71->71
+ Thread 35-08 71->72
+ Thread 35-09 72->72
+ Thread 35-10 72->72
+ Thread 35-11 72->72
+ Thread 35-12 72->72
+ Thread 35-13 72->72
+ Thread 35-14 72->72
+ Thread 35-15 72->72
+ Thread 36-00 72->73
+ Thread 36-01 73->73
+ Thread 36-02 73->73
+ Thread 36-03 73->73
+ Thread 36-04 73->73
+ Thread 36-05 73->73
+ Thread 36-06 73->73
+ Thread 36-07 73->73
+ Thread 36-08 73->74
+ Thread 36-09 74->74
+ Thread 36-10 74->74
+ Thread 36-11 74->74
+ Thread 36-12 74->74
+ Thread 36-13 74->74
+ Thread 36-14 74->74
+ Thread 36-15 74->74
+ Thread 37-00 74->75
+ Thread 37-01 75->75
+ Thread 37-02 75->75
+ Thread 37-03 75->75
+ Thread 37-04 75->75
+ Thread 37-05 75->75
+ Thread 37-06 75->75
+ Thread 37-07 75->75
+ Thread 37-08 75->76
+ Thread 37-09 76->76
+ Thread 37-10 76->76
+ Thread 37-11 76->76
+ Thread 37-12 76->76
+ Thread 37-13 76->76
+ Thread 37-14 76->76
+ Thread 37-15 76->76
+ Thread 38-00 76->77
+ Thread 38-01 77->77
+ Thread 38-02 77->77
+ Thread 38-03 77->77
+ Thread 38-04 77->77
+ Thread 38-05 77->77
+ Thread 38-06 77->77
+ Thread 38-07 77->77
+ Thread 38-08 77->78
+ Thread 38-09 78->78
+ Thread 38-10 78->78
+ Thread 38-11 78->78
+ Thread 38-12 78->78
+ Thread 38-13 78->78
+ Thread 38-14 78->78
+ Thread 38-15 78->78
+ Thread 39-00 78->79
+ Thread 39-01 79->79
+ Thread 39-02 79->79
+ Thread 39-03 79->79
+ Thread 39-04 79->79
+ Thread 39-05 79->79
+ Thread 39-06 79->79
+ Thread 39-07 79->79
+ Thread 39-08 79->80
+ Thread 39-09 80->80
+ Thread 39-10 80->80
+ Thread 39-11 80->80
+ Thread 39-12 80->80
+ Thread 39-13 80->80
+ Thread 39-14 80->80
+ Thread 39-15 80->80
+ Thread 40-00 80->81
+ Thread 40-01 81->81
+ Thread 40-02 81->81
+ Thread 40-03 81->81
+ Thread 40-04 81->81
+ Thread 40-05 81->81
+ Thread 40-06 81->81
+ Thread 40-07 81->81
+ Thread 40-08 81->82
+ Thread 40-09 82->82
+ Thread 40-10 82->82
+ Thread 40-11 82->82
+ Thread 40-12 82->82
+ Thread 40-13 82->82
+ Thread 40-14 82->82
+ Thread 40-15 82->82
+ Thread 41-00 82->83
+ Thread 41-01 83->83
+ Thread 41-02 83->83
+ Thread 41-03 83->83
+ Thread 41-04 83->83
+ Thread 41-05 83->83
+ Thread 41-06 83->83
+ Thread 41-07 83->83
+ Thread 41-08 83->84
+ Thread 41-09 84->84
+ Thread 41-10 84->84
+ Thread 41-11 84->84
+ Thread 41-12 84->84
+ Thread 41-13 84->84
+ Thread 41-14 84->84
+ Thread 41-15 84->84
+ Thread 42-00 84->85
+ Thread 42-01 85->85
+ Thread 42-02 85->85
+ Thread 42-03 85->85
+ Thread 42-04 85->85
+ Thread 42-05 85->85
+ Thread 42-06 85->85
+ Thread 42-07 85->85
+ Thread 42-08 85->86
+ Thread 42-09 86->86
+ Thread 42-10 86->86
+ Thread 42-11 86->86
+ Thread 42-12 86->86
+ Thread 42-13 86->86
+ Thread 42-14 86->86
+ Thread 42-15 86->86
+ Thread 43-00 86->87
+ Thread 43-01 87->87
+ Thread 43-02 87->87
+ Thread 43-03 87->87
+ Thread 43-04 87->87
+ Thread 43-05 87->87
+ Thread 43-06 87->87
+ Thread 43-07 87->87
+ Thread 43-08 87->88
+ Thread 43-09 88->88
+ Thread 43-10 88->88
+ Thread 43-11 88->88
+ Thread 43-12 88->88
+ Thread 43-13 88->88
+ Thread 43-14 88->88
+ Thread 43-15 88->88
+ Thread 44-00 88->89
+ Thread 44-01 89->89
+ Thread 44-02 89->89
+ Thread 44-03 89->89
+ Thread 44-04 89->89
+ Thread 44-05 89->89
+ Thread 44-06 89->89
+ Thread 44-07 89->89
+ Thread 44-08 89->90
+ Thread 44-09 90->90
+ Thread 44-10 90->90
+ Thread 44-11 90->90
+ Thread 44-12 90->90
+ Thread 44-13 90->90
+ Thread 44-14 90->90
+ Thread 44-15 90->90
+ Thread 45-00 90->91
+ Thread 45-01 91->91
+ Thread 45-02 91->91
+ Thread 45-03 91->91
+ Thread 45-04 91->91
+ Thread 45-05 91->91
+ Thread 45-06 91->91
+ Thread 45-07 91->91
+ Thread 45-08 91->92
+ Thread 45-09 92->92
+ Thread 45-10 92->92
+ Thread 45-11 92->92
+ Thread 45-12 92->92
+ Thread 45-13 92->92
+ Thread 45-14 92->92
+ Thread 45-15 92->92
+ Thread 46-00 92->93
+ Thread 46-01 93->93
+ Thread 46-02 93->93
+ Thread 46-03 93->93
+ Thread 46-04 93->93
+ Thread 46-05 93->93
+ Thread 46-06 93->93
+ Thread 46-07 93->93
+ Thread 46-08 93->94
+ Thread 46-09 94->94
+ Thread 46-10 94->94
+ Thread 46-11 94->94
+ Thread 46-12 94->94
+ Thread 46-13 94->94
+ Thread 46-14 94->94
+ Thread 46-15 94->94
+ Thread 47-00 94->95
+ Thread 47-01 95->95
+ Thread 47-02 95->95
+ Thread 47-03 95->95
+ Thread 47-04 95->95
+ Thread 47-05 95->95
+ Thread 47-06 95->95
+ Thread 47-07 95->95
+ Thread 47-08 95->96
+ Thread 47-09 96->96
+ Thread 47-10 96->96
+ Thread 47-11 96->96
+ Thread 47-12 96->96
+ Thread 47-13 96->96
+ Thread 47-14 96->96
+ Thread 47-15 96->96
+ Thread 48-00 96->97
+ Thread 48-01 97->97
+ Thread 48-02 97->97
+ Thread 48-03 97->97
+ Thread 48-04 97->97
+ Thread 48-05 97->97
+ Thread 48-06 97->97
+ Thread 48-07 97->97
+ Thread 48-08 97->98
+ Thread 48-09 98->98
+ Thread 48-10 98->98
+ Thread 48-11 98->98
+ Thread 48-12 98->98
+ Thread 48-13 98->98
+ Thread 48-14 98->98
+ Thread 48-15 98->98
+ Thread 49-00 98->99
+ Thread 49-01 99->99
+ Thread 49-02 99->99
+ Thread 49-03 99->99
+ Thread 49-04 99->99
+ Thread 49-05 99->99
+ Thread 49-06 99->99
+ Thread 49-07 99->99
+ Thread 49-08 99->100
+ Thread 49-09 100->100
+ Thread 49-10 100->100
+ Thread 49-11 100->100
+ Thread 49-12 100->100
+ Thread 49-13 100->100
+ Thread 49-14 100->100
+ Thread 49-15 100->100
+ Thread 50-00 100->101
+ Thread 50-01 101->101
+ Thread 50-02 101->101
+ Thread 50-03 101->101
+ Thread 50-04 101->101
+ Thread 50-05 101->101
+ Thread 50-06 101->101
+ Thread 50-07 101->101
+ Thread 50-08 101->102
+ Thread 50-09 102->102
+ Thread 50-10 102->102
+ Thread 50-11 102->102
+ Thread 50-12 102->102
+ Thread 50-13 102->102
+ Thread 50-14 102->102
+ Thread 50-15 102->102
+ Thread 51-00 102->103
+ Thread 51-01 103->103
+ Thread 51-02 103->103
+ Thread 51-03 103->103
+ Thread 51-04 103->103
+ Thread 51-05 103->103
+ Thread 51-06 103->103
+ Thread 51-07 103->103
+ Thread 51-08 103->104
+ Thread 51-09 104->104
+ Thread 51-10 104->104
+ Thread 51-11 104->104
+ Thread 51-12 104->104
+ Thread 51-13 104->104
+ Thread 51-14 104->104
+ Thread 51-15 104->104
+ Thread 52-00 104->105
+ Thread 52-01 105->105
+ Thread 52-02 105->105
+ Thread 52-03 105->105
+ Thread 52-04 105->105
+ Thread 52-05 105->105
+ Thread 52-06 105->105
+ Thread 52-07 105->105
+ Thread 52-08 105->106
+ Thread 52-09 106->106
+ Thread 52-10 106->106
+ Thread 52-11 106->106
+ Thread 52-12 106->106
+ Thread 52-13 106->106
+ Thread 52-14 106->106
+ Thread 52-15 106->106
+ Thread 53-00 106->107
+ Thread 53-01 107->107
+ Thread 53-02 107->107
+ Thread 53-03 107->107
+ Thread 53-04 107->107
+ Thread 53-05 107->107
+ Thread 53-06 107->107
+ Thread 53-07 107->107
+ Thread 53-08 107->108
+ Thread 53-09 108->108
+ Thread 53-10 108->108
+ Thread 53-11 108->108
+ Thread 53-12 108->108
+ Thread 53-13 108->108
+ Thread 53-14 108->108
+ Thread 53-15 108->108
+ Thread 54-00 108->109
+ Thread 54-01 109->109
+ Thread 54-02 109->109
+ Thread 54-03 109->109
+ Thread 54-04 109->109
+ Thread 54-05 109->109
+ Thread 54-06 109->109
+ Thread 54-07 109->109
+ Thread 54-08 109->110
+ Thread 54-09 110->110
+ Thread 54-10 110->110
+ Thread 54-11 110->110
+ Thread 54-12 110->110
+ Thread 54-13 110->110
+ Thread 54-14 110->110
+ Thread 54-15 110->110
+ Thread 55-00 110->111
+ Thread 55-01 111->111
+ Thread 55-02 111->111
+ Thread 55-03 111->111
+ Thread 55-04 111->111
+ Thread 55-05 111->111
+ Thread 55-06 111->111
+ Thread 55-07 111->111
+ Thread 55-08 111->112
+ Thread 55-09 112->112
+ Thread 55-10 112->112
+ Thread 55-11 112->112
+ Thread 55-12 112->112
+ Thread 55-13 112->112
+ Thread 55-14 112->112
+ Thread 55-15 112->112
+ Thread 56-00 112->113
+ Thread 56-01 113->113
+ Thread 56-02 113->113
+ Thread 56-03 113->113
+ Thread 56-04 113->113
+ Thread 56-05 113->113
+ Thread 56-06 113->113
+ Thread 56-07 113->113
+ Thread 56-08 113->114
+ Thread 56-09 114->114
+ Thread 56-10 114->114
+ Thread 56-11 114->114
+ Thread 56-12 114->114
+ Thread 56-13 114->114
+ Thread 56-14 114->114
+ Thread 56-15 114->114
+ Thread 57-00 114->115
+ Thread 57-01 115->115
+ Thread 57-02 115->115
+ Thread 57-03 115->115
+ Thread 57-04 115->115
+ Thread 57-05 115->115
+ Thread 57-06 115->115
+ Thread 57-07 115->115
+ Thread 57-08 115->116
+ Thread 57-09 116->116
+ Thread 57-10 116->116
+ Thread 57-11 116->116
+ Thread 57-12 116->116
+ Thread 57-13 116->116
+ Thread 57-14 116->116
+ Thread 57-15 116->116
+ Thread 58-00 116->117
+ Thread 58-01 117->117
+ Thread 58-02 117->117
+ Thread 58-03 117->117
+ Thread 58-04 117->117
+ Thread 58-05 117->117
+ Thread 58-06 117->117
+ Thread 58-07 117->117
+ Thread 58-08 117->118
+ Thread 58-09 118->118
+ Thread 58-10 118->118
+ Thread 58-11 118->118
+ Thread 58-12 118->118
+ Thread 58-13 118->118
+ Thread 58-14 118->118
+ Thread 58-15 118->118
+ Thread 59-00 118->119
+ Thread 59-01 119->119
+ Thread 59-02 119->119
+ Thread 59-03 119->119
+ Thread 59-04 119->119
+ Thread 59-05 119->119
+ Thread 59-06 119->119
+ Thread 59-07 119->119
+ Thread 59-08 119->120
+ Thread 59-09 120->120
+ Thread 59-10 120->120
+ Thread 59-11 120->120
+ Thread 59-12 120->120
+ Thread 59-13 120->120
+ Thread 59-14 120->120
+ Thread 59-15 120->120
+ Thread 60-00 120->121
+ Thread 60-01 121->121
+ Thread 60-02 121->121
+ Thread 60-03 121->121
+ Thread 60-04 121->121
+ Thread 60-05 121->121
+ Thread 60-06 121->121
+ Thread 60-07 121->121
+ Thread 60-08 121->122
+ Thread 60-09 122->122
+ Thread 60-10 122->122
+ Thread 60-11 122->122
+ Thread 60-12 122->122
+ Thread 60-13 122->122
+ Thread 60-14 122->122
+ Thread 60-15 122->122
+ Thread 61-00 122->123
+ Thread 61-01 123->123
+ Thread 61-02 123->123
+ Thread 61-03 123->123
+ Thread 61-04 123->123
+ Thread 61-05 123->123
+ Thread 61-06 123->123
+ Thread 61-07 123->123
+ Thread 61-08 123->124
+ Thread 61-09 124->124
+ Thread 61-10 124->124
+ Thread 61-11 124->124
+ Thread 61-12 124->124
+ Thread 61-13 124->124
+ Thread 61-14 124->124
+ Thread 61-15 124->124
+ Thread 62-00 124->125
+ Thread 62-01 125->125
+ Thread 62-02 125->125
+ Thread 62-03 125->125
+ Thread 62-04 125->125
+ Thread 62-05 125->125
+ Thread 62-06 125->125
+ Thread 62-07 125->125
+ Thread 62-08 125->126
+ Thread 62-09 126->126
+ Thread 62-10 126->126
+ Thread 62-11 126->126
+ Thread 62-12 126->126
+ Thread 62-13 126->126
+ Thread 62-14 126->126
+ Thread 62-15 126->126
+ Thread 63-00 126->127
+ Thread 63-01 127->127
+ Thread 63-02 127->127
+ Thread 63-03 127->127
+ Thread 63-04 127->127
+ Thread 63-05 127->127
+ Thread 63-06 127->127
+ Thread 63-07 127->127
+ Thread 63-08 127->128
+ Thread 63-09 128->128
+ Thread 63-10 128->128
+ Thread 63-11 128->128
+ Thread 63-12 128->128
+ Thread 63-13 128->128
+ Thread 63-14 128->128
+ Thread 63-15 128->128
 Run program on DPU(s)
-dpu_launch
-total nr_rank 64
-abort_struggling_dpus
-abort_struggling_dpu 0
-abort_struggling_dpu 1
-abort_struggling_dpu 2
-abort_struggling_dpu 6
-abort_struggling_dpu 7
-abort_struggling_dpu 9
-abort_struggling_dpu 11
-abort_struggling_dpu 12
-abort_struggling_dpu 13
-abort_struggling_dpu 14
-abort_struggling_dpu 16
-abort_struggling_dpu 21
-abort_struggling_dpu 22
-abort_struggling_dpu 23
-abort_struggling_dpu 26
-abort_struggling_dpu 27
-abort_struggling_dpu 34
-abort_struggling_dpu 37
-abort_struggling_dpu 42
-abort_struggling_dpu 45
-abort_struggling_dpu 46
-abort_struggling_dpu 47
-abort_struggling_dpu 48
-abort_struggling_dpu 49
-abort_struggling_dpu 52
-abort_struggling_dpu 54
-abort_struggling_dpu 55
-abort_struggling_dpu 61
-abort_struggling_dpu 63
+dpu_launch_preempt
+abort_struggling_dpus_reset
+abort_struggling_dpu_reset 0
+abort_struggling_dpu_reset 1
+abort_struggling_dpu_reset 2
+abort_struggling_dpu_reset 4
+abort_struggling_dpu_reset 8
+abort_struggling_dpu_reset 12
+abort_struggling_dpu_reset 14
+abort_struggling_dpu_reset 15
+abort_struggling_dpu_reset 16
+abort_struggling_dpu_reset 18
+abort_struggling_dpu_reset 22
+abort_struggling_dpu_reset 24
+abort_struggling_dpu_reset 26
+abort_struggling_dpu_reset 29
+abort_struggling_dpu_reset 30
+abort_struggling_dpu_reset 34
+abort_struggling_dpu_reset 38
+abort_struggling_dpu_reset 39
+abort_struggling_dpu_reset 40
+abort_struggling_dpu_reset 43
+abort_struggling_dpu_reset 44
+abort_struggling_dpu_reset 45
+abort_struggling_dpu_reset 50
+abort_struggling_dpu_reset 51
+abort_struggling_dpu_reset 52
+abort_struggling_dpu_reset 54
+abort_struggling_dpu_reset 57
+abort_struggling_dpu_reset 59
+abort_struggling_dpu_reset 62
+abort_struggling_dpu_reset 63
 Retrieve results
-DPU cycle count = 672 cc, dpu: 0
-DPU cycle count = 672 cc, dpu: 1
-DPU cycle count = 672 cc, dpu: 2
-DPU cycle count = 3203392 cc, dpu: 3
-DPU cycle count = 3203392 cc, dpu: 4
-DPU cycle count = 3203392 cc, dpu: 5
-DPU cycle count = 672 cc, dpu: 6
-DPU cycle count = 672 cc, dpu: 7
-DPU cycle count = 3203392 cc, dpu: 8
-DPU cycle count = 672 cc, dpu: 9
-DPU cycle count = 3203392 cc, dpu: 10
-DPU cycle count = 672 cc, dpu: 11
-DPU cycle count = 672 cc, dpu: 12
-DPU cycle count = 672 cc, dpu: 13
-DPU cycle count = 672 cc, dpu: 14
-DPU cycle count = 3203392 cc, dpu: 15
-DPU cycle count = 672 cc, dpu: 16
-DPU cycle count = 3203392 cc, dpu: 17
-DPU cycle count = 3203392 cc, dpu: 18
-DPU cycle count = 3203392 cc, dpu: 19
-DPU cycle count = 3203392 cc, dpu: 20
-DPU cycle count = 672 cc, dpu: 21
-DPU cycle count = 672 cc, dpu: 22
-DPU cycle count = 672 cc, dpu: 23
-DPU cycle count = 3203392 cc, dpu: 24
-DPU cycle count = 3203392 cc, dpu: 25
-DPU cycle count = 672 cc, dpu: 26
-DPU cycle count = 672 cc, dpu: 27
-DPU cycle count = 3203392 cc, dpu: 28
-DPU cycle count = 3203392 cc, dpu: 29
-DPU cycle count = 3203392 cc, dpu: 30
-DPU cycle count = 3203392 cc, dpu: 31
-DPU cycle count = 3203392 cc, dpu: 32
-DPU cycle count = 3203392 cc, dpu: 33
-DPU cycle count = 672 cc, dpu: 34
-DPU cycle count = 3203392 cc, dpu: 35
-DPU cycle count = 3203392 cc, dpu: 36
-DPU cycle count = 672 cc, dpu: 37
-DPU cycle count = 3203392 cc, dpu: 38
-DPU cycle count = 3203392 cc, dpu: 39
-DPU cycle count = 3203392 cc, dpu: 40
-DPU cycle count = 3203392 cc, dpu: 41
-DPU cycle count = 672 cc, dpu: 42
-DPU cycle count = 3203392 cc, dpu: 43
-DPU cycle count = 3203392 cc, dpu: 44
-DPU cycle count = 672 cc, dpu: 45
-DPU cycle count = 672 cc, dpu: 46
-DPU cycle count = 672 cc, dpu: 47
-DPU cycle count = 672 cc, dpu: 48
-DPU cycle count = 672 cc, dpu: 49
-DPU cycle count = 3203392 cc, dpu: 50
-DPU cycle count = 3203392 cc, dpu: 51
-DPU cycle count = 672 cc, dpu: 52
-DPU cycle count = 3203392 cc, dpu: 53
-DPU cycle count = 672 cc, dpu: 54
-DPU cycle count = 672 cc, dpu: 55
-DPU cycle count = 3203392 cc, dpu: 56
-DPU cycle count = 3203392 cc, dpu: 57
-DPU cycle count = 3203392 cc, dpu: 58
-DPU cycle count = 3203392 cc, dpu: 59
-DPU cycle count = 3203392 cc, dpu: 60
-DPU cycle count = 672 cc, dpu: 61
-DPU cycle count = 3203392 cc, dpu: 62
-DPU cycle count = 672 cc, dpu: 63
-_F_ fkey=      0 lkey=    128 loops=    128 SUM= cb8957f470205c31 seconds= 0.801698   Mks= 0.020437
-DPU fkey=      0 lkey=    128 loops=    128 SUM= cb8957f470205c31 seconds= 0.005339   Mks= 0.047949
+cur_key:0 ;lkey:1; cur_loop: 106, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
+cur_key:1 ;lkey:2; cur_loop: 106, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
+cur_key:2 ;lkey:3; cur_loop: 126, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
+cur_key:3 ;lkey:4; cur_loop: 126, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
+cur_key:4 ;lkey:5; cur_loop: 94, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
+cur_key:5 ;lkey:6; cur_loop: 94, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: 128, cur_sum:357254687
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: 128, cur_sum:-356802837
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
+cur_key:8 ;lkey:9; cur_loop: 105, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
+cur_key:9 ;lkey:10; cur_loop: 105, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: 128, cur_sum:1400504909
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:11 ;lkey:11; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: 128, cur_sum:-1816735286
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: 128, cur_sum:-1613923006
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: 128, cur_sum:-76261799
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: 128, cur_sum:168971719
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: 128, cur_sum:-1077088416
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
+cur_key:16 ;lkey:17; cur_loop: 112, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
+cur_key:17 ;lkey:18; cur_loop: 112, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: 128, cur_sum:1375852278
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: 128, cur_sum:-1577432817
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: 128, cur_sum:459113684
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: 128, cur_sum:-672765637
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: 128, cur_sum:72150216
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:23 ;lkey:23; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: 128, cur_sum:1110918203
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
+cur_key:24 ;lkey:25; cur_loop: 92, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
+cur_key:25 ;lkey:26; cur_loop: 92, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: 128, cur_sum:-1116022605
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: 128, cur_sum:-1764776152
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
+cur_key:28 ;lkey:29; cur_loop: 101, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
+cur_key:29 ;lkey:30; cur_loop: 101, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
+cur_key:30 ;lkey:31; cur_loop: 119, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
+cur_key:31 ;lkey:32; cur_loop: 119, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
+cur_key:32 ;lkey:33; cur_loop: 96, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
+cur_key:33 ;lkey:34; cur_loop: 96, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: 128, cur_sum:609335057
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: 128, cur_sum:1206408991
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
+cur_key:36 ;lkey:37; cur_loop: 96, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
+cur_key:37 ;lkey:38; cur_loop: 96, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: 128, cur_sum:-420182789
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:39 ;lkey:39; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: 128, cur_sum:42726225
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:40 ;lkey:40; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: 128, cur_sum:425850149
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:41 ;lkey:41; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: 128, cur_sum:1492640872
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: 128, cur_sum:-1777115543
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: 128, cur_sum:-659653121
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
+cur_key:44 ;lkey:45; cur_loop: 127, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
+cur_key:45 ;lkey:46; cur_loop: 127, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: 128, cur_sum:-2121399614
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:47 ;lkey:47; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: 128, cur_sum:-1745650855
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
+cur_key:48 ;lkey:49; cur_loop: 117, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
+cur_key:49 ;lkey:50; cur_loop: 117, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: 128, cur_sum:861638049
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:51 ;lkey:51; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: 128, cur_sum:-93002558
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
+cur_key:52 ;lkey:53; cur_loop: 102, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
+cur_key:53 ;lkey:54; cur_loop: 102, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: 128, cur_sum:228089621
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:55 ;lkey:55; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: 128, cur_sum:1553480391
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:56 ;lkey:56; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: 128, cur_sum:800406736
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:57 ;lkey:57; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: 128, cur_sum:1804301716
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
+cur_key:58 ;lkey:59; cur_loop: 99, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
+cur_key:59 ;lkey:60; cur_loop: 99, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
+cur_key:60 ;lkey:61; cur_loop: 119, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
+cur_key:61 ;lkey:62; cur_loop: 119, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: 128, cur_sum:1064499657
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: 128, cur_sum:-1721452908
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: 128, cur_sum:-211312281
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: 128, cur_sum:2009918100
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: 128, cur_sum:-841201224
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: 128, cur_sum:-1010703709
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
+cur_key:68 ;lkey:69; cur_loop: 113, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
+cur_key:69 ;lkey:70; cur_loop: 113, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: 128, cur_sum:-1188550862
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: 128, cur_sum:-652641707
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: 128, cur_sum:1583421583
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:73 ;lkey:73; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: 128, cur_sum:1281250688
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:74 ;lkey:74; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: 128, cur_sum:-1389488311
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:75 ;lkey:75; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: 128, cur_sum:2006938265
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
+cur_key:76 ;lkey:77; cur_loop: 104, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
+cur_key:77 ;lkey:78; cur_loop: 104, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
+cur_key:78 ;lkey:79; cur_loop: 112, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
+cur_key:79 ;lkey:80; cur_loop: 112, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
+cur_key:80 ;lkey:81; cur_loop: 91, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
+cur_key:81 ;lkey:82; cur_loop: 91, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: 128, cur_sum:-1474504404
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: 128, cur_sum:1553451962
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: 128, cur_sum:-901948184
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:85 ;lkey:85; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: 128, cur_sum:-675177396
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
+cur_key:86 ;lkey:87; cur_loop: 114, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
+cur_key:87 ;lkey:88; cur_loop: 114, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
+cur_key:88 ;lkey:89; cur_loop: 119, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
+cur_key:89 ;lkey:90; cur_loop: 119, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
+cur_key:90 ;lkey:91; cur_loop: 124, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
+cur_key:91 ;lkey:92; cur_loop: 124, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: 128, cur_sum:237425853
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:93 ;lkey:93; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: 128, cur_sum:-352155820
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: 128, cur_sum:-1192764966
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: 128, cur_sum:311867709
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: 128, cur_sum:1912104054
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: 128, cur_sum:-1181243764
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: 128, cur_sum:1248456592
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: 128, cur_sum:-190697880
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
+cur_key:100 ;lkey:101; cur_loop: 118, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:101; cur_loop: -1, cur_sum:0
+cur_key:101 ;lkey:102; cur_loop: 118, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
+cur_key:102 ;lkey:103; cur_loop: 103, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
+cur_key:103 ;lkey:104; cur_loop: 103, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
+cur_key:104 ;lkey:105; cur_loop: 109, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
+cur_key:105 ;lkey:106; cur_loop: 109, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: 128, cur_sum:-1685188552
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:107 ;lkey:107; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: 128, cur_sum:-1159359317
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
+cur_key:108 ;lkey:109; cur_loop: 94, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
+cur_key:109 ;lkey:110; cur_loop: 94, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: 128, cur_sum:1561216774
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:111 ;lkey:111; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: 128, cur_sum:2086276224
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:112 ;lkey:112; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: 128, cur_sum:-802907587
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:113 ;lkey:113; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: 128, cur_sum:-1172035742
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
+cur_key:114 ;lkey:115; cur_loop: 89, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
+cur_key:115 ;lkey:116; cur_loop: 89, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: 128, cur_sum:-278072823
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:117 ;lkey:117; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: 128, cur_sum:1031850885
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
+cur_key:118 ;lkey:119; cur_loop: 107, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
+cur_key:119 ;lkey:120; cur_loop: 107, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: 128, cur_sum:1240507409
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: 128, cur_sum:-1079581596
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: 128, cur_sum:2053112094
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: 128, cur_sum:-830931219
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
+cur_key:124 ;lkey:125; cur_loop: 91, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
+cur_key:125 ;lkey:126; cur_loop: 91, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
+cur_key:126 ;lkey:127; cur_loop: 109, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
+cur_key:127 ;lkey:128; cur_loop: 109, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
+host_resume
+_F_ fkey=      0 lkey=    128 loops=    128 SUM= 66af274895f81fb seconds= 0.917348   Mks= 36.577648
+DPU fkey=      0 lkey=    128 loops=    128 SUM= 66af274895f81fb seconds= 0.005414   Mks= 0.047285
+End to End Time (ms): 1018.316000	

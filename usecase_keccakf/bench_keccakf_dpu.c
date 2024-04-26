@@ -31,7 +31,7 @@
 #include <stdio.h>
 
 __host struct dpu_params tasklet_params[NR_TASKLETS];
-__host struct dpu_result tasklet_results[NR_TASKLETS];
+__host dpu_result_t tasklet_results[NR_TASKLETS];
 
 typedef uint64_t u64;
 
@@ -252,7 +252,7 @@ static void get_time_and_accumulate(perfcounter_t *accumulate_cycles, perfcounte
     *last_cycles = current_cycles;
 }
 
-static u64 scramble(u64 key, int loops, perfcounter_t *cycles, perfcounter_t *last_cycles)
+static u64 scramble(u64 key, int loops, perfcounter_t *cycles, perfcounter_t *last_cycles, dpu_result_t * result)
 {
     u64 st[25]
         = { 0x6170727463692e6bull, 0x68406570632e6d6full, 0x3335203539383937ull, 0x3436333333383732ull, 0x3931313736203339ull,
@@ -265,6 +265,11 @@ static u64 scramble(u64 key, int loops, perfcounter_t *cycles, perfcounter_t *la
         st[i] ^= key;
 
     for (int l = 0; l < loops; l++) {
+		result->cur_loop = l;
+		for (int i = 0; i < 25; i++)
+	    {
+		  result->tst[i] = st[i];
+	    }
         keccakf(st);
         u64 tmp = st[0];
         for (int i = 0; i < 24; i++)
@@ -289,16 +294,28 @@ int main()
     if (tid == 0) /* Initialize once the cycle counter */
         perfcounter_config(COUNT_CYCLES, true);
 
+
     // all calls to scramble() are independant
     // you can execute them in any order
+	dpu_result_t *result = tasklet_results + tid;
+	result->cur_key = params->fkey;
+	result->loops = params->loops;
+	result->lkey = params->lkey;
+	result->cur_loop = -1;
+	
+	
     for (uint32_t key = params->fkey; key < params->lkey; key++) {
-        sum ^= scramble(key, params->loops, &cycles, &last_cycles);
+        sum ^= scramble(key, params->loops, &cycles, &last_cycles, result);
+		result->sum = sum;
+        result->cycles = cycles + last_cycles;
+		result->cur_key++;
+		result->cur_loop = result->loops;   
     }
 
     /* Send the resulting keccak and cycles count to host application. */
     get_time_and_accumulate(&cycles, &last_cycles);
 
-    struct dpu_result *result = tasklet_results + tid;
+    
     result->sum = sum;
     result->cycles = cycles + last_cycles;
 

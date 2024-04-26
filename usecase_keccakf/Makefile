@@ -18,10 +18,11 @@ OUTPUT_FILE := $(BUILDDIR)/output.txt
 PLOTDATA_FILE := $(BUILDDIR)/plotdata.csv
 
 NR_TASKLETS := 16
+NR_DPUS := 5
 
 #Flags, Libraries and Includes
 DPU_CFLAGS  := -Wall -O2 -g -DNR_TASKLETS=$(NR_TASKLETS)
-HOST_CFLAGS := -std=c11 -Wall -O3 -g -DNR_TASKLETS=$(NR_TASKLETS) -DDPU_BINARY="\"$(DPU_EXE)\"" $(shell $(PKG_CONFIG) --cflags dpu)
+HOST_CFLAGS := -std=c11 -Wall -fopenmp -O3 -g -DNR_TASKLETS=$(NR_TASKLETS) -DDPU_BINARY="\"$(DPU_EXE)\"" $(shell $(PKG_CONFIG) --cflags dpu)
 HOST_LIB    := $(shell $(PKG_CONFIG) --libs dpu)
 
 # Ensure directories exist

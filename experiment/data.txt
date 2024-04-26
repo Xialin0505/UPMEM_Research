@@ -28,7 +28,25 @@ hashtable:
 reference total time:
 preempt total time:
 
-sensitivity of abort threshold and execution time window checksum:
+keccakf SHA-3(UPMEM-5):
+reference total time:
+    End to End Time (ms): 3829.906000
+    End to End Time (ms): 4287.390000
+    End to End Time (ms): 3880.161000
+    End to End Time (ms): 3968.756000
+    End to End Time (ms): 3779.139000
+    End to End Time (ms): 3946.843000
+
+
+preempt total time:
+    End to End Time (ms): 1018.316000
+	End to End Time (ms): 1042.276000
+	End to End Time (ms): 1036.025000
+	End to End Time (ms): 963.081000
+	End to End Time (ms): 964.831000
+	End to End Time (ms): 975.554000
+
+Sensitivity of abort threshold and execution time window checksum:
 0.4 and 0.02:
     ref: End to End Time (ms): 48685.141000
     preempt: End to End Time (ms): 40769.016000
@@ -42,7 +60,7 @@ sensitivity of abort threshold and execution time window checksum:
     ref: End to End Time (ms): 50174.600000
     preempt: End to End Time (ms): 36908.129000
 
-sensitivity of abort threshold and execution time window binary search:
+Sensitivity of abort threshold and execution time window binary search:
 0.4 and 0.02:
     ref: End to End Time (ms): 113981.222000
     preempt: End to End Time (ms): 32037.580000
@@ -59,7 +77,27 @@ sensitivity of abort threshold and execution time window binary search:
     ref: End to End Time (ms): 96726.189000
     preempt: End to End Time (ms): 26483.126000
 0.4 and 0.2:
-    ref: End to End Time (ms): 105051.129000
-    preempt: End to End Time (ms): 30134.505000
+    ref: End to End Time (ms): 97726.694000
+    preempt: End to End Time (ms): 29234.542000
+
+Sensitivity of abort threshold and execution time window keccakf SHA-3:
+0.4 and 0.02:
+    ref: End to End Time (ms): 3829.906000
+    preempt: End to End Time (ms): 1018.316000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 4287.390000
+    preempt: End to End Time (ms): 1042.276000
+0.8 and 0.02:
+    ref: End to End Time (ms): 3880.161000
+    preempt: End to End Time (ms): 1036.025000
+0.4 and 0.1:
+    ref: End to End Time (ms): 3968.756000
+    preempt: End to End Time (ms): 963.081000
+0.6 and 0.1:
+    ref: End to End Time (ms): 3779.139000
+    preempt: End to End Time (ms): 964.831000
+0.4 and 0.2:
+    ref: End to End Time (ms): 3946.843000
+    preempt: End to End Time (ms): 975.554000
 
 
