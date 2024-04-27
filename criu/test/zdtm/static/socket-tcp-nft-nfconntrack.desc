@@ -1,7 +1,0 @@
-{
-    'flavor': 'h',
-    'feature': 'network_lock_nftables',
-    'opts': '--tcp-established',
-    'dopts': '--network-lock nftables',
-    'flags': 'suid'
-}

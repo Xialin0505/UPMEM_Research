@@ -1,6 +1,0 @@
-#!/bin/bash
-set -e
-
-test ! -f /sys/fs/cgroup/cgroup.controllers
-
-grep -q '^net_prio\s' /proc/cgroups
