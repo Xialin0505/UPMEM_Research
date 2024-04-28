@@ -26,7 +26,25 @@ preempt total time:
 
 hashtable:
 reference total time:
+    End to End Time (ms): 4420.082000
+    End to End Time (ms): 5500.902000
+    End to End Time (ms): 8313.516000
+    End to End Time (ms): 3742.116000
+    End to End Time (ms): 5562.839000
+    End to End Time (ms): 7061.582000
+    End to End Time (ms): 6221.687000
+    End to End Time (ms): 5478.900000
+
 preempt total time:
+    End to End Time (ms): 3163.440000
+    End to End Time (ms): 3113.150000
+    End to End Time (ms): 3213.164000
+    End to End Time (ms): 3269.456000
+    End to End Time (ms): 3514.593000
+    End to End Time (ms): 3265.822000
+    End to End Time (ms): 3412.536000
+    End to End Time (ms): 3213.592000
+
 
 keccakf SHA-3(UPMEM-5):
 reference total time:
@@ -79,6 +97,26 @@ Sensitivity of abort threshold and execution time window binary search:
 0.4 and 0.2:
     ref: End to End Time (ms): 97726.694000
     preempt: End to End Time (ms): 29234.542000
+
+Sensitivity of abort threshold and execution time window hashtable:
+0.4 and 0.02:
+    ref: End to End Time (ms): 5562.839000
+    preempt: End to End Time (ms): 3269.456000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 6431.236000
+    preempt: End to End Time (ms): 3512.193000
+0.8 and 0.02:
+    ref: End to End Time (ms): 6401.939000
+    preempt: End to End Time (ms): 3465.461000
+0.4 and 0.1:
+    ref: End to End Time (ms): 4350.885000
+    preempt: End to End Time (ms): 3262.554000
+0.6 and 0.1:
+    ref: End to End Time (ms): 6667.784000
+    preempt: End to End Time (ms): 3162.486000
+0.4 and 0.2:
+    ref: End to End Time (ms): 5374.452000
+    preempt: End to End Time (ms): 3263.666000
 
 Sensitivity of abort threshold and execution time window keccakf SHA-3:
 0.4 and 0.02:

@@ -145,8 +145,9 @@ void host_func_resume() {
             // printf("resume at %d\n", buffer_idx);
             for (; buffer_idx < (each_tasklet * task_num + task_num); buffer_idx ++) {
 
-                hashtablesum += searchItem(table, buffer_idx);
-
+                int32_t temp = searchItem(table, buffer_idx);
+                /* end search hash */
+                hashtablesum += temp;
             }
             result->hashsum = hashtablesum;
         }
@@ -197,7 +198,7 @@ int main()
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, "hash_array", 0, sizeof(hash_t) * TABLE_SIZE, DPU_XFER_DEFAULT));
 
     printf("Run program on DPU(s)\n");
-    DPU_ASSERT(dpu_launch_preempt(dpu_set, DPU_SYNCHRONOUS, abortInfo));
+    DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
 
     DPU_FOREACH (dpu_set, dpu) {
         DPU_ASSERT(dpu_log_read(dpu, stdout));
@@ -212,7 +213,7 @@ int main()
     }
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
-    host_func_resume();
+    // host_func_resume();
 
     stop(&timer, 0);
 
