@@ -1,0 +1,155 @@
+Sensitivity of abort threshold and execution time window checksum:
+0.2 and 0.02:
+    ref: End to End Time (ms): 59531.607000
+    preempt: End to End Time (ms): 35210.680000
+    advance: End to End Time (ms): 38768.020000
+0.4 and 0.02:
+    ref: End to End Time (ms): 48685.141000
+    preempt: End to End Time (ms): 40769.016000
+	advance: End to End Time (ms): 35315.748000
+0.5 and 0.02:
+    ref: End to End Time (ms): 40160.207000
+    preempt: End to End Time (ms): 36362.865000
+	advance: End to End Time (ms): 35158.487000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 50643.311000
+    preempt: End to End Time (ms): 41765.777000
+	advance: End to End Time (ms): 38616.402000
+0.8 and 0.02:
+    ref: End to End Time (ms): 54242.783000
+    preempt: End to End Time (ms): 40565.371000
+	advance: End to End Time (ms): 35115.396000
+0.4 and 0.1:
+    ref: End to End Time (ms): 50174.600000
+    preempt: End to End Time (ms): 36908.129000
+	advance: End to End Time (ms): 39767.957000
+0.4 and 0.01:
+    ref: End to End Time (ms): 65021.146000
+    preempt: End to End Time (ms): 37017.304000
+    advance: End to End Time (ms): 35714.464000
+0.4 and 0.05:
+    ref: End to End Time (ms): 61281.297000
+    preempt: End to End Time (ms): 35557.845000
+    advance: End to End Time (ms): 35665.124000
+0.4 and 0.2:
+    ref: End to End Time (ms): 41283.253000
+    preempt: End to End Time (ms): 35607.982000
+    advance: End to End Time (ms): 35717.218000
+
+Sensitivity of abort threshold and execution time window binary search:
+0.2 and 0.02:
+    ref: End to End Time (ms): 158915.455000
+    preempt: End to End Time (ms): 29449.927000
+    advance: End to End Time (ms): 29448.902000
+0.4 and 0.02:
+    ref: End to End Time (ms): 156546.427000
+    preempt: End to End Time (ms): 29453.508000
+	advance: End to End Time (ms): 29220.395000
+0.5 and 0.02:
+    ref: End to End Time (ms): 115484.951000
+    preempt: End to End Time (ms): 29451.540000
+	advance: End to End Time (ms): 27155.683000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 159051.776000
+    preempt: End to End Time (ms): 27255.954000
+	advance: End to End Time (ms): 39813.511000
+0.8 and 0.02:
+    ref: End to End Time (ms): 106331.825000
+    preempt: End to End Time (ms): 26352.149000
+	advance: End to End Time (ms): 27559.006000
+0.4 and 0.1:
+    ref: End to End Time (ms): 121030.281000
+    preempt: End to End Time (ms): 29505.293000
+	advance: End to End Time (ms): 39847.008000
+0.4 and 0.01:
+    ref: End to End Time (ms): 115669.082000
+    preempt: End to End Time (ms): 29504.427000
+    advance: End to End Time (ms): 29996.958000
+0.4 and 0.05:
+    ref: End to End Time (ms): 97066.966000
+    preempt: End to End Time (ms): 29506.573000
+    advance: End to End Time (ms): 26805.870000
+0.4 and 0.2:
+    ref: End to End Time (ms): 104370.276000
+    preempt: End to End Time (ms): 29549.115000
+	advance: End to End Time (ms): 29451.036000
+
+Sensitivity of abort threshold and execution time window hashtable:
+0.2 and 0.02:
+    ref: End to End Time (ms): 5323.545000
+    preempt: End to End Time (ms): 3112.307000
+    advance: End to End Time (ms): 3162.684000
+0.4 and 0.02:
+    ref: End to End Time (ms): 5035.379000
+    preempt: End to End Time (ms): 3113.594000
+	advance: End to End Time (ms): 3111.769000
+0.5 and 0.02:
+    ref: End to End Time (ms): 7247.668000
+    preempt: End to End Time (ms): 3113.670000
+	advance: End to End Time (ms): 3113.343000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 3742.924000
+    preempt: End to End Time (ms): 3111.341000
+	advance: End to End Time (ms): 3112.236000
+0.8 and 0.02:
+    ref: End to End Time (ms): 7231.290000
+    preempt: End to End Time (ms): 3261.581000
+	advance: End to End Time (ms): 4999.813000
+0.4 and 0.1:
+    ref: End to End Time (ms): 4746.918000
+    preempt: End to End Time (ms): 3112.713000
+	advance: End to End Time (ms): 3636.958000
+0.4 and 0.01:
+    ref: End to End Time (ms): 6720.845000
+    preempt: End to End Time (ms): 3111.765000
+    advance: End to End Time (ms): 3545.079000
+0.4 and 0.05:
+    ref: End to End Time (ms): 5292.228000
+    preempt: End to End Time (ms): 3211.723000
+    advance: End to End Time (ms): 3111.901000
+0.4 and 0.2:
+    ref: End to End Time (ms): 4378.920000
+    preempt: End to End Time (ms): 3062.050000
+	advance: End to End Time (ms): 3111.590000
+
+
+Sensitivity of abort threshold and execution time window keccakf SHA-3:
+0.2 and 0.02:
+    ref: End to End Time (ms): 2846.391000
+    preempt: End to End Time (ms): 792.581000
+    advance: End to End Time (ms): 766.284000
+0.4 and 0.02:
+    ref: End to End Time (ms): 2712.009000
+    preempt: End to End Time (ms): 826.702000
+	advance: End to End Time (ms): 877.768000
+0.5 and 0.02:
+    ref: End to End Time (ms): 2996.755000
+    preempt: End to End Time (ms): 794.063000
+	advance: End to End Time (ms): 833.904000
+0.6 and 0.02: 
+    ref: End to End Time (ms): 2786.018000
+    preempt: End to End Time (ms): 890.674000
+	advance: End to End Time (ms): 860.657000
+0.8 and 0.02:
+    ref: End to End Time (ms): 2846.206000
+    preempt: End to End Time (ms): 828.557000
+	advance: End to End Time (ms): 842.876000
+0.4 and 0.1:
+    ref: End to End Time (ms): 2768.569000
+    preempt: End to End Time (ms): 844.108000
+	advance: End to End Time (ms): 942.063000
+0.4 and 0.01:
+    ref: End to End Time (ms): 2847.253000
+    preempt: End to End Time (ms): 802.543000
+    advance: End to End Time (ms): 824.208000
+0.4 and 0.05:
+    ref: End to End Time (ms): 2922.504000
+    preempt: End to End Time (ms): 846.548000
+    advance: End to End Time (ms): 992.310000
+0.4 and 0.2:
+    ref: End to End Time (ms): 2944.499000
+    preempt: End to End Time (ms): 826.991000
+	advance: End to End Time (ms): 802.039000
+
+
+
