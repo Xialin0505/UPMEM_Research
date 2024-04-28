@@ -161,13 +161,24 @@ static void print_rank_status() {
     printf("avg execution time %lld\n", preempt.avg_execution_dur);
 }
 
-void abort_struggling_dpu_reset(int rankIdx) {
-    printf("abort_struggling_dpu_reset %d\n", rankIdx);
+void drain_each_dpu(int rankIdx) {
+    struct dpu_rank_t *rank = preempt.dpu_set->list.ranks[rankIdx];
+    uint8_t nr_dpus = preempt.dpu_set->list.ranks[rankIdx]->nr_dpus_enabled;
+
+    for (int each_dpu = 0; each_dpu < nr_dpus; ++each_dpu) {
+        struct dpu_t *dpu = rank->dpus + each_dpu;
+        struct dpu_context_t dpu_context;
+        dpu_context_fill_from_rank(&dpu_context, rank);
+        // drain_pipeline(dpu, &dpu_context, false);
+    }
+}
+
+void abort_struggling_dpu(int rankIdx) {
+    printf("abort_struggling_dpu %d\n", rankIdx);
     struct dpu_rank_t* rank = preempt.dpu_set->list.ranks[rankIdx];
     
     rank->api.thread_info.should_stop = true;
     rank->api.abort = true;
-
     dpu_reset_rank(preempt.dpu_set->list.ranks[rankIdx]);
 
     if (preempt.host_func != NULL) {
@@ -176,7 +187,7 @@ void abort_struggling_dpu_reset(int rankIdx) {
 }
 
 void abort_struggling_dpu_advance(int rankIdx) {
-    printf("abort_struggling_dpu_advance %d\n", rankIdx);
+    printf("abort_struggling_dpu %d\n", rankIdx);
     struct dpu_rank_t* rank = preempt.dpu_set->list.ranks[rankIdx];
     
     rank->api.thread_info.should_stop = true;
@@ -193,24 +204,12 @@ void abort_struggling_dpu_advance(int rankIdx) {
     }
 }
 
-void abort_struggling_dpus_reset() {
-    printf("abort_struggling_dpus_reset\n"); 
+void abort_struggling_dpus() {
+    printf("abort_struggling_dpus\n"); 
     for (int i = 0; i < preempt.nr_rank; i++) {
         if (!preempt.rank_done[i]) {
             preempt.abort[i] = 1;
-            abort_struggling_dpu_reset(i);
-        } else {
-            preempt.abort[i] = 0;
-        }
-    }
-}
-
-void abort_struggling_dpus_advance() {
-    printf("abort_struggling_dpus_advance\n"); 
-    for (int i = 0; i < preempt.nr_rank; i++) {
-        if (!preempt.rank_done[i]) {
-            preempt.abort[i] = 1;
-            abort_struggling_dpus_advance(i);
+            abort_struggling_dpu(i);
         } else {
             preempt.abort[i] = 0;
         }
@@ -250,7 +249,7 @@ void * dpu_poll_status(void * arg) {
     }
 
     if (abort) {
-        abort_struggling_dpus_reset();
+        abort_struggling_dpus();
     }
     return NULL;
 }
