@@ -1,5 +1,10 @@
 ## UPMEM Research
 
+#### Project code
+the project code are located in `library` folder, mainly in
+`library/backends/api/include/api/dpu.h`
+`library/backends/api/src/api/dpu_runner.c`
+
 #### Build the Library
 ```
 cd /libaray/src/backends/
@@ -14,7 +19,10 @@ It should build `libdpu.so.0.0` and `libdpujni.so.0.0`, which should be enough f
 If reports "cannot open shared object file: No such file or directory"
 Manually export the library
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/my_library/
+`export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/my_library/`
+or
+`export LD_LIBRARY_PATH="$LD_LIBRARY_PATH;$PWD/lib"`
+in the benchmarks directory
 
 replace my library with the absolute path of /lib/ folder under one of the four benchmarks
 
