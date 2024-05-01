@@ -19,21 +19,21 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/my_library/
 replace my library with the absolute path of /lib/ folder under one of the four benchmarks
 
 #### Run the use case
-#### Use case binary search
+### Use case binary search
 
 cd /binarysearch/
 
-#### lazy preemption
+## lazy preemption
 
-#### CPU baseline contained in lazy preemption
+## CPU baseline contained in lazy preemption
 
 ./test.sh
 
-#### lazy preemption with advance mode
+## lazy preemption with advance mode
 
 ./test_advance.sh
 
-#### PIM baseline
+## PIM baseline
 
 ./test_ref.sh
 
@@ -42,23 +42,23 @@ cd /binarysearch/
 
 
 
-#### Use case keccaf
+### Use case keccaf
 
 cd /usecase_keccakf/
 
-#### lazy preemption
+## lazy preemption
 
 make run
 
-#### lazy preemption with advance mode
+## lazy preemption with advance mode
 
 make advance
 
-#### CPU baseline
+## CPU baseline
 
 make cpu
 
-#### dpu baseline
+## dpu baseline
 
 cd /usecase_keccakf-base/
 
@@ -71,23 +71,23 @@ make run
 
 
 
-#### Use case checksum
+### Use case checksum
 
 cd /checksum/
 
-#### lazy preemption
+## lazy preemption
 
 ./test.sh
 
-#### CPU baseline
+## CPU baseline
 
 ./host_cpu/host
 
-#### lazy preemption with advance mode
+## lazy preemption with advance mode
 
 ./test_advance.sh
 
-#### PIM baseline
+## PIM baseline
 
 ./test_ref.sh
 
