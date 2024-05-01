@@ -617,6 +617,7 @@ api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/include/lowlevel/dpu_trans
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/src/api/include/dpu_api_verbose.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/src/api/include/dpu_polling.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/src/api/include/dpu_thread_job.h
+api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/src/include/dpu_internals.h
 api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o: ../api/src/api/dpu_runner.c
 
 api/CMakeFiles/dpu.dir/src/api/dpu_set.c.o: ../api/../commons/include/dpu_attributes.h

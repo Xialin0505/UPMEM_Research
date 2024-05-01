@@ -115,6 +115,8 @@ dpu_types.h
 -
 dpu_macro_utils.h
 -
+dpu_rank.h
+-
 
 ../api/include/api/dpu_checkpoint.h
 dpu_error.h

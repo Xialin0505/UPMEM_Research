@@ -13,6 +13,7 @@
 #include <getopt.h>
 #include <assert.h>
 #include <time.h>
+#include <x86intrin.h>
 
 #if ENERGY
 #include <dpu_probe.h>
@@ -211,8 +212,13 @@ int main(int argc, char **argv) {
 
 	// Compute host solution
 	start(&timer, 0, 0);
+	uint64_t startc = _rdtsc();
 	result_host = binarySearch(input, querys, input_size - 1, num_querys);
+	uint64_t endc = _rdtsc();
 	stop(&timer, 0);
+
+	double cycles = (double)(endc - startc);
+	printf("CPU version CPU cycles : %g\n", cycles);
 
 	int status = 0;
 	// Create kernel arguments
@@ -304,7 +310,12 @@ int main(int argc, char **argv) {
 
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, "DPU_RESULTS", 0, NR_TASKLETS * sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
-		host_func_resume();
+		startc = _rdtsc();
+	    host_func_resume();
+	    endc = _rdtsc();
+
+	    cycles = (double)(endc - startc);
+	    printf("Resume Function CPU cycles : %g\n", cycles);
 
 		DPU_FOREACH(dpu_set, dpu, i)
 		{
@@ -331,6 +342,7 @@ int main(int argc, char **argv) {
 	print(&timer, 2, p.n_warmup);
 	printf("DPU-CPU Time (ms): ");
 	print(&timer, 3, p.n_warmup);
+	printf("\nEnd to End Time (ms): %f\n",(timer.time[1] + timer.time[2] + timer.time[3]) / (1000 * p.n_warmup) );
 
 	#if ENERGY
 	double energy;

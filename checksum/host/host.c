@@ -24,6 +24,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <x86intrin.h>
+#include "timer.h"
 
 #include "common.h"
 
@@ -108,6 +110,7 @@ int main()
     uint32_t theoretical_checksum, dpu_checksum;
     uint32_t dpu_cycles;
     bool status = true;
+	Timer timer;
 
     DPU_ASSERT(dpu_alloc(NR_DPUS, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
@@ -126,6 +129,7 @@ int main()
     // Create an "input file" with arbitrary data.
     // Compute its theoretical checksum value.
     theoretical_checksum = create_test_file();
+	start(&timer, 0, 0);
 
     printf("Load input data\n");
     DPU_ASSERT(dpu_copy_to(dpu_set, XSTR(DPU_BUFFER), 0, test_file, BUFFER_SIZE));
@@ -145,8 +149,13 @@ int main()
         //}
     }
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
-
+    uint64_t start = _rdtsc();
     host_func_resume();
+	uint64_t end = _rdtsc();
+	stop(&timer, 0);
+
+	double cycles = (double)(end - start);
+	printf("Resume Function CPU cycles : %g\n", cycles);
 
     DPU_FOREACH (dpu_set, dpu, each_dpu) {
         bool dpu_status;
@@ -176,6 +185,10 @@ int main()
         }
 
     }
+
+	printf("End to End Time (ms): ");
+	print(&timer, 0, 1);
+    printf("\n");
 
     DPU_ASSERT(dpu_free(dpu_set));
     free(abortInfo);

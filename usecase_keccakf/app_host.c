@@ -18,6 +18,7 @@
 #include <string.h>
 #include <omp.h>
 #include "timer.h"
+#include <x86intrin.h>
 
 typedef uint64_t u64;
 
@@ -373,7 +374,12 @@ int main(int argc, char **argv)
         i++;
     }
 
+	uint64_t startc = _rdtsc();
 	host_resume();
+	uint64_t endc = _rdtsc();
+
+	double ccycles = (double)(endc - startc);
+	printf("Host resume CPU cycles : %g\n", ccycles);
 	
     sum ^= total_sum;
 

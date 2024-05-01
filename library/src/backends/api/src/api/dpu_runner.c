@@ -24,7 +24,7 @@
 #include <dpu_program.h>
 
 #define RANK_THRESHOLD 0.4
-#define EXECUTION_WINDOW 0.02
+#define EXECUTION_WINDOW 0.2
 
 struct preempt_info{
     pthread_t preempt_thread;
@@ -161,18 +161,6 @@ static void print_rank_status() {
     printf("avg execution time %lld\n", preempt.avg_execution_dur);
 }
 
-void drain_each_dpu(int rankIdx) {
-    struct dpu_rank_t *rank = preempt.dpu_set->list.ranks[rankIdx];
-    uint8_t nr_dpus = preempt.dpu_set->list.ranks[rankIdx]->nr_dpus_enabled;
-
-    for (int each_dpu = 0; each_dpu < nr_dpus; ++each_dpu) {
-        struct dpu_t *dpu = rank->dpus + each_dpu;
-        struct dpu_context_t dpu_context;
-        dpu_context_fill_from_rank(&dpu_context, rank);
-        // drain_pipeline(dpu, &dpu_context, false);
-    }
-}
-
 void abort_struggling_dpu(int rankIdx) {
     printf("abort_struggling_dpu %d\n", rankIdx);
     struct dpu_rank_t* rank = preempt.dpu_set->list.ranks[rankIdx];
@@ -187,7 +175,7 @@ void abort_struggling_dpu(int rankIdx) {
 }
 
 void abort_struggling_dpu_advance(int rankIdx) {
-    printf("abort_struggling_dpu %d\n", rankIdx);
+    printf("abort_struggling_dpu_advance %d\n", rankIdx);
     struct dpu_rank_t* rank = preempt.dpu_set->list.ranks[rankIdx];
     
     rank->api.thread_info.should_stop = true;
@@ -197,10 +185,6 @@ void abort_struggling_dpu_advance(int rankIdx) {
     while (run_context->nb_dpu_running != 0) {
         run_context->nb_dpu_running = 0;
         pthread_cond_broadcast(&rank->api.poll_cond);
-    }
-
-    if (preempt.host_func != NULL) {
-        preempt.host_func(rankIdx);
     }
 }
 
@@ -216,17 +200,16 @@ void abort_struggling_dpus() {
     }
 }
 
-void enable_stealing() {
-    printf("enable_stealing\n");
-    int stealing = 1;
-    struct dpu_set_t dpu;
-    uint32_t each_dpu;
-
-    DPU_FOREACH(*(preempt.dpu_set), dpu, each_dpu)
-    {
-        DPU_ASSERT(dpu_prepare_xfer(dpu, &(stealing)));
+void abort_struggling_dpus_advance() {
+    printf("abort_struggling_dpus_advance\n"); 
+    for (int i = 0; i < preempt.nr_rank; i++) {
+        if (!preempt.rank_done[i]) {
+            preempt.abort[i] = 1;
+            abort_struggling_dpu_advance(i);
+        } else {
+            preempt.abort[i] = 0;
+        }
     }
-    DPU_ASSERT(dpu_push_xfer(*(preempt.dpu_set), DPU_XFER_TO_DPU, "start_stealing", 0, sizeof(int), DPU_XFER_DEFAULT));
 }
 
 void * dpu_poll_status(void * arg) {
@@ -254,8 +237,33 @@ void * dpu_poll_status(void * arg) {
     return NULL;
 }
 
+void * dpu_poll_status_advance(void * arg) {
+    struct dpu_thread_job_sync * sync = (struct dpu_thread_job_sync*) arg;
+    struct timeval nowTime;
+
+    gettimeofday(&preempt.startTime, NULL);
+    bool abort = false;
+
+    while (!sync->stop_polling) {
+        int running_rank_num = sync -> nr_ranks;
+        nano_sleep(preempt.check_interval);
+
+        each_rank_status();
+        if (determine_struggle_dpu()) {
+            abort = true;
+            sync->stop_polling = true;
+            break;
+        }
+    }
+
+    if (abort) {
+        abort_struggling_dpus_advance();
+    }
+    return NULL;
+}
+
 static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync * sync,
-                            void (*host_func)(uint32_t), int* abort) {
+                            void (*host_func)(uint32_t), int* abort, bool advance) {
     // dpu_get_nr_dpus(*dpu_set, &preempt.nr_rank);
     preempt.nr_rank = sync->nr_ranks;
     preempt.check_interval = 50000000L;
@@ -275,7 +283,11 @@ static void init_preempt(struct dpu_set_t * dpu_set, struct dpu_thread_job_sync 
     memset(preempt.prev_done, 0, sizeof(short) * preempt.nr_rank);
 
     sync->stop_polling = false;
-    int ret = pthread_create(&preempt.preempt_thread, NULL, dpu_poll_status, (void*)sync);
+    if (advance) {
+        int ret = pthread_create(&preempt.preempt_thread, NULL, dpu_poll_status_advance, (void*)sync);
+    } else {
+        int ret = pthread_create(&preempt.preempt_thread, NULL, dpu_poll_status, (void*)sync);
+    }
 }
 
 static void clean_preempt(struct dpu_thread_job_sync * sync) {
@@ -328,7 +340,7 @@ dpu_launch_preempt_restart(struct dpu_set_t dpu_set, dpu_launch_policy_t policy,
         }
     });
 
-    init_preempt(&dpu_set, &sync, host_func, abort);
+    init_preempt(&dpu_set, &sync, host_func, abort, false);
     status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
     clean_preempt(&sync);
 
@@ -375,7 +387,54 @@ dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, int* ab
         }
     });
 
-    init_preempt(&dpu_set, &sync, NULL, abort);
+    init_preempt(&dpu_set, &sync, NULL, abort, false);
+    status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
+    clean_preempt(&sync);
+
+    return status;
+}
+
+__API_SYMBOL__ dpu_error_t
+dpu_launch_preempt_advance(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, int* abort)
+{
+    dpu_error_t status = DPU_OK;
+    LOG_FN(DEBUG, "%s", dpu_launch_policy_to_string(policy));
+    printf("dpu_launch_preempt_advance\n");
+
+    if (dpu_set.kind != DPU_SET_RANKS && dpu_set.kind != DPU_SET_DPU) {
+        return DPU_ERR_INTERNAL;
+    }
+
+    uint32_t nr_ranks;
+    struct dpu_rank_t **ranks;
+    struct dpu_rank_t *rank;
+    switch (dpu_set.kind) {
+        case DPU_SET_RANKS:
+            nr_ranks = dpu_set.list.nr_ranks;
+            ranks = dpu_set.list.ranks;
+            break;
+        case DPU_SET_DPU:
+            nr_ranks = 1;
+            rank = dpu_get_rank(dpu_set.dpu);
+            ranks = &rank;
+            break;
+    }
+
+    struct dpu_thread_job_sync sync;
+    uint32_t nr_jobs_per_rank;
+    DPU_THREAD_JOB_GET_JOBS(ranks, nr_ranks, nr_jobs_per_rank, jobs, &sync, policy == DPU_SYNCHRONOUS, status);
+
+    struct dpu_thread_job *job;
+    DPU_THREAD_JOB_SET_JOBS(ranks, rank, nr_ranks, jobs, job, &sync, policy == DPU_SYNCHRONOUS, {
+        if (dpu_set.kind == DPU_SET_RANKS) {
+            job->type = DPU_THREAD_JOB_LAUNCH_RANK;
+        } else {
+            job->type = DPU_THREAD_JOB_LAUNCH_DPU;
+            job->dpu = dpu_set.dpu;
+        }
+    });
+
+    init_preempt(&dpu_set, &sync, NULL, abort, true);
     status = dpu_thread_job_do_jobs(ranks, nr_ranks, nr_jobs_per_rank, jobs, policy == DPU_SYNCHRONOUS, &sync);
     clean_preempt(&sync);
 

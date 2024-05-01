@@ -131,6 +131,8 @@ dpu_types.h
 -
 dpu_macro_utils.h
 -
+dpu_rank.h
+-
 
 ../api/include/api/dpu_checkpoint.h
 dpu_error.h
@@ -284,6 +286,22 @@ dpu_types.h
 dpu.h
 -
 
+../api/src/include/dpu_internals.h
+stdbool.h
+-
+stdint.h
+-
+dpu_error.h
+-
+dpu_types.h
+-
+dpu_debug.h
+-
+dpu_config.h
+-
+dpu_rank.h
+-
+
 /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu_runner.c
 dpu.h
 /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu.h
@@ -308,6 +326,8 @@ dpu_thread_job.h
 dpu_mask.h
 -
 dpu_config.h
+-
+dpu_internals.h
 -
 unistd.h
 -
