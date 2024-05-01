@@ -46,7 +46,7 @@ make run
 ```
 ### lazy preemption with advance mode
 ```
-make advance
+make adv
 ```
 ### CPU baseline
 ```
