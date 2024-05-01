@@ -618,6 +618,7 @@ api/CMakeFiles/dpu.dir/src/api/dpu_runner.c.o
  ../api/src/api/include/dpu_api_verbose.h
  ../api/src/api/include/dpu_polling.h
  ../api/src/api/include/dpu_thread_job.h
+ ../api/src/include/dpu_internals.h
  /home/upmem0037/xialinl/research/library/src/backends/api/src/api/dpu_runner.c
 api/CMakeFiles/dpu.dir/src/api/dpu_set.c.o
  ../api/../commons/include/dpu_attributes.h

@@ -26,6 +26,7 @@
 #include <unistd.h>
 #include <omp.h>
 #include <timer.h>
+#include <x86intrin.h>
 
 #include "common.h"
 
@@ -212,8 +213,12 @@ int main()
     }
     DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, XSTR(DPU_RESULTS), 0, sizeof(dpu_results_t), DPU_XFER_DEFAULT));
 
-    host_func_resume();
+    uint64_t startc = _rdtsc();
+	host_func_resume();
+	uint64_t endc = _rdtsc();
 
+	uint64_t ccycles = (double)(endc - startc);
+	printf("Resume Function CPU cycles : %g\n", ccycles);
     stop(&timer, 0);
 
     DPU_FOREACH (dpu_set, dpu, each_dpu) {

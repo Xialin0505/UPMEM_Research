@@ -402,6 +402,9 @@ do_sync_job(struct dpu_thread_job_sync *sync);
 dpu_error_t
 dpu_launch_preempt(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, int* abort);
 
+dpu_error_t
+dpu_launch_preempt_advance(struct dpu_set_t dpu_set, dpu_launch_policy_t policy, int* abort);
+
 /**
  * @brief Request the boot of all the DPUs in a DPU set.
  * @param dpu_set the identifier of the DPU set we want to boot

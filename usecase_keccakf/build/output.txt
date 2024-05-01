@@ -1025,39 +1025,48 @@ Allocated 64 DPU(s) x 16 Threads
  Thread 63-15 128->128
 Run program on DPU(s)
 dpu_launch_preempt
-abort_struggling_dpus_reset
-abort_struggling_dpu_reset 0
-abort_struggling_dpu_reset 1
-abort_struggling_dpu_reset 2
-abort_struggling_dpu_reset 4
-abort_struggling_dpu_reset 8
-abort_struggling_dpu_reset 12
-abort_struggling_dpu_reset 14
-abort_struggling_dpu_reset 15
-abort_struggling_dpu_reset 16
-abort_struggling_dpu_reset 18
-abort_struggling_dpu_reset 22
-abort_struggling_dpu_reset 24
-abort_struggling_dpu_reset 26
-abort_struggling_dpu_reset 29
-abort_struggling_dpu_reset 30
-abort_struggling_dpu_reset 34
-abort_struggling_dpu_reset 38
-abort_struggling_dpu_reset 39
-abort_struggling_dpu_reset 40
-abort_struggling_dpu_reset 43
-abort_struggling_dpu_reset 44
-abort_struggling_dpu_reset 45
-abort_struggling_dpu_reset 50
-abort_struggling_dpu_reset 51
-abort_struggling_dpu_reset 52
-abort_struggling_dpu_reset 54
-abort_struggling_dpu_reset 57
-abort_struggling_dpu_reset 59
-abort_struggling_dpu_reset 62
-abort_struggling_dpu_reset 63
+abort_struggling_dpus
+abort_struggling_dpu 0
+abort_struggling_dpu 1
+abort_struggling_dpu 3
+abort_struggling_dpu 4
+abort_struggling_dpu 6
+abort_struggling_dpu 7
+abort_struggling_dpu 9
+abort_struggling_dpu 10
+abort_struggling_dpu 13
+abort_struggling_dpu 14
+abort_struggling_dpu 15
+abort_struggling_dpu 16
+abort_struggling_dpu 17
+abort_struggling_dpu 21
+abort_struggling_dpu 22
+abort_struggling_dpu 26
+abort_struggling_dpu 29
+abort_struggling_dpu 30
+abort_struggling_dpu 31
+abort_struggling_dpu 32
+abort_struggling_dpu 33
+abort_struggling_dpu 35
+abort_struggling_dpu 38
+abort_struggling_dpu 39
+abort_struggling_dpu 41
+abort_struggling_dpu 44
+abort_struggling_dpu 45
+abort_struggling_dpu 47
+abort_struggling_dpu 48
+abort_struggling_dpu 49
+abort_struggling_dpu 50
+abort_struggling_dpu 51
+abort_struggling_dpu 52
+abort_struggling_dpu 54
+abort_struggling_dpu 57
+abort_struggling_dpu 59
+abort_struggling_dpu 60
+abort_struggling_dpu 61
+abort_struggling_dpu 62
 Retrieve results
-cur_key:0 ;lkey:1; cur_loop: 106, cur_sum:0
+cur_key:0 ;lkey:1; cur_loop: 121, cur_sum:0
 cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
 cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
 cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
@@ -1065,7 +1074,7 @@ cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
 cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
 cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
 cur_key:1 ;lkey:1; cur_loop: -1, cur_sum:0
-cur_key:1 ;lkey:2; cur_loop: 106, cur_sum:0
+cur_key:1 ;lkey:2; cur_loop: 121, cur_sum:0
 cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
 cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
 cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
@@ -1073,7 +1082,7 @@ cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
 cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
 cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
 cur_key:2 ;lkey:2; cur_loop: -1, cur_sum:0
-cur_key:2 ;lkey:3; cur_loop: 126, cur_sum:0
+cur_key:2 ;lkey:3; cur_loop: 97, cur_sum:0
 cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
 cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
 cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
@@ -1081,7 +1090,7 @@ cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
 cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
 cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
 cur_key:3 ;lkey:3; cur_loop: -1, cur_sum:0
-cur_key:3 ;lkey:4; cur_loop: 126, cur_sum:0
+cur_key:3 ;lkey:4; cur_loop: 97, cur_sum:0
 cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
 cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
 cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
@@ -1089,7 +1098,7 @@ cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
 cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
 cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
 cur_key:4 ;lkey:4; cur_loop: -1, cur_sum:0
-cur_key:4 ;lkey:5; cur_loop: 94, cur_sum:0
+cur_key:5 ;lkey:5; cur_loop: 128, cur_sum:-961240581
 cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
 cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
 cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
@@ -1097,7 +1106,7 @@ cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
 cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
 cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
 cur_key:5 ;lkey:5; cur_loop: -1, cur_sum:0
-cur_key:5 ;lkey:6; cur_loop: 94, cur_sum:0
+cur_key:6 ;lkey:6; cur_loop: 128, cur_sum:-2035016432
 cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
 cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
 cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
@@ -1105,7 +1114,7 @@ cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
 cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
 cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
 cur_key:6 ;lkey:6; cur_loop: -1, cur_sum:0
-cur_key:7 ;lkey:7; cur_loop: 128, cur_sum:357254687
+cur_key:6 ;lkey:7; cur_loop: 103, cur_sum:0
 cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
 cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
 cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
@@ -1113,7 +1122,7 @@ cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
 cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
 cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
 cur_key:7 ;lkey:7; cur_loop: -1, cur_sum:0
-cur_key:8 ;lkey:8; cur_loop: 128, cur_sum:-356802837
+cur_key:7 ;lkey:8; cur_loop: 103, cur_sum:0
 cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
 cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
 cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
@@ -1121,7 +1130,7 @@ cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
 cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
 cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
 cur_key:8 ;lkey:8; cur_loop: -1, cur_sum:0
-cur_key:8 ;lkey:9; cur_loop: 105, cur_sum:0
+cur_key:8 ;lkey:9; cur_loop: 84, cur_sum:0
 cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
 cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
 cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
@@ -1129,7 +1138,7 @@ cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
 cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
 cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
 cur_key:9 ;lkey:9; cur_loop: -1, cur_sum:0
-cur_key:9 ;lkey:10; cur_loop: 105, cur_sum:0
+cur_key:9 ;lkey:10; cur_loop: 84, cur_sum:0
 cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
 cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
 cur_key:10 ;lkey:10; cur_loop: -1, cur_sum:0
@@ -1153,7 +1162,7 @@ cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
 cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
 cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
 cur_key:12 ;lkey:12; cur_loop: -1, cur_sum:0
-cur_key:13 ;lkey:13; cur_loop: 128, cur_sum:-1613923006
+cur_key:12 ;lkey:13; cur_loop: 127, cur_sum:0
 cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
 cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
 cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
@@ -1161,7 +1170,7 @@ cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
 cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
 cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
 cur_key:13 ;lkey:13; cur_loop: -1, cur_sum:0
-cur_key:14 ;lkey:14; cur_loop: 128, cur_sum:-76261799
+cur_key:13 ;lkey:14; cur_loop: 127, cur_sum:0
 cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
 cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
 cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
@@ -1169,7 +1178,7 @@ cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
 cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
 cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
 cur_key:14 ;lkey:14; cur_loop: -1, cur_sum:0
-cur_key:15 ;lkey:15; cur_loop: 128, cur_sum:168971719
+cur_key:14 ;lkey:15; cur_loop: 109, cur_sum:0
 cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
 cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
 cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
@@ -1177,7 +1186,7 @@ cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
 cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
 cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
 cur_key:15 ;lkey:15; cur_loop: -1, cur_sum:0
-cur_key:16 ;lkey:16; cur_loop: 128, cur_sum:-1077088416
+cur_key:15 ;lkey:16; cur_loop: 109, cur_sum:0
 cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
 cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
 cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
@@ -1185,7 +1194,7 @@ cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
 cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
 cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
 cur_key:16 ;lkey:16; cur_loop: -1, cur_sum:0
-cur_key:16 ;lkey:17; cur_loop: 112, cur_sum:0
+cur_key:17 ;lkey:17; cur_loop: 128, cur_sum:1702745799
 cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
 cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
 cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
@@ -1193,7 +1202,7 @@ cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
 cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
 cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
 cur_key:17 ;lkey:17; cur_loop: -1, cur_sum:0
-cur_key:17 ;lkey:18; cur_loop: 112, cur_sum:0
+cur_key:18 ;lkey:18; cur_loop: 128, cur_sum:-1357202281
 cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
 cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
 cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
@@ -1201,7 +1210,7 @@ cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
 cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
 cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
 cur_key:18 ;lkey:18; cur_loop: -1, cur_sum:0
-cur_key:19 ;lkey:19; cur_loop: 128, cur_sum:1375852278
+cur_key:18 ;lkey:19; cur_loop: 74, cur_sum:0
 cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
 cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
 cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
@@ -1209,7 +1218,7 @@ cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
 cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
 cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
 cur_key:19 ;lkey:19; cur_loop: -1, cur_sum:0
-cur_key:20 ;lkey:20; cur_loop: 128, cur_sum:-1577432817
+cur_key:19 ;lkey:20; cur_loop: 74, cur_sum:0
 cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
 cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
 cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
@@ -1217,7 +1226,7 @@ cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
 cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
 cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
 cur_key:20 ;lkey:20; cur_loop: -1, cur_sum:0
-cur_key:21 ;lkey:21; cur_loop: 128, cur_sum:459113684
+cur_key:20 ;lkey:21; cur_loop: 119, cur_sum:0
 cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
 cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
 cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
@@ -1225,7 +1234,7 @@ cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
 cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
 cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
 cur_key:21 ;lkey:21; cur_loop: -1, cur_sum:0
-cur_key:22 ;lkey:22; cur_loop: 128, cur_sum:-672765637
+cur_key:21 ;lkey:22; cur_loop: 119, cur_sum:0
 cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
 cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
 cur_key:22 ;lkey:22; cur_loop: -1, cur_sum:0
@@ -1249,7 +1258,7 @@ cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
 cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
 cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
 cur_key:24 ;lkey:24; cur_loop: -1, cur_sum:0
-cur_key:24 ;lkey:25; cur_loop: 92, cur_sum:0
+cur_key:25 ;lkey:25; cur_loop: 128, cur_sum:-1731071931
 cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
 cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
 cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
@@ -1257,7 +1266,7 @@ cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
 cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
 cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
 cur_key:25 ;lkey:25; cur_loop: -1, cur_sum:0
-cur_key:25 ;lkey:26; cur_loop: 92, cur_sum:0
+cur_key:26 ;lkey:26; cur_loop: 128, cur_sum:24511382
 cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
 cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
 cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
@@ -1265,7 +1274,7 @@ cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
 cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
 cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
 cur_key:26 ;lkey:26; cur_loop: -1, cur_sum:0
-cur_key:27 ;lkey:27; cur_loop: 128, cur_sum:-1116022605
+cur_key:26 ;lkey:27; cur_loop: 108, cur_sum:0
 cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
 cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
 cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
@@ -1273,7 +1282,7 @@ cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
 cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
 cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
 cur_key:27 ;lkey:27; cur_loop: -1, cur_sum:0
-cur_key:28 ;lkey:28; cur_loop: 128, cur_sum:-1764776152
+cur_key:27 ;lkey:28; cur_loop: 108, cur_sum:0
 cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
 cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
 cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
@@ -1281,7 +1290,7 @@ cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
 cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
 cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
 cur_key:28 ;lkey:28; cur_loop: -1, cur_sum:0
-cur_key:28 ;lkey:29; cur_loop: 101, cur_sum:0
+cur_key:28 ;lkey:29; cur_loop: 111, cur_sum:0
 cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
 cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
 cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
@@ -1289,7 +1298,7 @@ cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
 cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
 cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
 cur_key:29 ;lkey:29; cur_loop: -1, cur_sum:0
-cur_key:29 ;lkey:30; cur_loop: 101, cur_sum:0
+cur_key:29 ;lkey:30; cur_loop: 111, cur_sum:0
 cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
 cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
 cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
@@ -1297,7 +1306,7 @@ cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
 cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
 cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
 cur_key:30 ;lkey:30; cur_loop: -1, cur_sum:0
-cur_key:30 ;lkey:31; cur_loop: 119, cur_sum:0
+cur_key:30 ;lkey:31; cur_loop: 82, cur_sum:0
 cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
 cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
 cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
@@ -1305,7 +1314,7 @@ cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
 cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
 cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
 cur_key:31 ;lkey:31; cur_loop: -1, cur_sum:0
-cur_key:31 ;lkey:32; cur_loop: 119, cur_sum:0
+cur_key:31 ;lkey:32; cur_loop: 82, cur_sum:0
 cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
 cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
 cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
@@ -1313,7 +1322,7 @@ cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
 cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
 cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
 cur_key:32 ;lkey:32; cur_loop: -1, cur_sum:0
-cur_key:32 ;lkey:33; cur_loop: 96, cur_sum:0
+cur_key:32 ;lkey:33; cur_loop: 108, cur_sum:0
 cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
 cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
 cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
@@ -1321,7 +1330,7 @@ cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
 cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
 cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
 cur_key:33 ;lkey:33; cur_loop: -1, cur_sum:0
-cur_key:33 ;lkey:34; cur_loop: 96, cur_sum:0
+cur_key:33 ;lkey:34; cur_loop: 108, cur_sum:0
 cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
 cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
 cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
@@ -1329,7 +1338,7 @@ cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
 cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
 cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
 cur_key:34 ;lkey:34; cur_loop: -1, cur_sum:0
-cur_key:35 ;lkey:35; cur_loop: 128, cur_sum:609335057
+cur_key:34 ;lkey:35; cur_loop: 91, cur_sum:0
 cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
 cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
 cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
@@ -1337,7 +1346,7 @@ cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
 cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
 cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
 cur_key:35 ;lkey:35; cur_loop: -1, cur_sum:0
-cur_key:36 ;lkey:36; cur_loop: 128, cur_sum:1206408991
+cur_key:35 ;lkey:36; cur_loop: 91, cur_sum:0
 cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
 cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
 cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
@@ -1345,7 +1354,7 @@ cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
 cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
 cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
 cur_key:36 ;lkey:36; cur_loop: -1, cur_sum:0
-cur_key:36 ;lkey:37; cur_loop: 96, cur_sum:0
+cur_key:37 ;lkey:37; cur_loop: 128, cur_sum:194704647
 cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
 cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
 cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
@@ -1353,7 +1362,7 @@ cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
 cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
 cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
 cur_key:37 ;lkey:37; cur_loop: -1, cur_sum:0
-cur_key:37 ;lkey:38; cur_loop: 96, cur_sum:0
+cur_key:38 ;lkey:38; cur_loop: 128, cur_sum:1623370977
 cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
 cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
 cur_key:38 ;lkey:38; cur_loop: -1, cur_sum:0
@@ -1393,7 +1402,7 @@ cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
 cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
 cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
 cur_key:42 ;lkey:42; cur_loop: -1, cur_sum:0
-cur_key:43 ;lkey:43; cur_loop: 128, cur_sum:-1777115543
+cur_key:42 ;lkey:43; cur_loop: 107, cur_sum:0
 cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
 cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
 cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
@@ -1401,7 +1410,7 @@ cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
 cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
 cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
 cur_key:43 ;lkey:43; cur_loop: -1, cur_sum:0
-cur_key:44 ;lkey:44; cur_loop: 128, cur_sum:-659653121
+cur_key:43 ;lkey:44; cur_loop: 107, cur_sum:0
 cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
 cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
 cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
@@ -1409,7 +1418,7 @@ cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
 cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
 cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
 cur_key:44 ;lkey:44; cur_loop: -1, cur_sum:0
-cur_key:44 ;lkey:45; cur_loop: 127, cur_sum:0
+cur_key:44 ;lkey:45; cur_loop: 85, cur_sum:0
 cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
 cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
 cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
@@ -1417,7 +1426,7 @@ cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
 cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
 cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
 cur_key:45 ;lkey:45; cur_loop: -1, cur_sum:0
-cur_key:45 ;lkey:46; cur_loop: 127, cur_sum:0
+cur_key:45 ;lkey:46; cur_loop: 85, cur_sum:0
 cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
 cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
 cur_key:46 ;lkey:46; cur_loop: -1, cur_sum:0
@@ -1441,7 +1450,7 @@ cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
 cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
 cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
 cur_key:48 ;lkey:48; cur_loop: -1, cur_sum:0
-cur_key:48 ;lkey:49; cur_loop: 117, cur_sum:0
+cur_key:49 ;lkey:49; cur_loop: 128, cur_sum:-1158052011
 cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
 cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
 cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
@@ -1449,7 +1458,7 @@ cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
 cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
 cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
 cur_key:49 ;lkey:49; cur_loop: -1, cur_sum:0
-cur_key:49 ;lkey:50; cur_loop: 117, cur_sum:0
+cur_key:50 ;lkey:50; cur_loop: 128, cur_sum:153930455
 cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
 cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
 cur_key:50 ;lkey:50; cur_loop: -1, cur_sum:0
@@ -1473,7 +1482,7 @@ cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
 cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
 cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
 cur_key:52 ;lkey:52; cur_loop: -1, cur_sum:0
-cur_key:52 ;lkey:53; cur_loop: 102, cur_sum:0
+cur_key:52 ;lkey:53; cur_loop: 125, cur_sum:0
 cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
 cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
 cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
@@ -1481,7 +1490,7 @@ cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
 cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
 cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
 cur_key:53 ;lkey:53; cur_loop: -1, cur_sum:0
-cur_key:53 ;lkey:54; cur_loop: 102, cur_sum:0
+cur_key:53 ;lkey:54; cur_loop: 125, cur_sum:0
 cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
 cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
 cur_key:54 ;lkey:54; cur_loop: -1, cur_sum:0
@@ -1521,7 +1530,7 @@ cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
 cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
 cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
 cur_key:58 ;lkey:58; cur_loop: -1, cur_sum:0
-cur_key:58 ;lkey:59; cur_loop: 99, cur_sum:0
+cur_key:58 ;lkey:59; cur_loop: 112, cur_sum:0
 cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
 cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
 cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
@@ -1529,7 +1538,7 @@ cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
 cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
 cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
 cur_key:59 ;lkey:59; cur_loop: -1, cur_sum:0
-cur_key:59 ;lkey:60; cur_loop: 99, cur_sum:0
+cur_key:59 ;lkey:60; cur_loop: 112, cur_sum:0
 cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
 cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
 cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
@@ -1537,7 +1546,7 @@ cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
 cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
 cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
 cur_key:60 ;lkey:60; cur_loop: -1, cur_sum:0
-cur_key:60 ;lkey:61; cur_loop: 119, cur_sum:0
+cur_key:60 ;lkey:61; cur_loop: 109, cur_sum:0
 cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
 cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
 cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
@@ -1545,7 +1554,7 @@ cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
 cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
 cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
 cur_key:61 ;lkey:61; cur_loop: -1, cur_sum:0
-cur_key:61 ;lkey:62; cur_loop: 119, cur_sum:0
+cur_key:61 ;lkey:62; cur_loop: 109, cur_sum:0
 cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
 cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
 cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
@@ -1553,7 +1562,7 @@ cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
 cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
 cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
 cur_key:62 ;lkey:62; cur_loop: -1, cur_sum:0
-cur_key:63 ;lkey:63; cur_loop: 128, cur_sum:1064499657
+cur_key:62 ;lkey:63; cur_loop: 116, cur_sum:0
 cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
 cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
 cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
@@ -1561,7 +1570,7 @@ cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
 cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
 cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
 cur_key:63 ;lkey:63; cur_loop: -1, cur_sum:0
-cur_key:64 ;lkey:64; cur_loop: 128, cur_sum:-1721452908
+cur_key:63 ;lkey:64; cur_loop: 116, cur_sum:0
 cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
 cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
 cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
@@ -1569,7 +1578,7 @@ cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
 cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
 cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
 cur_key:64 ;lkey:64; cur_loop: -1, cur_sum:0
-cur_key:65 ;lkey:65; cur_loop: 128, cur_sum:-211312281
+cur_key:64 ;lkey:65; cur_loop: 106, cur_sum:0
 cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
 cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
 cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
@@ -1577,7 +1586,7 @@ cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
 cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
 cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
 cur_key:65 ;lkey:65; cur_loop: -1, cur_sum:0
-cur_key:66 ;lkey:66; cur_loop: 128, cur_sum:2009918100
+cur_key:65 ;lkey:66; cur_loop: 106, cur_sum:0
 cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
 cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
 cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
@@ -1585,7 +1594,7 @@ cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
 cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
 cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
 cur_key:66 ;lkey:66; cur_loop: -1, cur_sum:0
-cur_key:67 ;lkey:67; cur_loop: 128, cur_sum:-841201224
+cur_key:66 ;lkey:67; cur_loop: 115, cur_sum:0
 cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
 cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
 cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
@@ -1593,7 +1602,7 @@ cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
 cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
 cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
 cur_key:67 ;lkey:67; cur_loop: -1, cur_sum:0
-cur_key:68 ;lkey:68; cur_loop: 128, cur_sum:-1010703709
+cur_key:67 ;lkey:68; cur_loop: 115, cur_sum:0
 cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
 cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
 cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
@@ -1601,7 +1610,7 @@ cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
 cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
 cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
 cur_key:68 ;lkey:68; cur_loop: -1, cur_sum:0
-cur_key:68 ;lkey:69; cur_loop: 113, cur_sum:0
+cur_key:69 ;lkey:69; cur_loop: 128, cur_sum:-127775833
 cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
 cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
 cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
@@ -1609,7 +1618,7 @@ cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
 cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
 cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
 cur_key:69 ;lkey:69; cur_loop: -1, cur_sum:0
-cur_key:69 ;lkey:70; cur_loop: 113, cur_sum:0
+cur_key:70 ;lkey:70; cur_loop: 128, cur_sum:294847242
 cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
 cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
 cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
@@ -1617,7 +1626,7 @@ cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
 cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
 cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
 cur_key:70 ;lkey:70; cur_loop: -1, cur_sum:0
-cur_key:71 ;lkey:71; cur_loop: 128, cur_sum:-1188550862
+cur_key:70 ;lkey:71; cur_loop: 124, cur_sum:0
 cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
 cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
 cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
@@ -1625,7 +1634,7 @@ cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
 cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
 cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
 cur_key:71 ;lkey:71; cur_loop: -1, cur_sum:0
-cur_key:72 ;lkey:72; cur_loop: 128, cur_sum:-652641707
+cur_key:71 ;lkey:72; cur_loop: 124, cur_sum:0
 cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
 cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
 cur_key:72 ;lkey:72; cur_loop: -1, cur_sum:0
@@ -1665,7 +1674,7 @@ cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
 cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
 cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
 cur_key:76 ;lkey:76; cur_loop: -1, cur_sum:0
-cur_key:76 ;lkey:77; cur_loop: 104, cur_sum:0
+cur_key:76 ;lkey:77; cur_loop: 127, cur_sum:0
 cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
 cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
 cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
@@ -1673,7 +1682,7 @@ cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
 cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
 cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
 cur_key:77 ;lkey:77; cur_loop: -1, cur_sum:0
-cur_key:77 ;lkey:78; cur_loop: 104, cur_sum:0
+cur_key:77 ;lkey:78; cur_loop: 127, cur_sum:0
 cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
 cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
 cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
@@ -1681,7 +1690,7 @@ cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
 cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
 cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
 cur_key:78 ;lkey:78; cur_loop: -1, cur_sum:0
-cur_key:78 ;lkey:79; cur_loop: 112, cur_sum:0
+cur_key:78 ;lkey:79; cur_loop: 115, cur_sum:0
 cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
 cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
 cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
@@ -1689,7 +1698,7 @@ cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
 cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
 cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
 cur_key:79 ;lkey:79; cur_loop: -1, cur_sum:0
-cur_key:79 ;lkey:80; cur_loop: 112, cur_sum:0
+cur_key:79 ;lkey:80; cur_loop: 115, cur_sum:0
 cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
 cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
 cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
@@ -1697,7 +1706,7 @@ cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
 cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
 cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
 cur_key:80 ;lkey:80; cur_loop: -1, cur_sum:0
-cur_key:80 ;lkey:81; cur_loop: 91, cur_sum:0
+cur_key:81 ;lkey:81; cur_loop: 128, cur_sum:1294945014
 cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
 cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
 cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
@@ -1705,7 +1714,7 @@ cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
 cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
 cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
 cur_key:81 ;lkey:81; cur_loop: -1, cur_sum:0
-cur_key:81 ;lkey:82; cur_loop: 91, cur_sum:0
+cur_key:82 ;lkey:82; cur_loop: 128, cur_sum:-188348310
 cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
 cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
 cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
@@ -1713,7 +1722,7 @@ cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
 cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
 cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
 cur_key:82 ;lkey:82; cur_loop: -1, cur_sum:0
-cur_key:83 ;lkey:83; cur_loop: 128, cur_sum:-1474504404
+cur_key:82 ;lkey:83; cur_loop: 121, cur_sum:0
 cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
 cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
 cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
@@ -1721,7 +1730,7 @@ cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
 cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
 cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
 cur_key:83 ;lkey:83; cur_loop: -1, cur_sum:0
-cur_key:84 ;lkey:84; cur_loop: 128, cur_sum:1553451962
+cur_key:83 ;lkey:84; cur_loop: 121, cur_sum:0
 cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
 cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
 cur_key:84 ;lkey:84; cur_loop: -1, cur_sum:0
@@ -1745,7 +1754,7 @@ cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
 cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
 cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
 cur_key:86 ;lkey:86; cur_loop: -1, cur_sum:0
-cur_key:86 ;lkey:87; cur_loop: 114, cur_sum:0
+cur_key:87 ;lkey:87; cur_loop: 128, cur_sum:-1734311974
 cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
 cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
 cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
@@ -1753,7 +1762,7 @@ cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
 cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
 cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
 cur_key:87 ;lkey:87; cur_loop: -1, cur_sum:0
-cur_key:87 ;lkey:88; cur_loop: 114, cur_sum:0
+cur_key:88 ;lkey:88; cur_loop: 128, cur_sum:1679237574
 cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
 cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
 cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
@@ -1761,7 +1770,7 @@ cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
 cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
 cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
 cur_key:88 ;lkey:88; cur_loop: -1, cur_sum:0
-cur_key:88 ;lkey:89; cur_loop: 119, cur_sum:0
+cur_key:88 ;lkey:89; cur_loop: 113, cur_sum:0
 cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
 cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
 cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
@@ -1769,7 +1778,7 @@ cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
 cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
 cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
 cur_key:89 ;lkey:89; cur_loop: -1, cur_sum:0
-cur_key:89 ;lkey:90; cur_loop: 119, cur_sum:0
+cur_key:89 ;lkey:90; cur_loop: 113, cur_sum:0
 cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
 cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
 cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
@@ -1777,7 +1786,7 @@ cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
 cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
 cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
 cur_key:90 ;lkey:90; cur_loop: -1, cur_sum:0
-cur_key:90 ;lkey:91; cur_loop: 124, cur_sum:0
+cur_key:90 ;lkey:91; cur_loop: 108, cur_sum:0
 cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
 cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
 cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
@@ -1785,7 +1794,7 @@ cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
 cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
 cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
 cur_key:91 ;lkey:91; cur_loop: -1, cur_sum:0
-cur_key:91 ;lkey:92; cur_loop: 124, cur_sum:0
+cur_key:91 ;lkey:92; cur_loop: 108, cur_sum:0
 cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
 cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
 cur_key:92 ;lkey:92; cur_loop: -1, cur_sum:0
@@ -1809,7 +1818,7 @@ cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
 cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
 cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
 cur_key:94 ;lkey:94; cur_loop: -1, cur_sum:0
-cur_key:95 ;lkey:95; cur_loop: 128, cur_sum:-1192764966
+cur_key:94 ;lkey:95; cur_loop: 108, cur_sum:0
 cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
 cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
 cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
@@ -1817,7 +1826,7 @@ cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
 cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
 cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
 cur_key:95 ;lkey:95; cur_loop: -1, cur_sum:0
-cur_key:96 ;lkey:96; cur_loop: 128, cur_sum:311867709
+cur_key:95 ;lkey:96; cur_loop: 108, cur_sum:0
 cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
 cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
 cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
@@ -1825,7 +1834,7 @@ cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
 cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
 cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
 cur_key:96 ;lkey:96; cur_loop: -1, cur_sum:0
-cur_key:97 ;lkey:97; cur_loop: 128, cur_sum:1912104054
+cur_key:96 ;lkey:97; cur_loop: 94, cur_sum:0
 cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
 cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
 cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
@@ -1833,7 +1842,7 @@ cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
 cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
 cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
 cur_key:97 ;lkey:97; cur_loop: -1, cur_sum:0
-cur_key:98 ;lkey:98; cur_loop: 128, cur_sum:-1181243764
+cur_key:97 ;lkey:98; cur_loop: 94, cur_sum:0
 cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
 cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
 cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
@@ -1841,7 +1850,7 @@ cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
 cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
 cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
 cur_key:98 ;lkey:98; cur_loop: -1, cur_sum:0
-cur_key:99 ;lkey:99; cur_loop: 128, cur_sum:1248456592
+cur_key:98 ;lkey:99; cur_loop: 110, cur_sum:0
 cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
 cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
 cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
@@ -1849,7 +1858,7 @@ cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
 cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
 cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
 cur_key:99 ;lkey:99; cur_loop: -1, cur_sum:0
-cur_key:100 ;lkey:100; cur_loop: 128, cur_sum:-190697880
+cur_key:99 ;lkey:100; cur_loop: 110, cur_sum:0
 cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
 cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
 cur_key:100 ;lkey:100; cur_loop: -1, cur_sum:0
@@ -1873,7 +1882,7 @@ cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
 cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
 cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
 cur_key:102 ;lkey:102; cur_loop: -1, cur_sum:0
-cur_key:102 ;lkey:103; cur_loop: 103, cur_sum:0
+cur_key:102 ;lkey:103; cur_loop: 122, cur_sum:0
 cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
 cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
 cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
@@ -1881,7 +1890,7 @@ cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
 cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
 cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
 cur_key:103 ;lkey:103; cur_loop: -1, cur_sum:0
-cur_key:103 ;lkey:104; cur_loop: 103, cur_sum:0
+cur_key:103 ;lkey:104; cur_loop: 122, cur_sum:0
 cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
 cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
 cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
@@ -1889,7 +1898,7 @@ cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
 cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
 cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
 cur_key:104 ;lkey:104; cur_loop: -1, cur_sum:0
-cur_key:104 ;lkey:105; cur_loop: 109, cur_sum:0
+cur_key:104 ;lkey:105; cur_loop: 122, cur_sum:0
 cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
 cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
 cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
@@ -1897,7 +1906,7 @@ cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
 cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
 cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
 cur_key:105 ;lkey:105; cur_loop: -1, cur_sum:0
-cur_key:105 ;lkey:106; cur_loop: 109, cur_sum:0
+cur_key:105 ;lkey:106; cur_loop: 122, cur_sum:0
 cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
 cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
 cur_key:106 ;lkey:106; cur_loop: -1, cur_sum:0
@@ -1921,7 +1930,7 @@ cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
 cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
 cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
 cur_key:108 ;lkey:108; cur_loop: -1, cur_sum:0
-cur_key:108 ;lkey:109; cur_loop: 94, cur_sum:0
+cur_key:108 ;lkey:109; cur_loop: 123, cur_sum:0
 cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
 cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
 cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
@@ -1929,7 +1938,7 @@ cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
 cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
 cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
 cur_key:109 ;lkey:109; cur_loop: -1, cur_sum:0
-cur_key:109 ;lkey:110; cur_loop: 94, cur_sum:0
+cur_key:109 ;lkey:110; cur_loop: 123, cur_sum:0
 cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
 cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
 cur_key:110 ;lkey:110; cur_loop: -1, cur_sum:0
@@ -1969,7 +1978,7 @@ cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
 cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
 cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
 cur_key:114 ;lkey:114; cur_loop: -1, cur_sum:0
-cur_key:114 ;lkey:115; cur_loop: 89, cur_sum:0
+cur_key:114 ;lkey:115; cur_loop: 108, cur_sum:0
 cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
 cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
 cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
@@ -1977,7 +1986,7 @@ cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
 cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
 cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
 cur_key:115 ;lkey:115; cur_loop: -1, cur_sum:0
-cur_key:115 ;lkey:116; cur_loop: 89, cur_sum:0
+cur_key:115 ;lkey:116; cur_loop: 108, cur_sum:0
 cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
 cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
 cur_key:116 ;lkey:116; cur_loop: -1, cur_sum:0
@@ -2001,7 +2010,7 @@ cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
 cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
 cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
 cur_key:118 ;lkey:118; cur_loop: -1, cur_sum:0
-cur_key:118 ;lkey:119; cur_loop: 107, cur_sum:0
+cur_key:118 ;lkey:119; cur_loop: 113, cur_sum:0
 cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
 cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
 cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
@@ -2009,7 +2018,7 @@ cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
 cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
 cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
 cur_key:119 ;lkey:119; cur_loop: -1, cur_sum:0
-cur_key:119 ;lkey:120; cur_loop: 107, cur_sum:0
+cur_key:119 ;lkey:120; cur_loop: 113, cur_sum:0
 cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
 cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
 cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
@@ -2017,7 +2026,7 @@ cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
 cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
 cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
 cur_key:120 ;lkey:120; cur_loop: -1, cur_sum:0
-cur_key:121 ;lkey:121; cur_loop: 128, cur_sum:1240507409
+cur_key:120 ;lkey:121; cur_loop: 104, cur_sum:0
 cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
 cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
 cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
@@ -2025,7 +2034,7 @@ cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
 cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
 cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
 cur_key:121 ;lkey:121; cur_loop: -1, cur_sum:0
-cur_key:122 ;lkey:122; cur_loop: 128, cur_sum:-1079581596
+cur_key:121 ;lkey:122; cur_loop: 104, cur_sum:0
 cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
 cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
 cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
@@ -2033,7 +2042,7 @@ cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
 cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
 cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
 cur_key:122 ;lkey:122; cur_loop: -1, cur_sum:0
-cur_key:123 ;lkey:123; cur_loop: 128, cur_sum:2053112094
+cur_key:122 ;lkey:123; cur_loop: 114, cur_sum:0
 cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
 cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
 cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
@@ -2041,7 +2050,7 @@ cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
 cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
 cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
 cur_key:123 ;lkey:123; cur_loop: -1, cur_sum:0
-cur_key:124 ;lkey:124; cur_loop: 128, cur_sum:-830931219
+cur_key:123 ;lkey:124; cur_loop: 114, cur_sum:0
 cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
 cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
 cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
@@ -2049,7 +2058,7 @@ cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
 cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
 cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
 cur_key:124 ;lkey:124; cur_loop: -1, cur_sum:0
-cur_key:124 ;lkey:125; cur_loop: 91, cur_sum:0
+cur_key:124 ;lkey:125; cur_loop: 122, cur_sum:0
 cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
 cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
 cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
@@ -2057,7 +2066,7 @@ cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
 cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
 cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
 cur_key:125 ;lkey:125; cur_loop: -1, cur_sum:0
-cur_key:125 ;lkey:126; cur_loop: 91, cur_sum:0
+cur_key:125 ;lkey:126; cur_loop: 122, cur_sum:0
 cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
 cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
 cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
@@ -2065,7 +2074,7 @@ cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
 cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
 cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
 cur_key:126 ;lkey:126; cur_loop: -1, cur_sum:0
-cur_key:126 ;lkey:127; cur_loop: 109, cur_sum:0
+cur_key:127 ;lkey:127; cur_loop: 128, cur_sum:-1748923259
 cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
 cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
 cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
@@ -2073,7 +2082,7 @@ cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
 cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
 cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
 cur_key:127 ;lkey:127; cur_loop: -1, cur_sum:0
-cur_key:127 ;lkey:128; cur_loop: 109, cur_sum:0
+cur_key:128 ;lkey:128; cur_loop: 128, cur_sum:-1099609066
 cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
 cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
 cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
@@ -2082,6 +2091,7 @@ cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
 cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
 cur_key:128 ;lkey:128; cur_loop: -1, cur_sum:0
 host_resume
-_F_ fkey=      0 lkey=    128 loops=    128 SUM= 66af274895f81fb seconds= 0.917348   Mks= 36.577648
-DPU fkey=      0 lkey=    128 loops=    128 SUM= 66af274895f81fb seconds= 0.005414   Mks= 0.047285
-End to End Time (ms): 1018.316000	
+Host resume CPU cycles : 2.55335e+06
+_F_ fkey=      0 lkey=    128 loops=    128 SUM= b7722c5e32fae4a2 seconds= 0.751754   Mks= 44.634857
+DPU fkey=      0 lkey=    128 loops=    128 SUM= b7722c5e32fae4a2 seconds= 0.005414   Mks= 0.047285
+End to End Time (ms): 868.576000	
