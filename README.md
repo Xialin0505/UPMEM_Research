@@ -11,25 +11,89 @@ make
 
 It should build `libdpu.so.0.0` and `libdpujni.so.0.0`, which should be enough for our project.
 
-#### Project code
-Our project code are located in `./library` folder, and mainly the following files are modified
-`library/backends/api/include/api/dpu.h`
-`library/backends/api/src/api/dpu_runner.c`
+If reports "cannot open shared object file: No such file or directory"
+Manually export the library
 
-The benchmarks are located in the remaining folders
-`binarysearch`
-`checksum`
-`hashtable`
-`usecase_keccakf`
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/my_library/
 
-#### How to run benchmarks
-Navigate to either benchmark folder, then 
+replace my library with the absolute path of /lib/ folder under one of the four benchmarks
+
+# Run the use case
+
+## Use case binary search
 ```
-bash link.sh
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH;$PWD/lib"
-bash test_advance.sh
-bash test_ref.sh
-bash test.sh
+cd /binarysearch/
 ```
-We notice that for when we remove the linking step for the reference, the reference will run much faster than without linking. The linking to our custom library cause a huge slow down of the entire program.
-
+### lazy preemption (CPU baseline contained in lazy preemption)
+```
+./test.sh
+```
+### lazy preemption with advance mode
+```
+./test_advance.sh
+```
+### PIM baseline
+```
+./test_ref.sh
+```
+## Use case keccaf
+```
+cd /usecase_keccakf/
+```
+### lazy preemption
+```
+make run
+```
+### lazy preemption with advance mode
+```
+make adv
+```
+### CPU baseline
+```
+make cpu
+```
+### dpu baseline
+```
+cd /usecase_keccakf-base/
+make run
+```
+## Use case checksum
+```
+cd /checksum/
+```
+### lazy preemption
+```
+./test.sh
+```
+### CPU baseline
+```
+./host_cpu/host
+```
+### lazy preemption with advance mode
+```
+./test_advance.sh
+```
+### PIM baseline
+```
+./test_ref.sh
+```
+## Use case Hashtable
+```
+cd /hashtable/
+```
+### lazy preemption
+```
+./test.sh
+```
+### CPU baseline
+```
+./test_cpu.sh
+```
+### lazy preemption with advance mode
+```
+./test_advance.sh
+```
+### PIM baseline
+```
+./test_ref.sh
+```
