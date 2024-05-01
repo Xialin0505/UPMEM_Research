@@ -37,6 +37,11 @@ cd /binarysearch/
 
 ./test_ref.sh
 
+
+
+
+
+
 #### Use case keccaf
 
 cd /usecase_keccakf/
@@ -59,6 +64,13 @@ cd /usecase_keccakf-base/
 
 make run
 
+
+
+
+
+
+
+
 #### Use case checksum
 
 cd /checksum/
@@ -78,6 +90,14 @@ cd /checksum/
 #### PIM baseline
 
 ./test_ref.sh
+
+
+
+
+
+
+
+
 
 #### Use case Hashtable
 
